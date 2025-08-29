@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Web y SEO en Venezuela | Maketo</title>
+    <meta name="description" content="¿Necesitas una página web? En Maketo creamos soluciones digitales que impulsan la visibilidad de tu negocio. Somos una agencia de diseño web en Venezuela especializada en la creación de sitios web y tiendas online que generan ventas.">
+    <meta name="keywords" content="diseño web venezuela, agencia seo valencia, crear tienda online en bolívares, costo de pagina web en venezuela, posicionamiento web para pymes, diseño de logos valencia, agencia de marketing digital caracas, visibilidad de tu negocio, creacion de paginas web">
+    <link rel="canonical" href="https://maketoweb.github.io">
+
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Diseño Web y SEO en Venezuela | Maketo">
+    <meta property="og:description" content="En Maketo creamos sitios web profesionales y estrategias de SEO para generar la visibilidad y ventas que tu negocio necesita en Venezuela.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maketoweb.github.io">
+    <meta property="og:image" content="https://placehold.co/1200x630/9333ea/ffffff?text=Maketo">
+    <meta property="og:locale" content="es_VE">
+    
+    <!-- Schema.org JSON-LD for Advanced SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://maketoweb.github.io/#maketo-business",
+          "name": "Maketo",
+          "url": "https://maketoweb.github.io",
+          "image": "https://placehold.co/1200x630/9333ea/ffffff?text=Maketo",
+          "description": "Agencia de diseño web y SEO en Valencia, Venezuela. Expertos en la creación de páginas web, tiendas online y estrategias de posicionamiento que generan resultados medibles para pymes y profesionales.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Valencia",
+            "addressRegion": "Carabobo",
+            "addressCountry": "VE"
+          },
+          "telephone": "+584143420573",
+          "email": "maketostudio@gmail.com",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "17:00"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Valencia"
+            },
+            {
+              "@type": "Country",
+              "name": "Venezuela"
+            }
+          ],
+          "knowsAbout": [
+            "Diseño Web",
+            "Creación de Páginas Web",
+            "SEO",
+            "Marketing Digital",
+            "Branding",
+            "Google Search"
+          ],
+          "serviceType": [
+            "Diseño Web",
+            "Creación de Sitio Web",
+            "SEO Local",
+            "SEO Avanzado",
+            "Diseño de Logos",
+            "Branding de Marca"
+          ],
+          "sameAs": [
+            "https://instagram.com/maketo.web",
+            "https://maketoweb.github.io"
+          ]
+        },
+        {
+            "@type": "ContactPoint",
+            "telephone": "+584143420573",
+            "contactType": "Sales",
+            "areaServed": "VE",
+            "availableLanguage": "es"
+        },
+        {
+            "@type": "ContactPoint",
+            "email": "hola@maketo.com",
+            "contactType": "Customer Service",
+            "areaServed": "VE",
+            "availableLanguage": "es"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "¿Qué es Maketo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Somos una <strong>agencia de marketing digital</strong> ubicada en Valencia, Venezuela, especializada en crear páginas web, tiendas online y estrategias de SEO. Nuestro objetivo no es solo diseñar, sino convertir tu presencia digital en un verdadero motor de crecimiento y ventas."
+            }
+          },{
+            "@type": "Question",
+            "name": "¿Qué servicios ofrecen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ofrecemos servicios de <strong>diseño web y e-commerce</strong> (páginas autoadministrables y tiendas online), <strong>SEO avanzado</strong> y <strong>SEO local</strong> para posicionamiento en Google, y <strong>branding</strong> para el desarrollo de identidades de marca sólidas."
+            }
+          },{
+            "@type": "Question",
+            "name": "¿Cuánto cuesta una landing page básica con Maketo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una <strong>landing page básica con dominio y hosting por un año, y SEO básico</strong> está disponible por <strong>$200</strong>. Nos enfocamos en darte la mejor calidad y un inicio sólido en el mundo digital sin sacrificar el valor."
+            }
+          },{
+            "@type": "Question",
+            "name": "¿En cuánto tiempo veré resultados de SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El SEO es una estrategia a largo plazo. Aunque es posible ver mejoras iniciales en 3-6 meses, los resultados significativos y sostenibles generalmente se aprecian entre 6 y 12 meses, dependiendo de la competitividad de tu nicho y el estado actual de tu sitio."
+            }
+          },{
+            "@type": "Question",
+            "name": "¿Qué métodos de pago aceptan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para adaptarnos a la economía venezolana, aceptamos múltiples formas de pago, incluyendo Bolívares (BCV), Dólares, Zelle y Pago Móvil."
+            }
+          }]
+        }
+      ]
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: #1C1917; /* stone-900 */
+        }
+        .bg-gradient-background {
+            background-image: linear-gradient(135deg, #ffffff 0%, #dfc2ff 50%, #c1ebff 100%);
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 450px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .tab-active {
+            border-color: #A21CAF; /* fuchsia-800 */
+            color: #A21CAF;
+            font-weight: 600;
+        }
+        .tab-inactive {
+            border-color: transparent;
+        }
+        
+        /* Custom Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-pop-in {
+            animation: popIn 0.5s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="antialiased bg-gradient-background">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-3xl font-extrabold text-stone-900 animate-pop-in" style="animation-delay: 0.1s;">Maketo</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#desafios" class="text-stone-600 hover:text-fuchsia-600 transition-colors">Desafíos</a>
+                <a href="#portafolio-servicios" class="text-stone-600 hover:text-fuchsia-600 transition-colors">Servicios</a>
+                <a href="#propuesta" class="text-stone-600 hover:text-fuchsia-600 transition-colors">Propuesta</a>
+                <a href="#mercado" class="text-stone-600 hover:text-fuchsia-600 transition-colors">Mercado</a>
+                <a href="#testimonios" class="text-stone-600 hover:text-fuchsia-600 transition-colors">Testimonios</a>
+                <a href="#faqs" class="text-stone-600 hover:text-fuchsia-600 transition-colors">FAQs</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-fuchsia-600 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <a href="https://wa.me/584143420573" target="_blank" rel="noopener noreferrer" class="bg-fuchsia-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-fuchsia-700 transition-transform transform hover:scale-105 animate-pop-in hidden md:block" style="animation-delay: 0.3s;">
+                Contactar
+            </a>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="fixed inset-0 z-50 bg-white/95 backdrop-blur-md hidden md:hidden flex flex-col items-center justify-center space-y-8 text-center transition-transform transform -translate-y-full">
+            <button id="close-menu-button" class="absolute top-6 right-6 text-stone-900 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <nav class="flex flex-col space-y-6 text-2xl font-bold text-stone-900">
+                <a href="#desafios" class="hover:text-fuchsia-600" onclick="hideMobileMenu()">Desafíos</a>
+                <a href="#portafolio-servicios" class="hover:text-fuchsia-600" onclick="hideMobileMenu()">Servicios</a>
+                <a href="#propuesta" class="hover:text-fuchsia-600" onclick="hideMobileMenu()">Propuesta</a>
+                <a href="#mercado" class="hover:text-fuchsia-600" onclick="hideMobileMenu()">Mercado</a>
+                <a href="#testimonios" class="hover:text-fuchsia-600" onclick="hideMobileMenu()">Testimonios</a>
+                <a href="#faqs" class="hover:text-fuchsia-600" onclick="hideMobileMenu()">FAQs</a>
+                <a href="https://wa.me/584143420573" target="_blank" rel="noopener noreferrer" class="bg-fuchsia-600 text-white font-bold py-4 px-10 rounded-lg text-lg hover:bg-fuchsia-700 transition-transform transform hover:scale-105 mt-4" onclick="hideMobileMenu()">Contactar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-stone-900 leading-tight animate-fade-in">
+                    Diseño Web y SEO en Venezuela <br class="hidden md:block"> que Genera Clientes.
+                </h1>
+                <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-stone-600 animate-fade-in" style="animation-delay: 0.2s;">
+                    Somos una agencia de <strong>creación de páginas web</strong> que entiende el mercado local. Construimos un <strong>sitio web</strong> o <strong>tienda online</strong> que no solo es profesional, sino que genera la <strong>visibilidad de tu negocio</strong> y ventas medibles desde el primer día.
+                </p>
+                <div class="mt-10 animate-fade-in" style="animation-delay: 0.4s;">
+                    <a href="https://wa.me/584143420573" target="_blank" rel="noopener noreferrer" class="bg-fuchsia-600 text-white font-bold py-3 px-6 md:py-4 md:px-8 rounded-lg text-lg hover:bg-fuchsia-700 transition-transform transform hover:scale-105 shadow-lg whitespace-nowrap">
+                        Pide una consultoría gratuita
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="desafios" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto animate-fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold text-stone-900">¿Te enfrentas a estos desafíos?</h2>
+                    <p class="mt-4 text-stone-600">
+                        En un entorno donde la digitalización es una obligación, no una opción, entendemos los obstáculos que enfrentan los negocios en Venezuela. La clave no es solo vender, sino optimizar, ser eficiente y generar confianza.
+                    </p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl border border-stone-200 text-center hover:shadow-xl transition-shadow animate-fade-in" style="animation-delay: 0.6s;">
+                        <div class="text-5xl font-extrabold text-fuchsia-600">99%</div>
+                        <h4 class="mt-4 text-xl font-bold text-stone-800">Competencia Digital</h4>
+                        <p class="mt-2 text-stone-600">De las pymes en Venezuela planea invertir en digitalización. Destacar en este mar de ofertas es crucial para sobrevivir y crecer.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl border border-stone-200 text-center hover:shadow-xl transition-shadow animate-fade-in" style="animation-delay: 0.8s;">
+                        <div class="text-5xl font-extrabold text-fuchsia-600">60%</div>
+                        <h4 class="mt-4 text-xl font-bold text-stone-800">Presión Fiscal y Costos</h4>
+                        <p class="mt-2 text-stone-600">La alta presión fiscal y la inflación exigen optimizar costos. Una web funcional automatiza procesos y reduce gastos operativos.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl border border-stone-200 text-center hover:shadow-xl transition-shadow animate-fade-in" style="animation-delay: 1s;">
+                        <div class="text-5xl font-extrabold text-fuchsia-600">78%</div>
+                        <h4 class="mt-4 text-xl font-bold text-stone-800">Búsquedas Locales</h4>
+                        <p class="mt-2 text-stone-600">De las búsquedas móviles locales terminan en una compra. Si tienes un negocio físico, no aparecer en Google Maps es perder dinero.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portafolio-servicios" class="py-16 bg-stone-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto animate-fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold text-stone-900">Servicios que Impulsan la Visibilidad de tu Negocio</h2>
+                    <p class="mt-4 text-stone-600">
+                        Nuestra misión es potenciar tu marca con soluciones digitales diseñadas para el mercado venezolano, enfocadas en resultados tangibles.
+                    </p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-8 rounded-xl border border-stone-200 hover:shadow-xl transition-shadow animate-pop-in" style="animation-delay: 1.2s;">
+                        <div class="text-5xl text-fuchsia-600 mb-4">💻</div>
+                        <h3 class="text-2xl font-bold text-stone-800">Creación de Páginas Web y E-commerce</h3>
+                        <p class="mt-4 text-stone-600">
+                            Construimos tu <strong>página web</strong> desde cero, optimizada para convertir visitantes en clientes. Ofrecemos soluciones a medida, desde un sitio web informativo hasta una <strong>tienda online</strong> completa, con opciones de pago locales.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl border border-stone-200 hover:shadow-xl transition-shadow animate-pop-in" style="animation-delay: 1.4s;">
+                        <div class="text-5xl text-fuchsia-600 mb-4">🔍</div>
+                        <h3 class="text-2xl font-bold text-stone-800">Posicionamiento SEO Avanzado</h3>
+                        <p class="mt-4 text-stone-600">
+                            Aumenta tu visibilidad en Google. Nuestra <strong>estrategia SEO</strong> integral incluye auditoría, análisis de la competencia y optimización on-page para asegurar que tu negocio aparezca en las primeras posiciones para las búsquedas más relevantes.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl border border-stone-200 hover:shadow-xl transition-shadow animate-pop-in" style="animation-delay: 1.6s;">
+                        <div class="text-5xl text-fuchsia-600 mb-4">🎨</div>
+                        <h3 class="text-2xl font-bold text-stone-800">Branding y Diseño Gráfico</h3>
+                        <p class="mt-4 text-stone-600">
+                            Desarrollamos una identidad de marca sólida y coherente, con diseños de logo y manuales de marca que te diferencian de la competencia y construyen confianza con tu audiencia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="propuesta" class="py-16 animate-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-stone-900">¿Por Qué Elegir Maketo? Nuestra Experiencia, Autoridad y Confianza</h2>
+                    <p class="mt-4 text-stone-600">
+                        No vendemos un servicio, vendemos una solución a tus problemas. Nuestra propuesta de valor se basa en la experiencia comprobada y la expertise para darte una ventaja competitiva.
+                    </p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="p-6 animate-pop-in" style="animation-delay: 1.2s;">
+                        <div class="text-4xl text-fuchsia-600 mb-4">✓</div>
+                        <h3 class="text-xl font-bold text-stone-800">Experiencia Comprobada</h3>
+                        <p class="mt-2 text-stone-600">Con más de 10 años ayudando a empresas y profesionales a generar resultados tangibles en Venezuela, somos tu socio con un historial de éxito.</p>
+                    </div>
+                    <div class="p-6 animate-pop-in" style="animation-delay: 1.4s;">
+                        <div class="text-4xl text-fuchsia-600 mb-4">🎯</div>
+                        <h3 class="text-xl font-bold text-stone-800">Enfoque de Negocio</h3>
+                        <p class="mt-2 text-stone-600">Nuestro objetivo es que obtengas un retorno de tu inversión (ROI) medible y claro, optimizando cada paso para maximizar tus ingresos.</p>
+                    </div>
+                    <div class="p-6 animate-pop-in" style="animation-delay: 1.6s;">
+                        <div class="text-4xl text-fuchsia-600 mb-4">🚀</div>
+                        <h3 class="text-xl font-bold text-stone-800">Tecnología y Futuro</h3>
+                        <p class="mt-2 text-stone-600">Aplicamos IA y LLMs para optimizar contenido y darte una ventaja competitiva única que te mantenga a la vanguardia.</p>
+                    </div>
+                    <div class="p-6 animate-pop-in" style="animation-delay: 1.8s;">
+                        <div class="text-4xl text-fuchsia-600 mb-4">💳</div>
+                        <h3 class="text-xl font-bold text-stone-800">Pagos Flexibles</h3>
+                        <p class="mt-2 text-stone-600">Para adaptarnos a tu realidad, aceptamos Bolívares (BCV), Dólares, Zelle y Pago Móvil. La confianza es nuestra prioridad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="testimonios" class="py-16 bg-white animate-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-stone-900">Lo que Dicen Nuestros Clientes</h2>
+                    <p class="mt-4 text-stone-600">
+                        Nuestra mejor carta de presentación son los resultados que hemos logrado para negocios como el tuyo en Venezuela.
+                    </p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-stone-50 p-8 rounded-xl shadow-lg border border-stone-200 animate-pop-in" style="animation-delay: 2s;">
+                        <p class="text-xl font-serif italic text-stone-700">"El diseño web que hicieron para nuestra clínica superó todas las expectativas. Ahora recibimos más de 50 consultas mensuales directamente desde el sitio. Un trabajo impecable y un servicio de primera."</p>
+                        <p class="mt-4 font-bold text-stone-900">Dr. Ana Márquez</p>
+                        <p class="text-sm text-fuchsia-600">Clínica Odontológica Valencia</p>
+                    </div>
+                    <div class="bg-stone-50 p-8 rounded-xl shadow-lg border border-stone-200 animate-pop-in" style="animation-delay: 2.2s;">
+                        <p class="text-xl font-serif italic text-stone-700">"Contratamos el servicio de SEO y el cambio fue dramático. En tres meses, pasamos de ser invisibles a la primera página de Google para nuestros servicios. El ROI está más que justificado."</p>
+                        <p class="mt-4 font-bold text-stone-900">Carlos Giménez</p>
+                        <p class="text-sm text-fuchsia-600">Gerente de Tienda de Electrónica</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faqs" class="py-16 animate-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-stone-900">Preguntas Frecuentes</h2>
+                    <p class="mt-4 text-stone-600">
+                        Resolvemos las dudas más comunes de nuestros clientes para que tomes la mejor decisión para tu negocio.
+                    </p>
+                </div>
+                <div class="mt-12 max-w-3xl mx-auto space-y-4">
+                     <details class="group bg-white p-6 rounded-xl border border-stone-200 cursor-pointer transition-all duration-300 hover:shadow-md animate-pop-in" style="animation-delay: 2.4s;">
+                        <summary class="flex justify-between items-center text-lg font-bold text-stone-800 list-none">
+                            <span>¿Qué es Maketo?</span>
+                            <span class="ml-auto transform transition-transform duration-300 group-open:rotate-180">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="mt-4 text-stone-600">
+                            Somos una <strong>agencia de marketing digital</strong> ubicada en Valencia, Venezuela, especializada en crear páginas web, tiendas online y estrategias de SEO. Nuestro objetivo no es solo diseñar, sino convertir tu presencia digital en un verdadero motor de crecimiento y ventas.
+                        </div>
+                    </details>
+                    <details class="group bg-white p-6 rounded-xl border border-stone-200 cursor-pointer transition-all duration-300 hover:shadow-md animate-pop-in" style="animation-delay: 2.6s;">
+                        <summary class="flex justify-between items-center text-lg font-bold text-stone-800 list-none">
+                            <span>¿Qué servicios ofrecen?</span>
+                            <span class="ml-auto transform transition-transform duration-300 group-open:rotate-180">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="mt-4 text-stone-600">
+                            Ofrecemos servicios de <strong>diseño web y e-commerce</strong> (páginas autoadministrables y tiendas online), <strong>SEO avanzado</strong> y <strong>SEO local</strong> para posicionamiento en Google, y <strong>branding</strong> para el desarrollo de identidades de marca sólidas.
+                        </div>
+                    </details>
+                    <details class="group bg-white p-6 rounded-xl border border-stone-200 cursor-pointer transition-all duration-300 hover:shadow-md animate-pop-in" style="animation-delay: 2.8s;">
+                        <summary class="flex justify-between items-center text-lg font-bold text-stone-800 list-none">
+                            <span>¿Cuánto cuesta una landing page básica con Maketo?</span>
+                            <span class="ml-auto transform transition-transform duration-300 group-open:rotate-180">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="mt-4 text-stone-600">
+                            Una <strong>landing page básica con dominio y hosting por un año, y SEO básico</strong> está disponible por <strong>$200</strong>. Nos enfocamos en darte la mejor calidad y un inicio sólido en el mundo digital sin sacrificar el valor.
+                        </div>
+                    </details>
+                    <details class="group bg-white p-6 rounded-xl border border-stone-200 cursor-pointer transition-all duration-300 hover:shadow-md animate-pop-in" style="animation-delay: 3s;">
+                        <summary class="flex justify-between items-center text-lg font-bold text-stone-800 list-none">
+                            <span>¿En cuánto tiempo veré resultados de SEO?</span>
+                            <span class="ml-auto transform transition-transform duration-300 group-open:rotate-180">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="mt-4 text-stone-600">
+                            El SEO es una estrategia a largo plazo. Aunque es posible ver mejoras iniciales en 3-6 meses, los resultados significativos y sostenibles generalmente se aprecian entre 6 y 12 meses, dependiendo de la competitividad de tu nicho y el estado actual de tu sitio.
+                        </div>
+                    </details>
+                    <details class="group bg-white p-6 rounded-xl border border-stone-200 cursor-pointer transition-all duration-300 hover:shadow-md animate-pop-in" style="animation-delay: 3.2s;">
+                        <summary class="flex justify-between items-center text-lg font-bold text-stone-800 list-none">
+                            <span>¿Qué métodos de pago aceptan?</span>
+                            <span class="ml-auto transform transition-transform duration-300 group-open:rotate-180">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="mt-4 text-stone-600">
+                            Para adaptarnos a la economía venezolana, aceptamos múltiples formas de pago, incluyendo Bolívares (BCV), Dólares, Zelle y Pago Móvil.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="mercado" class="py-16 bg-white animate-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-stone-900">El Mercado del Diseño Web en Venezuela</h2>
+                    <p class="mt-4 text-stone-600">
+                        El precio no lo es todo. El mercado está lleno de ofertas de bajo costo que a menudo resultan en una mala experiencia. Nosotros nos enfocamos en el valor y el retorno de inversión. Este gráfico muestra el rango de precios típico para un sitio web corporativo en el país.
+                    </p>
+                </div>
+                <div class="mt-12">
+                    <div class="chart-container bg-white p-4 md:p-8 rounded-xl shadow-lg border border-stone-200">
+                        <canvas id="marketChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-20  text-black animate-fade-in">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold">Tu Éxito Digital Empieza Aquí</h2>
+                <p class="mt-4 text-lg max-w-2xl mx-auto text-black-100">
+                    Si buscas un socio estratégico que entienda las palabras clave que necesita tu negocio y sepa cómo hacer que tu inversión se traduzca en crecimiento, estás en el lugar correcto.
+                </p>
+                <div class="mt-10">
+                    <a href="https://wa.me/584143420573" target="_blank" rel="noopener noreferrer" class="bg-white text-fuchsia-800 font-bold py-3 px-6 md:py-4 md:px-10 rounded-lg text-lg hover:bg-stone-100 transition-transform transform hover:scale-105 shadow-lg whitespace-nowrap">
+                        ¡Pide tu consultoría gratuita ahora!
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-stone-800 text-stone-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-bold text-white">Maketo</p>
+            <p class="mt-2">Agencia de Diseño y Marketing Digital en Valencia, Venezuela.</p>
+            
+            <!-- Contact Info -->
+            <div class="mt-6 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-8 text-white text-sm">
+                <div class="flex items-center space-x-2">
+                    <span class="font-bold">✉️ mail:</span>
+                    <a href="https://maketoweb.github.io" class="hover:text-fuchsia-400 transition-colors">maketoweb.github.io</a>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="font-bold">📱 Teléfono:</span>
+                    <a href="tel:+584143420573" class="hover:text-fuchsia-400 transition-colors">+58 414 3420573</a>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="font-bold">📸 Instagram:</span>
+                    <a href="https://instagram.com/maketo.web" class="hover:text-fuchsia-400 transition-colors">@maketo.web</a>
+                </div>
+            </div>
+
+            <div class="mt-6">
+                <p class="font-semibold text-white">Palabras Clave de Posicionamiento:</p>
+                <p class="mt-2 text-sm">
+                    diseño web venezuela • agencia seo valencia • crear tienda online en bolívares • costo de pagina web en venezuela • posicionamiento web para pymes • diseño de logos valencia • agencia de marketing digital caracas • servicios de branding venezuela
+                </p>
+            </div>
+            <p class="mt-8 text-sm">&copy; 2025 Maketo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Logic
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function showMobileMenu() {
+            mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.remove('-translate-y-full');
+            mobileMenu.classList.add('flex');
+            document.body.style.overflow = 'hidden'; // Prevents scrolling
+        }
+
+        function hideMobileMenu() {
+            mobileMenu.classList.remove('flex');
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.add('-translate-y-full');
+            document.body.style.overflow = 'auto'; // Re-enables scrolling
+        }
+
+        mobileMenuButton.addEventListener('click', showMobileMenu);
+        closeMenuButton.addEventListener('click', hideMobileMenu);
+
+        // Close menu if a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', hideMobileMenu);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.tab-button');
+            const panes = document.querySelectorAll('.tab-pane');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const target = tab.getAttribute('data-tab');
+
+                    tabs.forEach(t => {
+                        t.classList.remove('tab-active');
+                        t.classList.add('tab-inactive');
+                    });
+                    tab.classList.add('tab-active');
+                    tab.classList.remove('tab-inactive');
+
+                    panes.forEach(pane => {
+                        if (pane.id === target) {
+                            pane.classList.remove('hidden');
+                        } else {
+                            pane.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+
+            const ctx = document.getElementById('marketChart').getContext('2d');
+            const marketChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Freelancer (Básico)', 'Agencia (Oferta)', 'Agencia (Estándar)', 'Maketo (Valor)', 'Agencia (Premium)'],
+                    datasets: [{
+                        label: 'Precio Mínimo ($)',
+                        data: [35, 120, 350, 0, 750],
+                        backgroundColor: 'rgba(204, 204, 204, 0.5)',
+                        borderColor: 'rgba(150, 150, 150, 1)',
+                        borderWidth: 1,
+                        barPercentage: 0.6,
+                        categoryPercentage: 0.7,
+                    }, {
+                        label: 'Precio Máximo ($)',
+                        data: [150, 250, 750, 0, 2100],
+                        backgroundColor: 'rgba(200, 100, 255, 0.2)',
+                        borderColor: 'rgba(150, 50, 200, 1)',
+                        borderWidth: 1,
+                        barPercentage: 0.6,
+                        categoryPercentage: 0.7,
+                    },
+                    {
+                        label: 'Maketo (Enfoque en Valor)',
+                         data: [0, 0, 0, 200, 0],
+                         backgroundColor: 'rgba(162, 28, 175, 0.8)',
+                         borderColor: 'rgba(162, 28, 175, 1)',
+                         borderWidth: 1,
+                         barPercentage: 0.6,
+                         categoryPercentage: 0.7,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    scales: {
+                        x: {
+                            stacked: true,
+                            title: {
+                                display: true,
+                                text: 'Rango de Precios (USD)'
+                            }
+                        },
+                        y: {
+                            stacked: true,
+                        }
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Comparativa de Precios para un Sitio Web Corporativo en Venezuela',
+                            font: {
+                                size: 16
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed.x !== null) {
+                                        if(context.datasetIndex === 2) {
+                                            return ' Maketo: No competimos por precio, sino por ROI. Nuestro enfoque es un proyecto a medida que genera resultados.';
+                                        }
+                                        label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.x);
+                                    }
+                                    return label;
+                                }
+                            }
+                        },
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
