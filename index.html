@@ -17,117 +17,357 @@
     <meta property="og:locale" content="es_VE">
     <meta name="google-site-verification" content="XFhQKekxGVM6qDoErVnyQon-pJq4BqCyz_3W16qK90Y" />
     <!-- Schema.org JSON-LD for Advanced SEO -->
-    <script type="application/ld+json">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": ["LocalBusiness", "ProfessionalService", "AdvertisingAgency"],
+      "@id": "https://maketoweb.github.io/#maketo-business",
+      "name": "Maketo - Agencia de Diseño Web y SEO Valencia",
+      "alternateName": ["Maketo Web", "Maketo Digital", "Agencia Maketo"],
+      "url": "https://maketoweb.github.io",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://placehold.co/400x400/9333ea/ffffff?text=Maketo+Logo",
+        "width": 400,
+        "height": 400,
+        "contentUrl": "https://placehold.co/400x400/9333ea/ffffff?text=Maketo+Logo"
+      },
+      "image": [
         {
-          "@type": "LocalBusiness",
-          "@id": "https://maketoweb.github.io/#maketo-business",
-          "name": "Maketo",
-          "url": "https://maketoweb.github.io",
-          "image": "https://placehold.co/1200x630/9333ea/ffffff?text=Maketo",
-          "description": "Agencia de diseño web y SEO en Valencia, Venezuela. Expertos en la creación de páginas web, tiendas online y estrategias de posicionamiento que generan resultados medibles para pymes y profesionales.",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Valencia",
-            "addressRegion": "Carabobo",
-            "addressCountry": "VE"
+          "@type": "ImageObject",
+          "url": "https://placehold.co/1200x630/9333ea/ffffff?text=Maketo+Agencia+Web",
+          "width": 1200,
+          "height": 630,
+          "caption": "Maketo - Agencia de diseño web profesional en Valencia, Venezuela"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://placehold.co/800x600/9333ea/ffffff?text=Diseño+Web+Valencia",
+          "width": 800,
+          "height": 600,
+          "caption": "Servicios de diseño web y SEO en Valencia, Venezuela"
+        }
+      ],
+      "description": "Agencia líder en diseño web y SEO en Valencia, Venezuela. Creamos páginas web profesionales, tiendas online y estrategias de posicionamiento SEO que generan resultados medibles para pymes y profesionales. Especialistas en conversión digital.",
+      "slogan": "Convertimos tu presencia digital en un motor de crecimiento",
+      "foundingDate": "2020",
+      "numberOfEmployees": "2-10",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Valencia",
+        "addressLocality": "Valencia",
+        "addressRegion": "Carabobo",
+        "postalCode": "2001",
+        "addressCountry": "VE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 10.1621,
+        "longitude": -68.0077
+      },
+      "telephone": "+58-414-342-0573",
+      "email": "maketostudio@gmail.com",
+      "priceRange": "$$",
+      "currenciesAccepted": ["USD", "VED"],
+      "paymentAccepted": ["Cash", "Zelle", "Bank Transfer", "Mobile Payment"],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00",
+          "validFrom": "2024-01-01",
+          "validThrough": "2025-12-31"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Valencia",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Carabobo"
+          }
+        },
+        {
+          "@type": "State",
+          "name": "Carabobo"
+        },
+        {
+          "@type": "Country",
+          "name": "Venezuela",
+          "alternateName": "VE"
+        }
+      ],
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 10.1621,
+          "longitude": -68.0077
+        },
+        "geoRadius": "100000"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Marketing Digital Maketo",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Diseño Web Profesional",
+              "description": "Creación de páginas web responsive y optimizadas para conversión",
+              "serviceType": "Web Design"
+            },
+            "price": "200",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "200.00",
+              "priceCurrency": "USD",
+              "valueAddedTaxIncluded": "false"
+            },
+            "availability": "https://schema.org/InStock"
           },
-          "telephone": "+584143420573",
-          "email": "maketostudio@gmail.com",
-          "openingHoursSpecification": {
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SEO Local Valencia",
+              "description": "Posicionamiento web local para empresas en Valencia, Venezuela",
+              "serviceType": "SEO"
+            },
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tiendas Online E-commerce",
+              "description": "Desarrollo de tiendas virtuales con sistemas de pago integrados",
+              "serviceType": "E-commerce Development"
+            },
+            "availability": "https://schema.org/InStock"
+          }
+        ]
+      },
+      "makesOffer": [
+        {
+          "@type": "Service",
+          "@id": "#diseno-web-service",
+          "name": "Diseño de Páginas Web",
+          "serviceType": "Website Design",
+          "description": "Diseño y desarrollo de sitios web profesionales, responsive y optimizados para SEO",
+          "category": "Web Development",
+          "provider": {
+            "@id": "https://maketoweb.github.io/#maketo-business"
+          },
+          "areaServed": "Valencia, Venezuela"
+        },
+        {
+          "@type": "Service",
+          "@id": "#seo-service",
+          "name": "Posicionamiento SEO",
+          "serviceType": "Search Engine Optimization",
+          "description": "Estrategias de SEO local y avanzado para mejorar el posicionamiento en Google",
+          "category": "Digital Marketing",
+          "provider": {
+            "@id": "https://maketoweb.github.io/#maketo-business"
+          },
+          "areaServed": "Valencia, Venezuela"
+        },
+        {
+          "@type": "Service",
+          "@id": "#branding-service",
+          "name": "Diseño de Marca y Branding",
+          "serviceType": "Brand Design",
+          "description": "Creación de identidades visuales y estrategias de marca completas",
+          "category": "Graphic Design",
+          "provider": {
+            "@id": "https://maketoweb.github.io/#maketo-business"
+          },
+          "areaServed": "Valencia, Venezuela"
+        }
+      ],
+      "knowsAbout": [
+        "Diseño Web Valencia",
+        "SEO Local Valencia",
+        "Marketing Digital Venezuela",
+        "Desarrollo Web Profesional",
+        "Optimización para Motores de Búsqueda",
+        "Conversión Digital",
+        "UX/UI Design",
+        "E-commerce Development",
+        "Google My Business",
+        "Posicionamiento Web"
+      ],
+      "keywords": "diseño web valencia, seo valencia venezuela, agencia marketing digital, páginas web profesionales, tiendas online venezuela",
+      "sameAs": [
+        "https://instagram.com/maketo.web",
+        "https://maketoweb.github.io"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+58-414-342-0573",
+          "contactType": "sales",
+          "areaServed": "VE",
+          "availableLanguage": ["es", "Spanish"],
+          "contactOption": "TollFree",
+          "hoursAvailable": {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
             "opens": "09:00",
             "closes": "17:00"
-          },
-          "areaServed": [
-            {
-              "@type": "City",
-              "name": "Valencia"
-            },
-            {
-              "@type": "Country",
-              "name": "Venezuela"
-            }
-          ],
-          "knowsAbout": [
-            "Diseño Web",
-            "Creación de Páginas Web",
-            "SEO",
-            "Marketing Digital",
-            "Branding",
-            "Google Search"
-          ],
-          "serviceType": [
-            "Diseño Web",
-            "Creación de Sitio Web",
-            "SEO Local",
-            "SEO Avanzado",
-            "Diseño de Logos",
-            "Branding de Marca"
-          ],
-          "sameAs": [
-            "https://instagram.com/maketo.web",
-            "https://maketoweb.github.io"
-          ]
+          }
         },
         {
-            "@type": "ContactPoint",
-            "telephone": "+584143420573",
-            "contactType": "Sales",
-            "areaServed": "VE",
-            "availableLanguage": "es"
+          "@type": "ContactPoint",
+          "email": "hola@maketo.com",
+          "contactType": "customer service",
+          "areaServed": "VE",
+          "availableLanguage": ["es", "Spanish"],
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "47",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://maketoweb.github.io/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es Maketo y qué servicios ofrece en Valencia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Maketo es una agencia de marketing digital especializada ubicada en Valencia, Venezuela. Ofrecemos servicios integrales de diseño web, desarrollo de tiendas online, SEO local y avanzado, y branding corporativo. Nuestro enfoque se centra en convertir la presencia digital de nuestros clientes en un verdadero motor de crecimiento y ventas, con estrategias personalizadas para cada negocio.",
+            "dateCreated": "2024-01-15",
+            "author": {
+              "@type": "Organization",
+              "name": "Maketo"
+            }
+          }
         },
         {
-            "@type": "ContactPoint",
-            "email": "hola@maketo.com",
-            "contactType": "Customer Service",
-            "areaServed": "VE",
-            "availableLanguage": "es"
+          "@type": "Question",
+          "name": "¿Cuáles son los servicios de diseño web que ofrecen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nuestros servicios de diseño web incluyen: páginas web profesionales autoadministrables, tiendas online e-commerce con sistemas de pago integrados, landing pages optimizadas para conversión, diseño responsive para todos los dispositivos, optimización SEO técnica, y mantenimiento web continuo. Todos nuestros sitios incluyen hosting y dominio por el primer año.",
+            "dateCreated": "2024-01-15",
+            "author": {
+              "@type": "Organization",
+              "name": "Maketo"
+            }
+          }
         },
         {
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "¿Qué es Maketo?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Somos una <strong>agencia de marketing digital</strong> ubicada en Valencia, Venezuela, especializada en crear páginas web, tiendas online y estrategias de SEO. Nuestro objetivo no es solo diseñar, sino convertir tu presencia digital en un verdadero motor de crecimiento y ventas."
+          "@type": "Question",
+          "name": "¿Cuánto cuesta una landing page básica con dominio y hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una landing page básica profesional con dominio .com, hosting premium por un año completo, certificado SSL, SEO básico optimizado, diseño responsive y formularios de contacto funcionales tiene un costo de $200 USD. Este precio incluye hasta 3 revisiones del diseño y soporte técnico durante el primer mes. Es una inversión completa para comenzar tu presencia digital de manera profesional.",
+            "dateCreated": "2024-01-15",
+            "author": {
+              "@type": "Organization",
+              "name": "Maketo"
             }
-          },{
-            "@type": "Question",
-            "name": "¿Qué servicios ofrecen?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Ofrecemos servicios de <strong>diseño web y e-commerce</strong> (páginas autoadministrables y tiendas online), <strong>SEO avanzado</strong> y <strong>SEO local</strong> para posicionamiento en Google, y <strong>branding</strong> para el desarrollo de identidades de marca sólidas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En cuánto tiempo se ven resultados del SEO en Valencia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los resultados de SEO varían según múltiples factores. Para SEO local en Valencia, es posible ver mejoras iniciales en Google My Business y búsquedas locales entre 1-3 meses. Para posicionamiento orgánico general, los primeros resultados aparecen entre 3-6 meses, mientras que los resultados significativos y sostenibles se logran entre 6-12 meses. El tiempo específico depende de la competitividad de tu sector, el estado actual de tu sitio web y la constancia en la estrategia implementada.",
+            "dateCreated": "2024-01-15",
+            "author": {
+              "@type": "Organization",
+              "name": "Maketo"
             }
-          },{
-            "@type": "Question",
-            "name": "¿Cuánto cuesta una landing page básica con Maketo?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Una <strong>landing page básica con dominio y hosting por un año, y SEO básico</strong> está disponible por <strong>$200</strong>. Nos enfocamos en darte la mejor calidad y un inicio sólido en el mundo digital sin sacrificar el valor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué métodos de pago aceptan en Venezuela?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para facilitar el acceso a nuestros servicios en Venezuela, aceptamos múltiples formas de pago: Dólares estadounidenses (efectivo o transferencia), Bolívares venezolanos al cambio BCV del día, Zelle (para clientes con cuentas en USA), Pago Móvil, transferencias bancarias nacionales, y PayPal (sujeto a disponibilidad). También ofrecemos planes de pago flexibles para proyectos de mayor envergadura.",
+            "dateCreated": "2024-01-15",
+            "author": {
+              "@type": "Organization",
+              "name": "Maketo"
             }
-          },{
-            "@type": "Question",
-            "name": "¿En cuánto tiempo veré resultados de SEO?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "El SEO es una estrategia a largo plazo. Aunque es posible ver mejoras iniciales en 3-6 meses, los resultados significativos y sostenibles generalmente se aprecian entre 6 y 12 meses, dependiendo de la competitividad de tu nicho y el estado actual de tu sitio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué elegir Maketo para diseño web en Valencia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Maketo se diferencia por nuestro enfoque integral en resultados medibles. No solo diseñamos sitios web, sino que creamos estrategias digitales completas que generan leads y ventas reales. Ofrecemos precios competitivos adaptados al mercado venezolano, soporte técnico en español, conocimiento profundo del mercado local de Valencia, y un portafolio comprobado de casos de éxito. Además, todos nuestros proyectos incluyen capacitación para que puedas administrar tu sitio web de manera autónoma.",
+            "dateCreated": "2024-01-15",
+            "author": {
+              "@type": "Organization",
+              "name": "Maketo"
             }
-          },{
-            "@type": "Question",
-            "name": "¿Qué métodos de pago aceptan?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Para adaptarnos a la economía venezolana, aceptamos múltiples formas de pago, incluyendo Bolívares (BCV), Dólares, Zelle y Pago Móvil."
-            }
-          }]
+          }
         }
       ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://maketoweb.github.io/#website",
+      "url": "https://maketoweb.github.io",
+      "name": "Maketo - Agencia de Diseño Web y SEO Valencia",
+      "description": "Agencia líder en diseño web y SEO en Valencia, Venezuela. Creamos sitios web que convierten visitas en clientes.",
+      "publisher": {
+        "@id": "https://maketoweb.github.io/#maketo-business"
+      },
+      "inLanguage": "es-VE",
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://maketoweb.github.io/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://maketoweb.github.io/#organization",
+      "name": "Maketo",
+      "url": "https://maketoweb.github.io",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://placehold.co/400x400/9333ea/ffffff?text=Maketo+Logo",
+        "width": 400,
+        "height": 400
+      },
+      "sameAs": [
+        "https://instagram.com/maketo.web"
+      ]
     }
+  ]
+}
     </script>
     
     <script src="https://cdn.tailwindcss.com"></script>
