@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /politica-legal.html
 
 Sitemap: https://maketoweb.github.io/sitemap.xml
