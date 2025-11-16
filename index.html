@@ -2175,95 +2175,93 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('scroll', animateOnScroll);
         animateOnScroll(); 
 
-        // --- Lógica del Modal con Iframe ---
-        const projectButtons = document.querySelectorAll('.ver-proyecto');
-        const modals = document.querySelectorAll('.modal');
-        const closeButtons = document.querySelectorAll('.close');
-        
-        // La URL de demostración
-        const DEMO_URL = "https://themes.zozothemes.com/mist/insurance/";
+        // --- Lógica del Modal con Iframe ---document.addEventListener('DOMContentLoaded', function() {
+    const projectButtons = document.querySelectorAll('.ver-proyecto');
+    const modals = document.querySelectorAll('.modal');
+    const closeButtons = document.querySelectorAll('.close');
 
-        // Función para abrir el modal y cargar el iframe
-        projectButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const projectName = this.getAttribute('data-proyecto');
+    // Función para abrir el modal y cargar el iframe
+    projectButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // 1. Obtener los atributos necesarios
+            const projectName = this.getAttribute('data-proyecto');
+            const demoUrl = this.getAttribute('data-url'); // <-- OBTENEMOS LA URL DE data-url
+            
+            const modalId = `modal-${projectName}`;
+            const iframeId = `iframe-${projectName}`;
+
+            const modal = document.getElementById(modalId);
+            const iframe = document.getElementById(iframeId);
+
+            if (modal && iframe && demoUrl) {
+                // 2. Cargar la URL específica en el iframe
+                iframe.src = demoUrl; // <-- USAMOS LA URL OBTENIDA DEL BOTÓN
                 
-                const modalId = `modal-${projectName}`;
-                const iframeId = `iframe-${projectName}`;
-
-                const modal = document.getElementById(modalId);
-                const iframe = document.getElementById(iframeId);
-
-                if (modal && iframe) {
-                    // Cargar la URL en el iframe
-                    iframe.src = DEMO_URL;
-                    
-                    // Mostrar el modal
-                    // Usamos 'flex' para que el modal ocupe toda la pantalla y el contenido se centre
-                    modal.style.display = 'flex';
-                    
-                    // Ocultar el scroll del body mientras el modal está abierto
-                    document.body.style.overflow = 'hidden';
-                }
-            });
-        });
-
-        // Función para cerrar el modal y limpiar el iframe
-        const closeModal = (modalElement) => {
-            if (modalElement) {
-                const projectName = modalElement.id.replace('modal-', '');
-                const iframeId = `iframe-${projectName}`;
-                const iframe = document.getElementById(iframeId);
-
-                // Ocultar el modal
-                modalElement.style.display = 'none';
+                // 3. Mostrar el modal
+                modal.style.display = 'flex';
                 
-                // Limpiar el src del iframe para detener cualquier recurso
-                if (iframe) {
-                    iframe.src = 'about:blank';
-                }
-
-                // Restaurar el scroll del body
-                document.body.style.overflow = 'auto';
-            }
-        };
-
-        // Escuchar clics en los botones de cerrar (x)
-        closeButtons.forEach(closeBtn => {
-            closeBtn.addEventListener('click', function() {
-                const modalId = this.getAttribute('data-modal');
-                const modalElement = document.getElementById(modalId);
-                closeModal(modalElement);
-            });
-        });
-
-        // Escuchar clics fuera del modal (para cerrar)
-        modals.forEach(modal => {
-            modal.addEventListener('click', function(event) {
-                // Si el clic ocurrió directamente sobre el fondo del modal (el elemento 'modal' en sí)
-                if (event.target === modal) {
-                    closeModal(modal);
-                }
-            });
-        });
-
-        // Escuchar la tecla ESC (para cerrar)
-        document.addEventListener('keydown', function(event) {
-            if (event.key === "Escape") {
-                modals.forEach(modal => {
-                    // Buscamos el modal que esté visible ('flex')
-                    if (modal.style.display === 'flex') {
-                        closeModal(modal);
-                    }
-                });
+                // Ocultar el scroll del body
+                document.body.style.overflow = 'hidden';
             }
         });
     });
+
+    // ---
+    
+    // Función para cerrar el modal y limpiar el iframe (Se mantiene igual)
+    const closeModal = (modalElement) => {
+        if (modalElement) {
+            const projectName = modalElement.id.replace('modal-', '');
+            const iframeId = `iframe-${projectName}`;
+            const iframe = document.getElementById(iframeId);
+
+            // Ocultar el modal
+            modalElement.style.display = 'none';
+            
+            // Limpiar el src del iframe para detener cualquier recurso
+            if (iframe) {
+                iframe.src = 'about:blank';
+            }
+
+            // Restaurar el scroll del body
+            document.body.style.overflow = 'auto';
+        }
+    };
+
+    // Escuchar clics en los botones de cerrar (x)
+    closeButtons.forEach(closeBtn => {
+        closeBtn.addEventListener('click', function() {
+            const modalId = this.getAttribute('data-modal');
+            const modalElement = document.getElementById(modalId);
+            closeModal(modalElement);
+        });
+    });
+
+    // Escuchar clics fuera del modal (para cerrar)
+    modals.forEach(modal => {
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                closeModal(modal);
+            }
+        });
+    });
+
+    // Escuchar la tecla ESC (para cerrar)
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            modals.forEach(modal => {
+                if (modal.style.display === 'flex') {
+                    closeModal(modal);
+                }
+            });
+        }
+    });
+});
   </script>
 <!-- CTA Fijo Diagnóstico -->
 <a href="https://api.whatsapp.com/send?phone=+584143420573&text=Hola%20Maketo,%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20y%20financiamiento." 
    class="fixed bottom-6 left-6 z-50 bg-accent text-dark-bg px-6 py-3 rounded-full font-bold shadow-lg hover:bg-yellow-500 transition animate-bounce">
-  Diagnóstico Gratuito
+  🚀 Diagnóstico Gratuito
 </a>
 
 </body>
