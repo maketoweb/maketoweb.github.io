@@ -445,113 +445,119 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body class="min-h-screen bg-dark-bg text-primary-text">
 <!-- NAV -->
-<header class="shadow-xl bg-secondary-bg/95 sticky top-0 z-50 backdrop-blur-sm">
+ <!-- NAV -->
+<header class="shadow-xl bg-black sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
         <a href="#" class="flex items-center space-x-2">
-            <img src="imagen/logo.png" alt="Logo" style="width: 30px;">
-            <span class="text-sm text-secondary-text font-bold">Web & Financiación</span>
+            <img src="imagen/logo.png" alt="Logo" class="w-8 h-8">
+            <span class="text-sm text-white-800 font-bold">Web & Financiación</span>
         </a>
         
-        <nav class="hidden md:flex space-x-6 text-gray-300 font-medium items-center" id="desktopMenu">
-            <a href="#" class="hover:text-accent transition">Home</a>
-            <a href="#financiamiento" class="hover:text-accent transition">Financiamiento</a>
+        <!-- Menú Desktop -->
+        <nav class="hidden md:flex space-x-6 text-gray-700 font-medium items-center">
+            <a href="#" class="hover:text-blue-600 transition">Home</a>
+            <a href="#financiamiento" class="hover:text-blue-600 transition">Financiamiento</a>
             
             <div class="relative group">
-                <a href="#servicios" class="hover:text-accent transition flex items-center">
+                <button class="hover:text-blue-600 transition flex items-center focus:outline-none">
                     Servicios
                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
-                </a>
-                <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                    <div class="py-1">
-                        <a href="#diseno-web" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Diseño Web</a>
-                        <a href="#seo" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">SEO</a>
-                        <a href="#branding" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Branding</a>
+                </button>
+                <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div class="py-2">
+                        <a href="#diseno-web" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">Diseño Web</a>
+                        <a href="#seo" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">SEO</a>
+                        <a href="#branding" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">Branding</a>
                     </div>
                 </div>
             </div>
             
             <div class="relative group">
-                <a href="#blog" class="hover:text-accent transition flex items-center">
+                <button class="hover:text-blue-600 transition flex items-center focus:outline-none">
                     Blog
                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
-                </a>
-                <div class="absolute left-0 mt-2 w-80 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                </button>
+                <div class="absolute left-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                     <div class="py-2">
-                        <a href="/5-errores-comunes-seo-onpage.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">5 Errores Comunes en SEO On-Page que Matan tu Tráfico</a>
-                        <a href="/financiacion-web-sin-intereses.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">¿Cómo Funciona la Financiación Web Sin Intereses?</a>
-                        <a href="/cuanto-cuesta-pagina-web.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cuánto Cuesta una Página Web? Guía Completa 2025</a>
-                        <a href="/diseno-lix-principios.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Diseño LIX: 7 Principios Clave para Retención y SEO</a>
-                        <a href="/guia-practica-venezuela-latam.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Guía práctica para negocios en Venezuela y LATAM</a>
+                        <a href="/5-errores-comunes-seo-onpage.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">5 Errores Comunes en SEO On-Page</a>
+                        <a href="/financiacion-web-sin-intereses.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">Financiación Web Sin Intereses</a>
+                        <a href="/cuanto-cuesta-pagina-web.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">Cuánto Cuesta una Página Web</a>
+                        <a href="/diseno-lix-principios.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">Diseño LIX: 7 Principios</a>
+                        <a href="/guia-practica-venezuela-latam.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600">Guía Venezuela y LATAM</a>
                     </div>
                 </div>
             </div>
             
-            <a href="#ejemplos" class="hover:text-accent transition">Ejemplos</a>
-            <a href="#contacto" class="py-2 px-4 bg-accent text-dark-bg rounded-xl font-bold hover:bg-yellow-500 transition shadow-lg">Contactar</a>
+            <a href="#ejemplos" class="hover:text-blue-600 transition">Ejemplos</a>
+            <a href="#contacto" class="py-2 px-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition shadow-md">Contactar</a>
         </nav>
         
-        <button class="md:hidden text-gray-400 focus:outline-none" aria-label="Abrir menú" id="mobileMenuButton">
+        <!-- Botón Menú Móvil -->
+        <button class="md:hidden text-gray-600 focus:outline-none" id="mobileMenuButton">
             <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
         </button>
     </div>
 
-    <div class="md:hidden fixed inset-0 h-screen bg-white z-[9999] transform translate-x-full transition-transform duration-300 flex flex-col" id="mobileMenu">
-        
-        <div class="flex justify-between items-center p-4 border-b border-gray-200 bg-white sticky top-0">
+    <!-- Menú Móvil -->
+    <div id="mobileMenu" class="md:hidden fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300">
+        <!-- Header del Menú Móvil -->
+        <div class="flex justify-between items-center p-4 border-b border-gray-200 bg-white">
             <a href="#" class="flex items-center space-x-2">
-                <img src="imagen/logo.png" alt="Logo" style="width: 30px;">
-                <span class="text-sm text-gray-700 font-bold">Web & Financiación</span>
+                <img src="imagen/logo.png" alt="Logo" class="w-8 h-8">
+                <span class="text-sm text-gray-800 font-bold">Web & Financiación</span>
             </a>
-            <button class="text-gray-500 focus:outline-none" aria-label="Cerrar menú" id="closeMobileMenu">
+            <button id="closeMobileMenu" class="text-gray-600 p-2">
                 <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                 </svg>
             </button>
         </div>
-        
-        <nav class="p-4 space-y-2 bg-white flex-grow overflow-y-auto">
-            <a href="#" class="block text-gray-900 font-medium hover:text-accent transition py-2 border-b border-gray-100">Home</a>
-            <a href="#financiamiento" class="block text-gray-900 font-medium hover:text-accent transition py-2 border-b border-gray-100">Financiamiento</a>
 
-            <details class="group border-b border-gray-100">
-                <summary class="flex items-center justify-between w-full text-gray-900 font-medium hover:text-accent transition py-2 cursor-pointer focus:outline-none">
-                    Servicios
-                    <svg class="w-4 h-4 transition-transform transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <!-- Navegación Móvil -->
+        <nav class="p-4 space-y-1 overflow-y-auto h-full pb-20">
+            <a href="#" class="block py-3 px-4 text-gray-800 font-medium hover:bg-gray-50 rounded-lg">Home</a>
+            <a href="#financiamiento" class="block py-3 px-4 text-gray-800 font-medium hover:bg-gray-50 rounded-lg">Financiamiento</a>
+            
+            <!-- Acordeón Servicios -->
+            <div class="border-b border-gray-100">
+                <button class="mobile-accordion-btn w-full flex justify-between items-center py-3 px-4 text-gray-800 font-medium hover:bg-gray-50 rounded-lg">
+                    <span>Servicios</span>
+                    <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
-                </summary>
-                <div class="ml-4 space-y-1 pb-2">
-                    <a href="#diseno-web" class="block text-gray-800 hover:text-accent transition py-1">Diseño Web</a>
-                    <a href="#seo" class="block text-gray-800 hover:text-accent transition py-1">SEO</a>
-                    <a href="#branding" class="block text-gray-800 hover:text-accent transition py-1">Branding</a>
+                </button>
+                <div class="mobile-accordion-content hidden pl-6 pb-2">
+                    <a href="#diseno-web" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-lg">Diseño Web</a>
+                    <a href="#seo" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-lg">SEO</a>
+                    <a href="#branding" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-lg">Branding</a>
                 </div>
-            </details>
+            </div>
             
-            <details class="group border-b border-gray-100">
-                <summary class="flex items-center justify-between w-full text-gray-900 font-medium hover:text-accent transition py-2 cursor-pointer focus:outline-none">
-                    Blog
-                    <svg class="w-4 h-4 transition-transform transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <!-- Acordeón Blog -->
+            <div class="border-b border-gray-100">
+                <button class="mobile-accordion-btn w-full flex justify-between items-center py-3 px-4 text-gray-800 font-medium hover:bg-gray-50 rounded-lg">
+                    <span>Blog</span>
+                    <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
-                </summary>
-                <div class="ml-4 space-y-1 pb-2">
-                    <a href="/5-errores-comunes-seo-onpage.html" class="block text-gray-800 hover:text-accent transition py-1">5 Errores Comunes SEO On-Page</a>
-                    <a href="/financiacion-web-sin-intereses.html" class="block text-gray-800 hover:text-accent transition py-1">Financiación Web Sin Intereses</a>
-                    <a href="/cuanto-cuesta-pagina-web.html" class="block text-gray-800 hover:text-accent transition py-1">Cuánto Cuesta Página Web 2025</a>
-                    <a href="/diseno-lix-principios.html" class="block text-gray-800 hover:text-accent transition py-1">Diseño LIX: 7 Principios</a>
-                    <a href="/guia-practica-venezuela-latam.html" class="block text-gray-800 hover:text-accent transition py-1">Guía Venezuela y LATAM</a>
+                </button>
+                <div class="mobile-accordion-content hidden pl-6 pb-2">
+                    <a href="/5-errores-comunes-seo-onpage.html" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-lg">5 Errores Comunes SEO</a>
+                    <a href="/financiacion-web-sin-intereses.html" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-lg">Financiación Sin Intereses</a>
+                    <a href="/cuanto-cuesta-pagina-web.html" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-lg">Coste Página Web 2025</a>
+                    <a href="/diseno-lix-principios.html" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-lg">Diseño LIX: 7 Principios</a>
+                    <a href="/guia-practica-venezuela-latam.html" class="block py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-lg">Guía Venezuela y LATAM</a>
                 </div>
-            </details>
+            </div>
             
-            <a href="#ejemplos" class="block text-gray-900 font-medium hover:text-accent transition py-2 border-b border-gray-100">Ejemplos</a>
-            
-            <a href="#contacto" class="block py-3 px-4 bg-accent text-dark-bg rounded-xl font-bold hover:bg-yellow-500 transition shadow-lg text-center mt-4">Contactar</a>
+            <a href="#ejemplos" class="block py-3 px-4 text-gray-800 font-medium hover:bg-gray-50 rounded-lg">Ejemplos</a>
+            <a href="#contacto" class="block py-3 px-4 bg-blue-600 text-white font-semibold hover:bg-blue-700 rounded-lg text-center mt-4">Contactar</a>
         </nav>
     </div>
 </header>
@@ -2083,69 +2089,73 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <script>// ** Funcionalidad del menú móvil con Acordeón <details> **
    
-    document.addEventListener('DOMContentLoaded', function() {
-        const mobileMenuButton = document.getElementById('mobileMenuButton');
-        const closeMobileMenu = document.getElementById('closeMobileMenu');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        // Función para cerrar todos los submenús <details>
-        const closeAllDetails = () => {
-            if (mobileMenu) {
-                mobileMenu.querySelectorAll('details').forEach(d => {
-                    d.open = false;
-                });
-            }
-        };
-        
-        // 1. Abre el menú principal
-        if (mobileMenuButton && mobileMenu) { 
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.remove('translate-x-full');
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const closeMobileMenu = document.getElementById('closeMobileMenu');
+    
+    // Abrir menú móvil
+    mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.remove('translate-x-full');
+        document.body.style.overflow = 'hidden';
+    });
+    
+    // Cerrar menú móvil
+    closeMobileMenu.addEventListener('click', function() {
+        mobileMenu.classList.add('translate-x-full');
+        document.body.style.overflow = '';
+        closeAllAccordions();
+    });
+    
+    // Cerrar menú al hacer clic en enlaces
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.style.overflow = '';
+            closeAllAccordions();
+        });
+    });
+    
+    // Acordeones móviles
+    const accordionButtons = document.querySelectorAll('.mobile-accordion-btn');
+    accordionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector('svg');
+            
+            // Cerrar otros acordeones
+            document.querySelectorAll('.mobile-accordion-content').forEach(otherContent => {
+                if (otherContent !== content) {
+                    otherContent.classList.add('hidden');
+                    otherContent.previousElementSibling.querySelector('svg').classList.remove('rotate-180');
+                }
             });
-        }
-        
-        // 2. Cierra el menú principal
-        if (closeMobileMenu && mobileMenu) { 
-            closeMobileMenu.addEventListener('click', () => {
-                mobileMenu.classList.add('translate-x-full');
-                closeAllDetails();
-            });
-        }
-        
-        // 3. Cierra menú principal al hacer clic en un enlace
-        if (mobileMenu) {
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('translate-x-full');
-                    closeAllDetails();
-                });
-            });
-
-            // 4. Lógica de Acordeón y Accesibilidad para submenús <details>
-            mobileMenu.querySelectorAll('details').forEach(d => {
-                // Manejo de accesibilidad del teclado (Enter/Espacio)
-                d.addEventListener('keydown', e => {
-                    if (e.key === 'Enter' || e.key === ' ') { 
-                        e.preventDefault(); 
-                        d.open = !d.open; 
-                    }
-                });
-
-                // Lógica del Acordeón: Asegura que solo un submenú esté abierto
-                d.addEventListener('toggle', (event) => {
-                    if (event.target.open) {
-                        mobileMenu.querySelectorAll('details').forEach(d2 => {
-                            if (d2 !== event.target) {
-                                d2.open = false;
-                            }
-                        });
-                    }
-                });
-            });
+            
+            // Toggle acordeón actual
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        });
+    });
+    
+    function closeAllAccordions() {
+        document.querySelectorAll('.mobile-accordion-content').forEach(content => {
+            content.classList.add('hidden');
+        });
+        document.querySelectorAll('.mobile-accordion-btn svg').forEach(icon => {
+            icon.classList.remove('rotate-180');
+        });
+    }
+    
+    // Cerrar con tecla Escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !mobileMenu.classList.contains('translate-x-full')) {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.style.overflow = '';
+            closeAllAccordions();
         }
     });
-
+});
     // JavaScript para los modales
      document.addEventListener('DOMContentLoaded', () => {
         // --- Animación de Scroll (Estética) ---
