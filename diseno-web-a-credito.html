@@ -656,8 +656,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
     </div>
 </section>
-<!-- SECCIÓN CONFIANZA - AÑADIR INMEDIATAMENTE DESPUÉS DEL HERO -->
-<section class="py-8 bg-white border-b">
+<!-- SECCIÓN CONFIANZA  -->
+<section class="py-5 bg-white border-b">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div class="flex flex-col items-center">
@@ -680,7 +680,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </section>
   <main class="main xl:px-10 p-4 sm:p-0 ">
-        <section id="main-features" class="py-20 bg-white">
+        <section id="main-features" class="py-10 bg-white">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-bold mb-4">Razones para <span class="text-blue-600">Elegirnos</span> y Crecer</h2>
@@ -761,7 +761,143 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
             </div>
         </section>
-        <section id="financiamiento-explicado" class="py-24 bg-white">
+
+
+
+<section id="calculadora" class="py-10 md:py-10 bg-gray-50">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+            
+            <!-- Controles de Configuración de la Inversión -->
+            <div>
+                <h2 class="text-4xl lg:text-4xl font-extrabold mb-4 text-gray-800">
+                    Calculadora <span class="text-blue-500">Financiera</span> & ROI
+                </h2>
+                <p class="text-sm text-gray-600 mb-10">Simula tu inversión, plan de pagos y calcula el Retorno de la Inversión (ROI) potencial de tu nuevo proyecto web.</p>
+
+                <!-- Tarjeta de Personalización -->
+                <div class="bg-white border border-gray-300 rounded-3xl p-6 md:p-8 shadow-lg interactive-card">
+                    <h3 class="text-1xl font-bold text-gray-800 mb-6 border-b pb-3">1. Define tu Proyecto y Plan</h3>
+                    
+                    <div class="space-y-6">
+                        
+                        <!-- 1. Selección del Plan Base -->
+                        <div class="relative">
+                            <label for="plan-select" class="block text-sm font-semibold text-gray-700 mb-2">Plan Base:</label>
+                            <select id="plan-select" class="w-full p-3 border border-blue-500 rounded-xl text-sm focus:ring-blue-300 focus:border-blue-300 appearance-none transition duration-200 bg-white shadow-sm">
+                                <option value="300">Plan IMPACTO (Incluye 1 páginas)</option>
+                                <option value="600" selected>Plan AUTORIDAD (Incluye 6 páginas, Recomendado)</option>
+                                <option value="1000">Plan EXPANSIÓN (Incluye 10 páginas)</option>
+                            </select>
+                        </div>
+
+                        <!-- 2. Número de Páginas (AHORA ES PÁGINAS EXTRA) -->
+                        <div class="relative">
+                            <label for="num-pages" class="block text-sm font-semibold text-gray-700 mb-2">Páginas Extras Requeridas (Adicionales al Plan):</label>
+                            <input type="number" id="num-pages" value="0" min="0" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 shadow-sm"/>
+                            <p class="text-xs text-gray-500 mt-1"><span id="pages-info-text">El Plan AUTORIDAD incluye 6 páginas.</span> Cada página adicional tiene un costo de $30.</p>
+                        </div>
+                        
+                        <!-- 3. Plazo de Financiamiento -->
+                        <div class="relative">
+                            <label for="payment-term" class="block text-sm font-semibold text-gray-700 mb-2">Plazo de Pago (0% Interés):</label>
+                            <select id="payment-term" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-blue-500 focus:border-blue-500 appearance-none transition duration-200 bg-white shadow-sm">
+                                <option value="2_CASH" selected>De Contado - 2 Pagos (Tarifa Económica)</option>
+                                <option value="6_CREDIT">Crédito - 6 Meses (Tarifa Estándar)</option>
+                                <option value="10_CREDIT">Crédito - 10 Meses (Tarifa Estándar)</option>
+                            </select>
+                            <p id="term-pricing-info" class="text-xs text-indigo-500 mt-1">Precio Base del Plan AUTORIDAD (Tarifa Económica (De Contado)): $250.00.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de ROI (Inputs) -->
+                <div class="bg-white border border-gray-300 rounded-3xl p-6 md:p-8 shadow-lg interactive-card mt-8">
+                    <h3 class="text-1xl font-bold text-gray-800 mb-6 border-b pb-3">2. Cálculo de ROI (Opcional)</h3>
+                    <p class="text-sm text-gray-600 mb-4">Ingresa tus proyecciones para estimar el retorno potencial de tu inversión.</p>
+
+                    <div class="space-y-6">
+                        <!-- Ingreso Mensual Estimado -->
+                        <div class="relative">
+                            <label for="monthly-revenue" class="block text-sm font-semibold text-gray-700 mb-2">Ingreso Mensual Extra Estimado (por la web):</label>
+                            <div class="relative rounded-xl shadow-sm">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <span class="text-gray-500">$</span>
+                                </div>
+                                <input type="number" id="monthly-revenue" value="200" min="0" class="w-full pl-8 pr-3 p-3 border border-gray-300 rounded-xl focus:ring-green-500 focus:border-green-500 transition duration-200"/>
+                            </div>
+                        </div>
+
+                        <!-- Periodo de Cálculo de Retorno -->
+                        <div class="relative">
+                            <label for="roi-period" class="block text-sm font-semibold text-gray-700 mb-2">Periodo de Cálculo de Retorno (Meses):</label>
+                            <input type="number" id="roi-period" value="12" min="1" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-green-500 focus:border-green-500 transition duration-200 shadow-sm"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel de Resultados (Calculadora) -->
+            <div class="calculator-container transition-all duration-500">
+                <div class="bg-white rounded-3xl p-6 md:p-10 shadow-2xl border border-blue-300 interactive-card">
+                    <h3 class="text-1xl font-extrabold mb-8 text-center text-blue-500">Resumen Financiero</h3>
+
+                    <div class="space-y-4 mb-8">
+                        
+                        <!-- Costo Total de la Inversión -->
+                        <div class="bg-gray-100 p-4 rounded-xl flex justify-between items-center">
+                            <p class="text-sm font-medium text-gray-700">Inversión Total Estimada:</p>
+                            <h4 id="total-investment" class="text-sm font-bold text-indigo-900">$250.00</h4>
+                        </div>
+                        
+                        <!-- Plazo y Tipo de Pago -->
+                        <div class="bg-gray-100 p-4 rounded-xl flex justify-between items-center">
+                            <p class="text-sm font-medium text-gray-700">Plazo Seleccionado:</p>
+                            <h4 id="term-display" class="text-sm font-bold text-indigo-600">De Contado (2 pagos)</h4>
+                        </div>
+
+                        <!-- Abono Inicial -->
+                        <div class="bg-blue-50 p-5 rounded-xl flex justify-between items-center border border-indigo-300">
+                            <p class="text-sm font-semibold text-indigo-800">Abono Inicial (Hoy):</p>
+                            <h4 id="initial-payment" class="text-sm font-extrabold text-indigo-600">$125.00</h4>
+                        </div>
+
+                        <!-- Cuota Mensual Fija -->
+                        <div class="bg-blue-600 p-5 rounded-xl text-center shadow-xl">
+                            <p class="text-lg font-semibold text-indigo-100 mb-1">Monto de la Cuota Fija</p>
+                            <h4 id="monthly-payment" class="text-1xl font-extrabold text-white">$125.00</h4>
+                            <p class="text-sm text-indigo-200 mt-2">Durante <span id="months-display" class="font-bold">1</span> pago restante. 0% Interés.</p>
+                        </div>
+                    </div>
+
+                  
+                        <!-- NOTA DE DISCLAIMER ACTUALIZADA -->
+                        <p class="text-sm text-center text-red-700 bg-red-100 p-3 rounded-xl border border-red-300 mb-8 font-medium">
+                            ⚠️ <strong>Nota Importante:</strong> El precio y los pagos mostrados son <strong> precios base</strong> que no incluyen plugins premium o funcionalidades avanzadas. El costo total final se calculará según las funcionalidades específicas que requiera el cliente. Para obtener un presupuesto exacto y mayor precisión, es mejor consultar a uno de nuestros agentes.
+                        </p>
+                    <!-- Resultados del ROI -->
+                    <div id="roi-section" class="pt-6 border-t border-gray-200">
+                        <h4 class="text-xs font-bold mb-4 text-green-700">Retorno de la Inversión (ROI)</h4>
+                        
+                        <div class="bg-blue-50 p-5 rounded-xl border border-green-300 text-center">
+                            <p class="text-sm font-semibold text-blue-800 mb-1">ROI Proyectado a <span id="roi-period-display">12</span> meses</p>
+                            <h4 id="roi-result" class="text-xl font-extrabold text-blue-800">86.00%</h4>
+                            <p id="roi-details" class="text-sm text-gray-600 mt-2">Ganancia neta estimada: $210.00</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-8">
+                        <a href="https://wa.me/584143420573?text=Hola%20Maketo%20Web,%20estoy%20interesado%20en%20el%20plan%20%20de%20%241200." class="inline-block w-full bg-blue-700 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-xl transition duration-300 text-lg shadow-lg hover:shadow-xl hover:translate-y-[-2px] active:translate-y-0 active:shadow-md" id="whatsapp-calculator">
+                            ¡Quiero Iniciar con este Plan!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="financiamiento-explicado" class="py-10 bg-white">
     <div class="container mx-auto px-6 lg:px-4">
         <div class="text-center mb-16">
             <h2 class="text-5xl font-extrabold mb-4 tracking-tight text-gray-900">Financiamiento Web: <span class="text-blue-700">Estrategia Inteligente</span></h2>
@@ -770,7 +906,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         <div class="grid lg:grid-cols-2 gap-10 items-stretch">
             
-            <div class="bg-gray-50 p-10 rounded-3xl border border-gray-200 shadow-xl">
+            <div class="bg-gray-50 p-5 rounded-3xl border border-gray-200 shadow-xl">
                 <h3 class="text-3xl font-bold mb-8 text-gray-800 flex items-center border-b pb-4 border-gray-200">
                     <i class="fas fa-file-invoice-dollar mr-4 text-blue-600 text-3xl"></i> Condiciones del Plan
                 </h3>
@@ -967,264 +1103,148 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
     </div>
     
-</section>
-        <section id="planes" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-4 text-center">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold mb-4">Planes de <span class="text-blue-600">Financiamiento</span> Inteligente</h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Invierte inteligentemente. Elige el impulso perfecto para tu negocio con cuotas 0% interés.</p>
-                </div>
-                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
-                    
-                    <div class="transition-all duration-400 bg-white border-2 border-gray-200 rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-xl">
-                        <div class="p-8">
-                            <h3 class="text-2xl font-bold mb-1 text-gray-800">Plan IMPACTO</h3>
-                            <p class="text-sm text-gray-600 mb-6">Landing Page de 1 a 4 Página</p>
-                            
-                            <div class="text-5xl font-extrabold my-4 text-blue-600">
-                                $300
-                            </div>
-                            
-                            <div class="bg-blue-50 text-blue-600 py-3 px-4 rounded-full inline-block mb-8 font-semibold">
-                                Pago Inicial: <span class="font-bold">$90</span>
-                            </div>
-                            
-                            <ul class="space-y-4 mb-8 text-left text-gray-700">
-                                <li class="flex items-start">
-                                    <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>1 Página con secciones clave (7) y 3 internas</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Dominio gratis 1 año</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>SEO técnico básico (Velocidad)</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Integración de WhatsApp/Formulario</span>
-                                </li>
-                            </ul>
-                            <a href="https://wa.me/584143420573?text=Hola%20Maketo%20Web,%20estoy%20interesado%20en%20el%20plan%20IMPACTO%20de%20%24300." class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-xl hover:translate-y-[-2px] active:translate-y-0 active:shadow-md" target="_blank">
-                                ¡Empezar Ahora!
-                            </a>
-                            <div class="mt-4 text-center">
-                                <small class="text-gray-600 font-medium">Desde 6 a 10 meses para pagar.</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="transition-all duration-400 bg-white border-2 border-blue-600 rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/50 scale-[1.05]">
-                        <div class="p-8 relative">
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                <div class="bg-blue-600 text-white py-1.5 px-6 rounded-full font-bold shadow-xl">
-                                    <span class="text-sm">EL MÁS CONVERTIDOR</span>
-                                </div>
-                            </div>
-                            <h3 class="text-2xl font-bold mb-1 text-gray-800 mt-6">Plan AUTORIDAD</h3>
-                            <p class="text-sm text-gray-600 mb-6">Web Corporativa Completa</p>
-                            
-                            <div class="text-5xl font-extrabold my-4 text-blue-600">
-                                $600
-                            </div>
-                            
-                            <div class="bg-blue-50 text-blue-600 py-3 px-4 rounded-full inline-block mb-8 font-semibold">
-                                Pago Inicial: <span class="font-bold">$150</span>
-                            </div>
-                            
-                            <ul class="space-y-4 mb-8 text-left text-gray-700">
-                                <li class="flex items-start">
-                                    <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Hasta 6 páginas internas (Servicios, Nosotros, etc.)</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Dominio y Hosting <span class="font-bold">Premium</span> 1 año</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span><span class="font-bold">Optimización SEO</span> completa (On-Page)</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Integración de redes sociales y Analytics</span>
-                                </li>
-                            </ul>
-                            <a href="https://wa.me/584143420573?text=Hola%20Maketo%20Web,%20estoy%20interesado%20en%20el%20plan%20AUTORIDAD%20de%24600." class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-xl hover:translate-y-[-2px] active:translate-y-0 active:shadow-md" target="_blank">
-                                ¡Lo Quiero!
-                            </a>
-                            <div class="mt-4 text-center">
-                                <small class="text-gray-600 font-medium">Desde 6 a 10 meses para pagar.</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="transition-all duration-400 bg-white border-2 border-gray-200 rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-xl">
-                        <div class="p-8">
-                            <h3 class="text-2xl font-bold mb-1 text-gray-800">Plan EXPANSIÓN</h3>
-                            <p class="text-sm text-gray-600 mb-6">Tienda Online y E-commerce</p>
-                            
-                            <div class="text-5xl font-extrabold my-4 text-blue-600">
-                                $1000
-                            </div>
-                            
-                            <div class="bg-blue-50 text-blue-600 py-3 px-4 rounded-full inline-block mb-8 font-semibold">
-                                Pago Inicial: <span class="font-bold">$300</span>
-                            </div>
-                            
-                            <ul class="space-y-4 mb-8 text-left text-gray-700">
-                                <li class="flex items-start">
-                                    <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Tienda Online con <span class="font-bold">hasta 50 productos</span></span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Integración de Pasarelas de Pago</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Gestión de Inventario y Envío</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Certificado SSL de Seguridad y Hosting</span>
-                                </li>
-                            </ul>
-                            <a href="https://wa.me/584143420573?text=Hola%20Maketo%20Web,%20estoy%20interesado%20en%20el%20plan%20EXPANSIÓN%20de%20%241200." class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-xl hover:translate-y-[-2px] active:translate-y-0 active:shadow-md" target="_blank">
-                                ¡Escalar Mi Negocio!
-                            </a>
-                            <div class="mt-4 text-center">
-                                <small class="text-gray-600 font-medium">Desde 6 a 10 meses para pagar.</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-<section id="calculadora" class="py-12 md:py-20 bg-gray-50">
-    <div class="container mx-auto px-4 max-w-7xl">
-        <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+<section id="planes" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Planes de <span class="text-blue-600">Financiamiento</span> Inteligente</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Invierte inteligentemente. Elige el impulso perfecto para tu negocio con cuotas 0% interés.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
             
-            <!-- Controles de Configuración de la Inversión -->
-            <div>
-                <h2 class="text-4xl lg:text-5xl font-extrabold mb-4 text-gray-800">
-                    Calculadora <span class="text-indigo-600">Financiera</span> & ROI
-                </h2>
-                <p class="text-xl text-gray-600 mb-10">Simula tu inversión, plan de pagos y calcula el Retorno de la Inversión (ROI) potencial de tu nuevo proyecto web.</p>
-
-                <!-- Tarjeta de Personalización -->
-                <div class="bg-white border border-gray-200 rounded-3xl p-6 md:p-8 shadow-lg interactive-card">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-3">1. Define tu Proyecto y Plan</h3>
+            <!-- PLAN IMPACTO -->
+            <div class="transition-all duration-400 bg-white border-2 border-gray-200 rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-xl">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-1 text-gray-800">Plan IMPACTO</h3>
+                    <p class="text-sm text-gray-600 mb-6">Landing Page </p>
                     
-                    <div class="space-y-6">
-                        
-                        <!-- 1. Selección del Plan Base -->
-                        <div class="relative">
-                            <label for="plan-select" class="block text-sm font-semibold text-gray-700 mb-2">Plan Base:</label>
-                            <select id="plan-select" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-indigo-500 focus:border-indigo-500 appearance-none transition duration-200 bg-white shadow-sm">
-                                <option value="300">Plan IMPACTO (Incluye 4 páginas)</option>
-                                <option value="600" selected>Plan AUTORIDAD (Incluye 6 páginas, Recomendado)</option>
-                                <option value="1000">Plan EXPANSIÓN (Incluye 10 páginas)</option>
-                            </select>
-                        </div>
-
-                        <!-- 2. Número de Páginas (AHORA ES PÁGINAS EXTRA) -->
-                        <div class="relative">
-                            <label for="num-pages" class="block text-sm font-semibold text-gray-700 mb-2">Páginas Extras Requeridas (Adicionales al Plan):</label>
-                            <input type="number" id="num-pages" value="0" min="0" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 shadow-sm"/>
-                            <p class="text-xs text-gray-500 mt-1"><span id="pages-info-text">El Plan AUTORIDAD incluye 6 páginas.</span> Cada página adicional tiene un costo de $30.</p>
-                        </div>
-                        
-                        <!-- 3. Plazo de Financiamiento -->
-                        <div class="relative">
-                            <label for="payment-term" class="block text-sm font-semibold text-gray-700 mb-2">Plazo de Pago (0% Interés):</label>
-                            <select id="payment-term" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-indigo-500 focus:border-indigo-500 appearance-none transition duration-200 bg-white shadow-sm">
-                                <option value="2_CASH" selected>De Contado - 2 Pagos (Tarifa Económica)</option>
-                                <option value="6_CREDIT">Crédito - 6 Meses (Tarifa Estándar)</option>
-                                <option value="10_CREDIT">Crédito - 10 Meses (Tarifa Estándar)</option>
-                            </select>
-                            <p id="term-pricing-info" class="text-xs text-indigo-500 mt-1">Precio Base del Plan AUTORIDAD (Tarifa Económica (De Contado)): $250.00.</p>
-                        </div>
+                   
+                    <div class="text-6xl font-extrabold my-4 text-blue-600">
+                        $21<span class="text-2xl font-semibold">/mes</span>
                     </div>
-                </div>
-
-                <!-- Tarjeta de ROI (Inputs) -->
-                <div class="bg-white border border-gray-200 rounded-3xl p-6 md:p-8 shadow-lg interactive-card mt-8">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-3">2. Cálculo de ROI (Opcional)</h3>
-                    <p class="text-sm text-gray-600 mb-4">Ingresa tus proyecciones para estimar el retorno potencial de tu inversión.</p>
-
-                    <div class="space-y-6">
-                        <!-- Ingreso Mensual Estimado -->
-                        <div class="relative">
-                            <label for="monthly-revenue" class="block text-sm font-semibold text-gray-700 mb-2">Ingreso Mensual Extra Estimado (por la web):</label>
-                            <div class="relative rounded-xl shadow-sm">
-                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                    <span class="text-gray-500">$</span>
-                                </div>
-                                <input type="number" id="monthly-revenue" value="200" min="0" class="w-full pl-8 pr-3 p-3 border border-gray-300 rounded-xl focus:ring-green-500 focus:border-green-500 transition duration-200"/>
-                            </div>
-                        </div>
-
-                        <!-- Periodo de Cálculo de Retorno -->
-                        <div class="relative">
-                            <label for="roi-period" class="block text-sm font-semibold text-gray-700 mb-2">Periodo de Cálculo de Retorno (Meses):</label>
-                            <input type="number" id="roi-period" value="12" min="1" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-green-500 focus:border-green-500 transition duration-200 shadow-sm"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Panel de Resultados (Calculadora) -->
-            <div class="calculator-container transition-all duration-500">
-                <div class="bg-white rounded-3xl p-6 md:p-10 shadow-2xl border border-indigo-200 interactive-card">
-                    <h3 class="text-3xl font-extrabold mb-8 text-center text-indigo-600">Resumen Financiero</h3>
-
-                    <div class="space-y-4 mb-8">
-                        
-                        <!-- Costo Total de la Inversión -->
-                        <div class="bg-gray-100 p-4 rounded-xl flex justify-between items-center">
-                            <p class="text-lg font-medium text-gray-700">Inversión Total Estimada:</p>
-                            <h4 id="total-investment" class="text-3xl font-bold text-indigo-900">$250.00</h4>
-                        </div>
-                        
-                        <!-- Plazo y Tipo de Pago -->
-                        <div class="bg-gray-100 p-4 rounded-xl flex justify-between items-center">
-                            <p class="text-lg font-medium text-gray-700">Plazo Seleccionado:</p>
-                            <h4 id="term-display" class="text-2xl font-bold text-indigo-600">De Contado (2 pagos)</h4>
-                        </div>
-
-                        <!-- Abono Inicial -->
-                        <div class="bg-indigo-50 p-5 rounded-xl flex justify-between items-center border border-indigo-300">
-                            <p class="text-xl font-semibold text-indigo-800">Abono Inicial (Hoy):</p>
-                            <h4 id="initial-payment" class="text-4xl font-extrabold text-indigo-600">$125.00</h4>
-                        </div>
-
-                        <!-- Cuota Mensual Fija -->
-                        <div class="bg-indigo-600 p-5 rounded-xl text-center shadow-xl">
-                            <p class="text-lg font-semibold text-indigo-100 mb-1">Monto de la Cuota Fija</p>
-                            <h4 id="monthly-payment" class="text-5xl font-extrabold text-white">$125.00</h4>
-                            <p class="text-sm text-indigo-200 mt-2">Durante <span id="months-display" class="font-bold">1</span> pago restante. 0% Interés.</p>
-                        </div>
-                    </div>
-
-                    <!-- NOTA DE DISCLAIMER -->
-                    <p class="text-sm text-center text-red-700 bg-red-100 p-3 rounded-xl border border-red-300 mb-8 font-medium">
-                        ⚠️ **Nota Importante:** El precio y los pagos mostrados son **aproximados** y no definitivos. Para obtener un presupuesto exacto y mayor precisión, es mejor consultar a uno de nuestros agentes.
+                    <!-- PRECIO TOTAL CLARO PERO PEQUEÑO -->
+                    <p class="text-sm text-gray-700 mb-2">
+                        Precio Total: <span class="font-bold">$300</span>
                     </p>
                     
-                    <!-- Resultados del ROI -->
-                    <div id="roi-section" class="pt-6 border-t border-gray-200">
-                        <h4 class="text-2xl font-bold mb-4 text-green-700">Retorno de la Inversión (ROI)</h4>
-                        
-                        <div class="bg-green-50 p-5 rounded-xl border border-green-300 text-center">
-                            <p class="text-xl font-semibold text-green-800 mb-1">ROI Proyectado a <span id="roi-period-display">12</span> meses</p>
-                            <h4 id="roi-result" class="text-5xl font-extrabold text-green-600">860.00%</h4>
-                            <p id="roi-details" class="text-sm text-gray-600 mt-2">Ganancia neta estimada: $2100.00</p>
+                    <div class="bg-blue-50 text-blue-600 py-3 px-4 rounded-full inline-block mb-8 font-semibold">
+                        Pago Inicial: <span class="font-bold">$90</span>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8 text-left text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>1 Página con secciones clave (7) </span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Dominio gratis 1 año</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>SEO técnico básico (Velocidad)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Integración de WhatsApp/Formulario</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/584143420573?text=Hola%20Maketo%20Web,%20estoy%20interesado%20en%20el%20plan%20IMPACTO%20de%20%24300." class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-xl hover:translate-y-[-2px] active:translate-y-0 active:shadow-md" target="_blank">
+                        ¡Empezar Ahora!
+                    </a>
+                    <div class="mt-4 text-center">
+                        <small class="text-gray-600 font-medium">Desde 6 a 10 meses para pagar.</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PLAN AUTORIDAD (Destacado) -->
+            <div class="transition-all duration-400 bg-white border-2 border-blue-600 rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/50 scale-[1.05]">
+                <div class="p-8 relative">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div class="bg-blue-600 text-white py-1.5 px-6 rounded-full font-bold shadow-xl">
+                            <span class="text-sm">EL MÁS CONVERTIDOR</span>
                         </div>
                     </div>
+                    <h3 class="text-2xl font-bold mb-1 text-gray-800 mt-6">Plan AUTORIDAD</h3>
+                    <p class="text-sm text-gray-600 mb-6">Web Corporativa Completa</p>
+                    
+              
+                    <div class="text-6xl font-extrabold my-4 text-blue-600">
+                        $45<span class="text-2xl font-semibold">/mes</span>
+                    </div>
+                   
+                    <p class="text-sm text-gray-700 mb-2">
+                        Precio Total: <span class="font-bold">$600</span>
+                    </p>
 
-                    <div class="text-center mt-8">
-                        <a href="#" class="inline-block w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-xl transition duration-300 text-lg shadow-lg hover:shadow-xl hover:translate-y-[-2px] active:translate-y-0 active:shadow-md" id="whatsapp-calculator">
-                            ¡Quiero Iniciar con este Plan!
-                        </a>
+                    <div class="bg-blue-50 text-blue-600 py-3 px-4 rounded-full inline-block mb-8 font-semibold">
+                        Pago Inicial: <span class="font-bold">$150</span>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8 text-left text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Hasta 6 páginas internas (Servicios, Nosotros, etc.)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Dominio y Hosting <span class="font-bold">Premium</span> 1 año</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span><span class="font-bold">Optimización SEO</span> completa (On-Page)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Integración de redes sociales y Analytics</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/584143420573?text=Hola%20Maketo%20Web,%20estoy%20interesado%20en%20el%20plan%20AUTORIDAD%20de%24600." class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-xl hover:translate-y-[-2px] active:translate-y-0 active:shadow-md" target="_blank">
+                        ¡Lo Quiero!
+                    </a>
+                    <div class="mt-4 text-center">
+                        <small class="text-gray-600 font-medium">Desde 6 a 10 meses para pagar.</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PLAN EXPANSIÓN -->
+            <div class="transition-all duration-400 bg-white border-2 border-gray-200 rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-xl">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-1 text-gray-800">Plan EXPANSIÓN</h3>
+                    <p class="text-sm text-gray-600 mb-6">Tienda Online y E-commerce</p>
+                    
+                    <!-- CUOTA MENSUAL DESTACADA (Grande) -->
+                    <div class="text-6xl font-extrabold my-4 text-blue-600">
+                        $70<span class="text-2xl font-semibold">/mes</span>
+                    </div>
+                    <!-- PRECIO TOTAL CLARO PERO PEQUEÑO -->
+                    <p class="text-sm text-gray-700 mb-2">
+                        Precio Total: <span class="font-bold">$1000</span>
+                    </p>
+                    
+                    <div class="bg-blue-50 text-blue-600 py-3 px-4 rounded-full inline-block mb-8 font-semibold">
+                        Pago Inicial: <span class="font-bold">$300</span>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8 text-left text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Tienda Online con <span class="font-bold">hasta 50 productos</span></span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Integración de Pasarelas de Pago</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Gestión de Inventario y Envío</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-3 mt-1 text-lg"></i> <span>Certificado SSL de Seguridad y Hosting</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/584143420573?text=Hola%20Maketo%20Web,%20estoy%20interesado%20en%20el%20plan%20EXPANSIÓN%20de%20%241200." class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-xl hover:translate-y-[-2px] active:translate-y-0 active:shadow-md" target="_blank">
+                        ¡Escalar Mi Negocio!
+                    </a>
+                    <div class="mt-4 text-center">
+                        <small class="text-gray-600 font-medium">Desde 6 a 10 meses para pagar.</small>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
         <!-- INICIO NUEVA SECCIÓN: PREGUNTAS FRECUENTES (FAQ) -->
         <section id="faq" class="py-20 bg-gray-50">
@@ -1508,10 +1528,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script>
     // Variables globales para la configuración del cálculo
     const PLAN_COSTS = {
-        // IMPACTO: Estándar $300, 2 Cuotas $500. Incluye 4 páginas. Costo extra: $30
-        '300': { name: 'IMPACTO', base_pages: 4, cost_per_page: 30, credit_price: 300, cash_price: 500 },
-        // AUTORIDAD: Estándar $600, 2 Cuotas $250. Incluye 6 páginas. Costo extra: $30
-        '600': { name: 'AUTORIDAD', base_pages: 6, cost_per_page: 30, credit_price: 600, cash_price: 250 },
+        // IMPACTO: Estándar $300, 2 Cuotas $300. Incluye 1 páginas. Costo extra: $30
+        '300': { name: 'IMPACTO', base_pages: 1, cost_per_page: 30, credit_price: 300, cash_price: 250 },
+        // AUTORIDAD: Estándar $600, 2 Cuotas $500. Incluye 6 páginas. Costo extra: $30
+        '600': { name: 'AUTORIDAD', base_pages: 6, cost_per_page: 30, credit_price: 600, cash_price: 500 },
         // EXPANSIÓN: Estándar $1000, 2 Cuotas $850. Incluye 10 páginas. Costo extra: $30
         '1000': { name: 'EXPANSIÓN', base_pages: 10, cost_per_page: 30, credit_price: 1000, cash_price: 850 },
     };
@@ -1598,13 +1618,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 termName = 'De Contado (2 pagos)';
                 break;
             case '6_CREDIT':
-                initialPercentage = 0.25; // 25% inicial para crédito
-                totalPayments = 6;
+                initialPercentage = 0.30; // 25% inicial para crédito
+                totalPayments = 7;
                 termName = 'Crédito - 6 Meses';
                 break;
             case '10_CREDIT':
-                initialPercentage = 0.25; // 25% inicial para crédito
-                totalPayments = 10;
+                initialPercentage = 0.30; // 25% inicial para crédito
+                totalPayments = 11;
                 termName = 'Crédito - 10 Meses';
                 break;
             default:
@@ -1728,7 +1748,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         const encodedMessage = encodeURIComponent(whatsappMessage);
         // Usar un número de WhatsApp de ejemplo. Se debe cambiar por el número real.
-        const whatsappURL = `https://wa.me/5215512345678?text=${encodedMessage}`; 
+        const whatsappURL = `https://wa.me/584143420573?text=${encodedMessage}`; 
         
         elements.whatsappLink.href = whatsappURL;
     }
