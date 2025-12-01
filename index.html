@@ -1,250 +1,239 @@
-<!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Diseño Web Profesional  100% Enfocado en Ventas y SEO | Maketo</title>
-
-<meta name="description" content="¿Tu web no vende? Creamos sitios de alto impacto con +70% conversión y SEO Garantizado. Opciones de Financiamiento Disponibles para tu proyecto. ¡Consultoría Gratis!" />
- 
-<meta name="keywords" content="diseño web, diseño de páginas web, agencia de diseño web, diseño web profesional, posicionamiento seo, páginas web vendedoras, diseño web global, financiamiento diseño web, web a plazos, maketo, conversión digital" />
-  <link rel="canonical" href="https://maketo.site" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5" />
+    <title>Diseño Web Profesional 100% Enfocado en Ventas y SEO | Maketo</title>
+    
+    <meta name="description" content="¿Tu web no vende? Creamos sitios de alto impacto con +70% conversión y SEO Garantizado. Opciones de Financiamiento Disponibles para tu proyecto. ¡Consultoría Gratis!" />
+    <meta name="keywords" content="diseño web, diseño de páginas web, agencia de diseño web, diseño web profesional, posicionamiento seo, páginas web vendedoras, diseño web global, financiamiento diseño web, web a plazos, maketo, conversión digital" />
+    <link rel="canonical" href="https://maketo.site" />
+    
+    <meta property="og:title" content="Maketo | Diseño Web que Convierte + Posicionamiento SEO y financiación" />
+    <meta property="og:description" content="Tu web debe vender, no solo existir. Creamos páginas web que convierten visitantes en clientes. Posicionamiento en Google garantizado." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maketo.site" />
+    <meta property="og:image" content="https://maketo.site/imagen/banner-maketo.webp?v=1.1" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <link rel="icon" href="/imagen/favicon.png" type="image/png">
+    <link rel="icon" href="/imagen/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/imagen/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/imagen/favicon.png" sizes="180x180">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" as="style">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"></noscript>
+    <style>
+  /* 🎨 VARIABLES DE COLOR (Recuperadas de tu tailwind.config) */
+  :root {
+    --color-primary: #111827; /* Negro elegante */
+    --color-secondary: #00acee; /* Azul premium */
+    --color-call: #dc2626; /* Rojo premium */
+    --color-accent: #059669; /* Verde éxito */
+    --color-light: #f8fafc;
+    --color-dark: #1f2937;
+    scroll-behavior: smooth;
+  }
   
-  <meta property="og:title" content="Maketo | Diseño Web que Convierte + Posicionamiento SEO y financiación" />
-  <meta property="og:description" content="Tu web debe vender, no solo existir. Creamos páginas web que convierten visitantes en clientes. Posicionamiento en Google garantizado." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://maketo.site" />
-  <meta property="og:image" content="https://maketo.site/imagen/banner-maketo.webp" />
-  <meta property="og:locale" content="es_ES" />
-  <meta property="og:site_name" content="Maketo" />
+  /* 🖌️ CLASES DE UTILIDAD PARA COLORES (Para que funcionen tus clases perdidas) */
+  .bg-primary { background-color: var(--color-primary); }
+  .text-primary { color: var(--color-primary); }
+  .bg-secondary { background-color: var(--color-secondary); }
+  .text-secondary { color: var(--color-secondary); }
+  .bg-call { background-color: var(--color-call); }
+  .text-call { color: var(--color-call); }
+  .bg-accent { background-color: var(--color-accent); }
+  .text-accent { color: var(--color-accent); }
+  .bg-light { background-color: var(--color-light); }
+  .text-light { color: var(--color-light); }
+  .bg-dark { background-color: var(--color-dark); }
+  .text-dark { color: var(--color-dark); }
+
+  /* 🚀 KEYFRAMES Y ANIMACIONES (Recuperadas de tu tailwind.config) */
+  @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+  }
+  @keyframes pulse { 
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+  }
+
+  /* CLASES DE ANIMACIÓN CORRESPONDIENTES */
+  .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+  .animate-pulse-slow { animation: pulse 3s infinite; }
+  .animate-float { animation: float 6s ease-in-out infinite; }
   
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="Maketo: Diseño Web que Convierte + Posicionamiento SEO + Financiamiento" />
-  <meta property="twitter:description" content="Tu web debe vender, no solo existir. Creamos páginas web que convierten visitantes en clientes. Posicionamiento en Google Financiamiento." />
-  <meta property="twitter:image" content="https://maketo.site/imagen/banner-maketo.webp" />
+  /* ✅ FIX CRÍTICO: Clases para Gradientes Personalizados (Solución LCP) */
+  /* Reemplaza bg-gradient-to-br from-primary to-secondary */
+  .custom-gradient-br {
+      background: linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
+  }
+  /* Reemplaza bg-gradient-to-r from-primary to-secondary */
+  .custom-gradient-r {
+      background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  }
   
-  <!-- Preload crítico -->
-  <link rel="preload" href="imagen/logo.png" as="image">
-  <link rel="preload" href="imagen/Estadisticas-roi-maketo.png" as="image">
+  /* 🖼️ ESTILOS CRÍTICOS Y PERSONALIZADOS (Tu CSS existente) */
+  body {
+    background-color: #ffffff;
+    color: var(--color-primary);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+  }
   
-  <!-- Favicon -->
-  <link rel="icon" href="/imagen/favicon.png" type="image/png">
-  <link rel="icon" href="/imagen/favicon-32x32.png" type="image/png" sizes="32x32">
-  <link rel="icon" href="/imagen/favicon-16x16.png" type="image/png" sizes="16x16">
-  <link rel="apple-touch-icon" href="/imagen/favicon.png" sizes="180x180">
-  <link rel="manifest" href="/site.webmanifest">
+  /* Ajuste de colores por consistencia de diseño */
+  /* Definiciones de colores claros usados en la sección para iconos */
+  .bg-blue-100 { background-color: #e0f7ff; } 
+  .bg-green-100 { background-color: #d1fae5; }
+  /* Ajuste de color de texto en la tercera tarjeta */
+  .text-blue-600 { color: var(--color-secondary); }
+  
+  /* Tus estilos de Neurodiseño (.card-elegant, .modal, etc.) */
+  .card-elegant {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f3f4f6;
+  }
+  
+  .card-elegant:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  }
+  
+  .gradient-subtle {
+    background: linear-gradient(135deg, var(--color-light) 0%, #f1f5f9 100%);
+  }
+  
+  .text-readable { line-height: 1.7; }
+  
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.2, 0.9, 0.3, 1);
+  }
+  
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  img { max-width: 100%; height: auto; }
+  
+  .icon-elegant {
+    filter: grayscale(100%) brightness(0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .card-elegant:hover .icon-elegant {
+    filter: grayscale(0%) brightness(1);
+  }
+  
+  .counter { font-variant-numeric: tabular-nums; }
+  
+  .neuro-shadow {
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .pulse-urgency { animation: pulse 2s infinite; }
+  
+  .will-change-transform { will-change: transform; }
+  
+  /* Estilos funcionales del Modal */
+  .modal {
+    display: none; 
+    position: fixed;
+    inset: 0; 
+    z-index: 1000;
+    overflow: hidden; 
+    background-color: rgba(0, 0, 0, 0.95); 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+  }
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5CN6E2EFS2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-5CN6E2EFS2');
-  </script>
+  .modal-content {
+    position: relative;
+    width: 95%; 
+    height: 95%; 
+    border-radius: 1rem; 
+    overflow: hidden; 
+    box-shadow: 0 10px 25px var(--color-secondary); 
+  }
+  
+  .close {
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1001; 
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+  }
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5ZK3M5QT');</script>
-  <!-- End Google Tag Manager -->
+  .close:hover,
+  .close:focus {
+    color: var(--color-secondary); 
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-  <meta name="ai-extractable" content="true" />
-  <meta name="ai-topic" content="diseño web que convierte, posicionamiento seo, páginas web vendedoras, conversión digital" />
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'primary': '#111827', // Negro elegante
-            'secondary': '#00acee', // azul premium
-            'call': '#dc2626', // Rojo premium
-            'accent': '#059669', // Verde éxito
-            'light': '#f8fafc',
-            'dark': '#1f2937'
-          },
-          fontFamily: {
-            sans: ['Helvetica', 'Arial', 'sans-serif'],
-          },
-          animation: {
-            'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-            'pulse-slow': 'pulse 3s infinite',
-            'float': 'float 6s ease-in-out infinite'
-          },
-          keyframes: {
-            fadeInUp: {
-              '0%': { opacity: '0', transform: 'translateY(30px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' }
-            },
-            float: {
-              '0%, 100%': { transform: 'translateY(0)' },
-              '50%': { transform: 'translateY(-10px)' }
-            }
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    :root {
-      scroll-behavior: smooth;
-    }
+  /* Estilos Estéticos AVANZADOS (Animaciones) */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-on-scroll.animate-in {
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+  }
+  .card-float {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card-float:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(3, 138, 248, 0.3), 0 4px 6px -4px rgba(94, 169, 255, 0.3);
+  }
+  .badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color:var(--color-secondary); 
+    background-color: var(--color-secondary); 
+    border-radius: 9999px;
+  }
+</style>
     
-    body {
-      background-color: #ffffff;
-      color: #111827;
-      font-family: 'Helvetica', 'Arial', sans-serif;
-      -webkit-font-smoothing: antialiased;
-      line-height: 1.6;
-    }
+    <link rel="preload" href="imagen/logo.png?v=1.1" as="image">
+    <link rel="preload" href="imagen/Estadisticas-roi-maketo.png?v=1.1" as="image">
     
-    /* Neurodiseño: Efectos de profundidad y enfoque */
-    .card-elegant {
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-      border: 1px solid #f3f4f6;
-    }
+    <meta name="ai-extractable" content="true" />
+    <meta name="ai-topic" content="diseño web que convierte, posicionamiento seo, páginas web vendedoras, conversión digital" />
     
-    .card-elegant:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
-    }
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5ZK3M5QT');</script>
     
-    /* Efecto de gradiente sutil */
-    .gradient-subtle {
-      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-    }
-    
-    /* Estilos para mejorar la legibilidad */
-    .text-readable {
-      line-height: 1.7;
-    }
-    
-    /* Animaciones para elementos al hacer scroll */
-    .animate-on-scroll {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.2, 0.9, 0.3, 1);
-    }
-    
-    .animate-on-scroll.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    /* Estilos para mejorar el rendimiento */
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    
-    /* Iconos elegantes */
-    .icon-elegant {
-      filter: grayscale(100%) brightness(0.3);
-      transition: all 0.3s ease;
-    }
-    
-    .card-elegant:hover .icon-elegant {
-      filter: grayscale(0%) brightness(1);
-    }
-    
-    /* Contador animado */
-    .counter {
-      font-variant-numeric: tabular-nums;
-    }
-    
-    /* Neuro elementos */
-    .neuro-shadow {
-      box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    }
-    
-    .pulse-urgency {
-      animation: pulse 2s infinite;
-    }
-    
-    /* Mejorar rendimiento */
-    .will-change-transform {
-      will-change: transform;
-    }
-    
-     /* Estilos funcionales del Modal (NO PUEDEN SER REEMPLAZADOS POR TAILWIND SIN PERDER FUNCIÓN) */
-        .modal {
-            display: none; /* CLAVE: Oculto por defecto. */
-            position: fixed;
-            inset: 0; /* CORRECCIÓN CLAVE: Asegura cobertura total del viewport (es igual a top:0; right:0; bottom:0; left:0;) */
-            z-index: 1000;
-            overflow: hidden; 
-            background-color: rgba(0, 0, 0, 0.95); 
-            
-            /* Clases de Tailwind que controlan el centrado (flex justify-center items-center) */
-            align-items: center; 
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        /* Contenido del Modal (el contenedor del iframe) - Usa width/height fijos para mejor responsividad */
-        .modal-content {
-            position: relative;
-            width: 95%; 
-            height: 95%; 
-            border-radius: 1rem; 
-            overflow: hidden; 
-            box-shadow: 0 10px 25px #00acee; /* Sombra de acento */
-        }
-        
-        /* Estilo del botón de cerrar (necesita position: absolute y z-index alto) */
-        .close {
-            color: #fff;
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-            cursor: pointer;
-            z-index: 1001; 
-            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Mejora visibilidad sobre el fondo */
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #00acee; 
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        /* Estilos Estéticos AVANZADOS (dependen de @keyframes y :hover/selectores complejos) */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-on-scroll.animate-in {
-            animation: fadeIn 0.6s ease-out forwards;
-            opacity: 0;
-        }
-        .card-float {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card-float:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(3, 138, 248, 0.3), 0 4px 6px -4px rgba(94, 169, 255, 0.3);
-        }
-        .badge {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color:var(#00acee); 
-            background-color: #00acee; 
-            border-radius: 9999px;
-        }
-  </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5CN6E2EFS2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5CN6E2EFS2');
+    </script>
 
  <script type="application/ld+json">
 {
@@ -1031,97 +1020,91 @@
       </div>
     </div>
   </section>
-  
-
-  <!-- ==================== -->
-  <!-- SECCIÓN 2: LA PROMESA ÚNICA -->
-  <!-- ==================== -->
   <section id="promesa" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
-          La Solución Definitiva Para Que Tu Web
-          <span class="text-secondary block mt-2">Genere Clientes 24/7</span>
-        </h2>
-        <p class="text-xl text-gray-700 max-w-3xl mx-auto">
-          No somos una agencia de diseño web común. Somos <strong class="text-primary">especialistas en conversión</strong> que creamos 
-          <strong class="text-accent">máquinas de generar clientes</strong>, no solo páginas bonitas.
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
+        La Solución Definitiva Para Que Tu Web
+        <span class="text-secondary block mt-2">Genere Clientes 24/7</span>
+      </h2>
+      <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+        No somos una agencia de diseño web común. Somos <strong class="text-primary">especialistas en conversión</strong> que creamos 
+        <strong class="text-accent">máquinas de generar clientes</strong>, no solo páginas bonitas.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-8 rounded-2xl text-white text-center card-elegant custom-gradient-br">
+        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Posicionamiento SEO Garantizado</h3>
+        <p class="text-white text-sm mb-6">
+          Aparecerás en los resultados de Google para las búsquedas de tus clientes ideales. Garantizado.
         </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-gradient-to-br from-primary to-secondary p-8 rounded-2xl text-white text-center card-elegant">
-          <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold mb-4">Posicionamiento SEO Garantizado</h3>
-          <p class="text-white text-opacity-90 text-sm mb-6">
-            Aparecerás en los resultados  de Google para las búsquedas de tus clientes ideales. Garantizado.
-          </p>
-          <div class="bg-white bg-opacity-20 rounded-lg p-3 text-sm">
-            <strong>Resultado:</strong> +200% tráfico cualificado
-          </div>
-        </div>
-
-        <div class="bg-white p-8 rounded-2xl border border-gray-200 text-center card-elegant">
-          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-primary mb-4">Diseño que Convierte</h3>
-          <p class="text-gray-700 text-sm mb-6">
-            Cada elemento está científicamente diseñado para guiar a tus visitantes hacia la acción que deseas.
-          </p>
-          <div class="bg-green-50 rounded-lg p-3 text-sm text-accent">
-            <strong>Resultado:</strong> +150% tasa de conversión
-          </div>
-        </div>
-
-        <div class="bg-white p-8 rounded-2xl border border-gray-200 text-center card-elegant">
-          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-primary mb-4">Sin Inversión Inicial Grande</h3>
-          <p class="text-gray-700 text-sm mb-6">
-            Comienza con solo el 30% y paga el resto en cuotas fijas. Tu web genera ingresos desde el día 1.
-          </p>
-          <div class="bg-blue-50 rounded-lg p-3 text-sm text-blue-600">
-            <strong>Beneficio:</strong> Flujo de caja protegido
-          </div>
+        <div class="bg-white bg-opacity-20 rounded-lg p-3 text-sm">
+          <strong>Resultado:</strong> +200% tráfico cualificado
         </div>
       </div>
 
-      <!-- Promesa única destacada -->
-      <div class="mt-16 bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 text-white text-center">
-        <h3 class="text-2xl md:text-3xl font-bold mb-4">
-          Esto Es Lo Que Nos Hace Diferentes:
-        </h3>
-        <p class="text-xl mb-6 max-w-3xl mx-auto">
-          No te entregamos solo un diseño. Te entregamos <strong>un sistema completo de generación de clientes</strong> 
-          que funciona automáticamente mientras tú te enfocas en tu negocio.
+      <div class="bg-white p-8 rounded-2xl border border-gray-200 text-center card-elegant">
+        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-primary mb-4">Diseño que Convierte</h3>
+        <p class="text-gray-700 text-sm mb-6">
+          Cada elemento está científicamente diseñado para guiar a tus visitantes hacia la acción que deseas.
         </p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <div class="bg-white bg-opacity-20 rounded-lg p-4">
-            <div class="text-3xl font-bold counter" data-target="20">0</div>
-            <div class="text-sm">Clientes Satisfechos</div>
-          </div>
-          <div class="bg-white bg-opacity-20 rounded-lg p-4">
-            <div class="text-3xl font-bold counter" data-target="35">0</div>
-            <div class="text-sm">Proyectos Entregados</div>
-          </div>
-          <div class="bg-white bg-opacity-20 rounded-lg p-4">
-            <div class="text-3xl font-bold counter" data-target="100">0</div>
-            <div class="text-sm">% Clientes Recomiendan</div>
-          </div>
+        <div class="bg-green-50 rounded-lg p-3 text-sm text-accent">
+          <strong>Resultado:</strong> +150% tasa de conversión
+        </div>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl border border-gray-200 text-center card-elegant">
+        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-primary mb-4">Sin Inversión Inicial Grande</h3>
+        <p class="text-gray-700 text-sm mb-6">
+          Comienza con solo el 30% y paga el resto en cuotas fijas. Tu web genera ingresos desde el día 1.
+        </p>
+        <div class="bg-blue-50 rounded-lg p-3 text-sm text-secondary">
+          <strong>Beneficio:</strong> Flujo de caja protegido
         </div>
       </div>
     </div>
-  </section>
+
+    <div class="mt-16 rounded-2xl p-8 text-white text-center custom-gradient-r">
+      <h3 class="text-2xl md:text-3xl font-bold mb-4">
+        Esto Es Lo Que Nos Hace Diferentes:
+      </h3>
+      <p class="text-xl mb-6 max-w-3xl mx-auto">
+        No te entregamos solo un diseño. Te entregamos <strong>un sistema completo de generación de clientes</strong> 
+        que funciona automáticamente mientras tú te enfocas en tu negocio.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+          <div class="text-3xl font-bold counter" data-target="20">0</div>
+          <div class="text-sm">Clientes Satisfechos</div>
+        </div>
+        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+          <div class="text-3xl font-bold counter" data-target="35">0</div>
+          <div class="text-sm">Proyectos Entregados</div>
+        </div>
+        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+          <div class="text-3xl font-bold counter" data-target="100">0</div>
+          <div class="text-sm">% Clientes Recomiendan</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- ==================== -->
   <!-- SECCIÓN 3: EL PROCESO SIMPLIFICADO -->
@@ -1687,7 +1670,7 @@
       <p class="text-gray-400 text-sm mb-4">
         ¿Prefieres pagar en cuotas? Tenemos opciones de financiamiento sin intereses
       </p>
-      <a href="/diseno-web-a-credito.html" class="inline-block py-3 px-6 border-2 border-accent text-white bg-accent font-bold rounded-xl hover:bg-secondary hover:text-dark-bg transition">
+      <a href="/diseno-web-a-credito.html" class="inline-block py-3 px-6 border-2 border-accent text-white bg-accent font-bold rounded-xl hover:bg-blue-500 hover:text-dark-bg transition">
         Ver Planes a Crédito
       </a>
     </div>
