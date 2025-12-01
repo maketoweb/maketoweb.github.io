@@ -917,35 +917,32 @@
         </svg>
       </button>
     </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="md:hidden fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300">
-      <div class="flex justify-between items-center p-4 border-b border-gray-200">
+<div id="mobileMenu" class="md:hidden fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300">
+    <div class="flex justify-between items-center p-4 border-b border-gray-200">
         <a href="/" class="flex items-center space-x-3">
-          <img src="imagen/logo.png" alt="Logo Maketo" class="w-10 h-10" width="40" height="40">
-          <div>
-            <span class="text-xl font-bold text-primary block">MAKETO</span>
-            <span class="text-xs text-gray-500 uppercase tracking-wider">Webs que Venden</span>
-          </div>
+            <img src="imagen/logo.png" alt="Logo Maketo" class="w-10 h-10" width="40" height="40">
+            <div>
+                <span class="text-xl font-bold text-primary block">MAKETO</span>
+                <span class="text-xs text-gray-500 uppercase tracking-wider">Webs que Venden</span>
+            </div>
         </a>
         <button id="closeMobileMenu" class="text-gray-700 p-2" aria-label="Cerrar menú">
-          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-          </svg>
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
         </button>
-      </div>
-
-      <nav class="p-4 space-y-4 overflow-y-auto h-full pb-20">
-        <a href="/sobre-nosotros.html" class="text-gray-700 hover:text-secondary transition duration-300">Nosotros</a>
-         <a href="/diseno-web-a-credito.html" class="text-gray-700 hover:text-secondary transition duration-300">Plan Flex</a>
-        <a href="#planes" class="text-gray-700 hover:text-secondary transition duration-300">Planes</a>
-         <a href="#blog" class="text-gray-700 hover:text-secondary transition duration-300">Blog</a>
-        <a href="#portafolio" class="text-gray-700 hover:text-secondary transition duration-300">Portafolio</a>
-       
-        <a href="https://api.whatsapp.com/send?phone=+584124058904&text=Hola%20Maketo,%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20y%20financiamiento." class="block py-3 px-4 bg-secondary text-white font-semibold hover:bg-red-700 rounded-lg text-center transition duration-300">Comenzar Ahora</a>
-      </nav>
     </div>
-  </header>
+
+    <nav class="p-4 space-y-2 overflow-y-auto h-full pb-20">
+        <a href="/sobre-nosotros.html" class="block py-2 text-gray-700 hover:text-secondary transition duration-300">Nosotros</a>
+        <a href="/diseno-web-a-credito.html" class="block py-2 text-gray-700 hover:text-secondary transition duration-300">Plan Flex</a>
+        <a href="#planes" class="block py-2 text-gray-700 hover:text-secondary transition duration-300">Planes</a>
+        <a href="#blog" class="block py-2 text-gray-700 hover:text-secondary transition duration-300">Blog</a>
+        <a href="#portafolio" class="block py-2 text-gray-700 hover:text-secondary transition duration-300">Portafolio</a>
+        
+        <a href="https://api.whatsapp.com/send?phone=+584124058904&text=Hola%20Maketo,%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20y%20financiamiento." class="block py-3 px-4 bg-secondary text-white font-semibold hover:bg-red-700 rounded-lg text-center transition duration-300">Comenzar Ahora</a>
+    </nav>
+</div>
 
   <!-- HERO SECTION  -->
   <section id="gancho" class="py-20 md:py-28 gradient-subtle">
@@ -1203,7 +1200,42 @@
   </section>
 
 
-<!-- SECCIÓN DE PORTAFOLIO DE SOLUCIONES WEB (9 EJEMPLOS) -->
+  <!-- Banner -->
+
+  <section id="banner" class="p-8 m-3 bg-blue-100 lg:h-[370px]  flex items-center card-float">
+  <div class="w-full px-15 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:px-20  lg:grid-cols-12 gap-4  items-center">
+      
+      <div class="  col-span-1  lg:col-span-7 order-2 lg:order-1">
+        <h2 class="text-black text-center text-4xl sm:text-5xl font-bold mb-2">¿PAGAR UN SUELDO?</h2>
+        <p class="text-black text-lg sm:text-3xl mb-3 py-5">
+          <strong >Maketo Flex</strong> es 70% más bajo que un vendedor promedio.
+        </p>
+        <span class="text-black text-xl font-semibold block mb-4" >
+          Más Ventas, Menos Costos Fijos.
+        </span> <br>
+
+        <button id="cta-banner" class="bg-blue-500 hover:bg-blue-600 text-white  py-3 px-6 rounded-full transition duration-300 shadow-md card-float ">
+          ¡Despega YA!
+        </button>
+      </div>
+      
+      <div class="col-span-1 lg:col-span-2 order-1 lg:order-2 flex justify-center items-center  px-4 rounded-full card-float"> 
+         <a href="/diseno-web-a-credito.html" class="flex items-center space-x-2">
+        <img src="/imagen/flex.png" alt="Icono Maketo Flex" class="h-auto  w-full max-h-[200px]  "  >
+        </a>
+      </div>
+      
+      <div class="col-span-1 lg:col-span-3 order-3 lg:order-3 text-center lg:text-right  ">
+       
+        <img src="imagen/flex-banner.png" alt="Banner Maketo Flex" class="w-full h-auto mx-auto lg:mx-0 " style="margin-bottom: px;">
+         </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="portafolio" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h3 class="text-3xl md:text-5xl font-extrabold text-center mb-4 text-black">
@@ -1215,27 +1247,24 @@
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <!-- 1. Abogados / Firma Legal -->
-            <div class="bg-ligth rounded-xl overflow-hidden shadow-2xl  transition duration-300 hover:border-blue-600 hover:shadow-4xl hover:scale-[1.01] hover:-translate-y-1">
-                <img src="imagen/aboga.webp" alt="Diseño Web profesional para Abogados en WordPress" class="w-full h-48 object-cover"/>
+            <div class="bg-ligth rounded-xl overflow-hidden shadow-2xl transition duration-300 hover:border-blue-600 hover:shadow-4xl hover:scale-[1.01] hover:-translate-y-1">
+                <img src="imagen/aboga.webp?v=1.0" alt="Diseño Web profesional para Abogados en WordPress" class="w-full h-48 object-cover" loading="lazy" width="400" height="192"/>
                 <div class="p-6">
-                 
                     <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full border border-red-500 text-red-500 bg-red-900/10">Sector Legal</span>
                     <h4 class="text-xl font-bold text-slate-800 mt-3 mb-2">Diseño Web para Abogados</h4>
-                    <p class="text-slate-600  text-sm mb-4 min-h-[85px]">
+                    <p class="text-slate-600 text-sm mb-4 min-h-[85px]">
                         Construimos su <strong>web profesional en WordPress</strong> enfocada en credibilidad. Optimización para <strong>SEO Local</strong> y captación de clientes de consulta legal online.
                     </p>
                     <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
-                            data-proyecto="abogados" 
-                            data-url="https://demo.awaikenthemes.com/justiq/law-firm/">
+                                data-proyecto="abogados" 
+                                data-url="https://demo.awaikenthemes.com/justiq/law-firm/">
                         Ver Demo
                     </button>
                 </div>
             </div>
 
-            <!-- 2. Tienda Online / WooCommerce -->
-            <div class="bg-ligth rounded-xl overflow-hidden shadow-2xl  transition duration-300 hover:border-blue-600 hover:shadow-4xl hover:scale-[1.01] hover:-translate-y-1">
-                <img src="imagen/tienda.webp" alt="Tienda Online con Woocommerce en WordPress" class="w-full h-48 object-cover"/>
+            <div class="bg-ligth rounded-xl overflow-hidden shadow-2xl transition duration-300 hover:border-blue-600 hover:shadow-4xl hover:scale-[1.01] hover:-translate-y-1">
+                <img src="imagen/tienda.webp?v=1.0" alt="Tienda Online con Woocommerce en WordPress" class="w-full h-48 object-cover" loading="lazy" width="400" height="192"/>
                 <div class="p-6">
                     <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full border border-teal-700 text-teal-700 bg-teal-900/10">eCommerce & Ventas</span>
                     <h4 class="text-xl font-bold text-slate-800 mt-3 mb-2">Tienda Online & Catálogo Profesional</h4>
@@ -1243,16 +1272,15 @@
                         <strong>Tiendas online con Woocommerce</strong> escalables creadas en <strong>WordPress</strong>. Diseño centrado en la conversión y <strong>SEO para productos</strong> (eCommerce SEO).
                     </p>
                     <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
-                            data-proyecto="tienda"
-                            data-url="https://fullkit.moxcreative.com/audioplus/template-kit/homepage/?storefront=envato-elements">
+                                data-proyecto="tienda"
+                                data-url="https://fullkit.moxcreative.com/audioplus/template-kit/homepage/?storefront=envato-elements">
                         Ver Demo
                     </button>
                 </div>
             </div>
 
-            <!-- 3. Psicólogos / Terapeutas -->
             <div class="bg-ligth rounded-xl overflow-hidden shadow-2xl transition duration-300 hover:border-blue-600 hover:shadow-4xl hover:scale-[1.01] hover:-translate-y-1">
-                <img src="imagen/psico.png" alt="Web profesional para Psicólogos y Terapeutas en WordPress" class="w-full h-48 object-cover"/>
+                <img src="imagen/psico.png?v=1.0" alt="Web profesional para Psicólogos y Terapeutas en WordPress" class="w-full h-48 object-cover" loading="lazy" width="400" height="192"/>
                 <div class="p-6">
                     <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full border border-purple-700 text-purple-700 bg-purple-900/10">Salud Mental & Citas</span>
                     <h4 class="text-xl font-bold text-slate-800 mt-3 mb-2">Psicólogos & Terapeutas Online</h4>
@@ -1260,16 +1288,15 @@
                         Webs en <strong>WordPress</strong> con enfoque humano, optimizadas para <strong>citas online</strong> y captación de clientes buscando terapia psicológica (E-E-A-T).
                     </p>
                     <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
-                            data-proyecto="psicologos"
-                            data-url="https://dtpsychiatrist.wpengine.com/?storefront=envato-elements">
+                                data-proyecto="psicologos"
+                                data-url="https://dtpsychiatrist.wpengine.com/?storefront=envato-elements">
                         Ver Demo
                     </button>
                 </div>
             </div>
 
-            <!-- 4. Barberías / Peluquerías -->
-            <div class="bg-ligth rounded-xl overflow-hidden shadow-2xl  transition duration-300 hover:border-blue-600 hover:shadow-4xl hover:scale-[1.01] hover:-translate-y-1">
-                <img src="imagen/bar1.png" alt="Web con sistema de reservas para Barbería en WordPress" class="w-full h-48 object-cover"/>
+            <div class="bg-ligth rounded-xl overflow-hidden shadow-2xl transition duration-300 hover:border-blue-600 hover:shadow-4xl hover:scale-[1.01] hover:-translate-y-1">
+                <img src="imagen/bar1.png?v=1.0" alt="Web con sistema de reservas para Barbería en WordPress" class="w-full h-48 object-cover" loading="lazy" width="400" height="192"/>
                 <div class="p-6">
                     <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full border border-amber-700 text-amber-700 bg-amber-900/0">Servicios Locales & Turnos</span>
                     <h4 class="text-xl font-bold text-slate-800 mt-3 mb-2">Barbería & Peluquería con Reservas</h4>
@@ -1277,16 +1304,15 @@
                         Webs con <strong>sistema de reservas en WordPress</strong> integrado y galería de trabajos. Clave para el <strong>posicionamiento local</strong> y gestión de turnos.
                     </p>
                     <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
-                            data-proyecto="barberia"
-                            data-url="https://hector.1onestrong.com/?storefront=envato-elements">
+                                data-proyecto="barberia"
+                                data-url="https://hector.1onestrong.com/?storefront=envato-elements">
                         Ver Demo
                     </button>
                 </div>
             </div>
 
-            <!-- 5. Consultores / Coaches -->
             <div class="bg-ligth rounded-xl overflow-hidden shadow-2xl transition duration-300 hover:border-blue-600 hover:shadow-4xl hover:scale-[1.01] hover:-translate-y-1">
-                <img src="imagen/coach.webp" alt="Web para Consultores y Coaches de Negocios en WordPress" class="w-full h-48 object-cover"/>
+                <img src="imagen/coach.webp?v=1.0" alt="Web para Consultores y Coaches de Negocios en WordPress" class="w-full h-48 object-cover" loading="lazy" width="400" height="192"/>
                 <div class="p-6">
                     <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full border border-sky-700 text-sky-700 bg-sky-900/10">Consultoría B2B & Leads</span>
                     <h4 class="text-xl font-bold text-slate-800 mt-3 mb-2">Consultoría & Coaching Profesional</h4>
@@ -1294,16 +1320,15 @@
                         <strong>Diseño web de autoridad en WordPress</strong> para consultores. Foco en la generación de <strong>leads B2B</strong> y la descarga de recursos (lead magnets).
                     </p>
                     <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
-                            data-proyecto="consultores"
-                            data-url="https://coaching.thimpress.com/demo-life-coaching/">
+                                data-proyecto="consultores"
+                                data-url="https://coaching.thimpress.com/demo-life-coaching/">
                         Ver Demo
                     </button>
                 </div>
             </div>
 
-            <!-- 6. Restaurantes / Cafeterías -->
-            <div class="bg-ligth rounded-xl overflow-hidden shadow-2xl  transition duration-300 hover:border-blue-600 hover:shadow-4xl hover:scale-[1.01] hover:-translate-y-1">
-                <img src="imagen/restaurant.webp" alt="Web con menú y reservas para Restaurantes en WordPress" class="w-full h-48 object-cover"/>
+            <div class="bg-ligth rounded-xl overflow-hidden shadow-2xl transition duration-300 hover:border-blue-600 hover:shadow-4xl hover:scale-[1.01] hover:-translate-y-1">
+                <img src="imagen/restaurant.webp?v=1.0" alt="Web con menú y reservas para Restaurantes en WordPress" class="w-full h-48 object-cover" loading="lazy" width="400" height="192"/>
                 <div class="p-6">
                     <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full border border-yellow-700 text-yellow-700 bg-yellow-900/10">Hostelería & Proximidad</span>
                     <h4 class="text-xl font-bold text-slate-800 mt-3 mb-2">Restaurantes & Cafeterías con Menú</h4>
@@ -1311,16 +1336,15 @@
                         Webs visuales en <strong>WordPress</strong> con menú digital, sistema de <strong>reservas de mesa</strong> y optimización para Google My Business. Esencial para el <strong>SEO de proximidad</strong>.
                     </p>
                     <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
-                            data-proyecto="restaurantes"
-                            data-url="https://demo.bravisthemes.com/stradale/">
+                                data-proyecto="restaurantes"
+                                data-url="https://demo.bravisthemes.com/stradale/">
                         Ver Demo
                     </button>
                 </div>
             </div>
             
-            <!-- 7. Constructoras / Arquitectos -->
             <div class="bg-ligth rounded-xl overflow-hidden shadow-2xl transition duration-300 hover:border-blue-600 hover:shadow-4xl hover:scale-[1.01] hover:-translate-y-1">
-                <img src="imagen/constru.webp" alt="Web para Constructoras y Estudios de Arquitectura en WordPress" class="w-full h-48 object-cover"/>
+                <img src="imagen/constru.webp?v=1.0" alt="Web para Constructoras y Estudios de Arquitectura en WordPress" class="w-full h-48 object-cover" loading="lazy" width="400" height="192"/>
                 <div class="p-6">
                     <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full border border-gray-700 text-gray-700 bg-gray-900/10">Sector Inmobiliario & Proyectos</span>
                     <h4 class="text-xl font-bold text-slate-800 mt-3 mb-2">Constructoras & Arquitectos Portafolio</h4>
@@ -1328,16 +1352,15 @@
                         Portafolios de alta calidad con proyectos y llamadas a la acción en <strong>WordPress</strong> para <strong>solicitar presupuesto</strong> de construcción o diseño.
                     </p>
                     <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
-                            data-proyecto="constructoras"
-                            data-url="https://wpdemo.zcubethemes.com/willmor/?storefront=envato-elements">
+                                data-proyecto="constructoras"
+                                data-url="https://wpdemo.zcubethemes.com/willmor/?storefront=envato-elements">
                         Ver Demo
                     </button>
                 </div>
             </div>
             
-            <!-- 8. Gimnasios / Centros Fitness -->
             <div class="bg-ligth rounded-xl overflow-hidden shadow-2xl transition duration-300 hover:border-blue-600 hover:shadow-4xl hover:scale-[1.01] hover:-translate-y-1">
-                <img src="imagen/gym.webp" alt="Web para Gimnasios, Entrenadores y Centros Fitness en WordPress" class="w-full h-48 object-cover"/>
+                <img src="imagen/gym.webp?v=1.0" alt="Web para Gimnasios, Entrenadores y Centros Fitness en WordPress" class="w-full h-48 object-cover" loading="lazy" width="400" height="192"/>
                 <div class="p-6">
                     <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full border border-pink-700 text-pink-700 bg-pink-900/10">Fitness & Deporte Local</span>
                     <h4 class="text-xl font-bold text-slate-800 mt-3 mb-2">Gimnasios & Centros Fitness Online</h4>
@@ -1345,16 +1368,15 @@
                         Diseño motivacional, horarios de clases, y formularios para <strong>prueba gratuita</strong> en <strong>WordPress</strong>. Optimizado para búsquedas de <strong>gimnasio cerca de mí</strong>.
                     </p>
                     <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
-                            data-proyecto="gimnasios"
-                            data-url="https://maruthi.wpengine.com/">
+                                data-proyecto="gimnasios"
+                                data-url="https://maruthi.wpengine.com/">
                         Ver Demo
                     </button>
                 </div>
             </div>
             
-            <!-- 9. Centros Odontológicos / Dentistas -->
             <div class="bg-ligth rounded-xl overflow-hidden shadow-2xl transition duration-300 hover:border-blue-600 hover:shadow-4xl hover:scale-[1.01] hover:-translate-y-1">
-                <img src="imagen/odont.webp" alt="Web para Dentistas, Odontología y Clínicas Dentales en WordPress" class="w-full h-48 object-cover"/>
+                <img src="imagen/odont.webp?v=1.0" alt="Web para Dentistas, Odontología y Clínicas Dentales en WordPress" class="w-full h-48 object-cover" loading="lazy" width="400" height="192"/>
                 <div class="p-6">
                     <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full border border-cyan-700 text-cyan-700 bg-cyan-900/10">Clínicas Médicas & Citas</span>
                     <h4 class="text-xl font-bold text-slate-800 mt-3 mb-2">Clínica Odontológica & Dentistas</h4>
@@ -1362,8 +1384,8 @@
                         Diseño limpio y confiable en <strong>WordPress</strong>, galería de tratamientos y sistema de <strong>citas médicas online</strong>. Generación de leads de alto valor.
                     </p>
                     <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
-                            data-proyecto="dentistas"
-                            data-url="https://templates.sparklethings.com/dentaris/template-kit/home/?storefront=envato-elements">
+                                data-proyecto="dentistas"
+                                data-url="https://templates.sparklethings.com/dentaris/template-kit/home/?storefront=envato-elements">
                         Ver Demo
                     </button>
                 </div>
