@@ -2,7 +2,7 @@
 <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Diseño Web Profesional 100% Enfocado en Ventas y SEO | Maketo</title>
     
     <meta name="description" content="¿Tu web no vende? Creamos sitios de alto impacto con +70% conversión y SEO Garantizado. Opciones de Financiamiento Disponibles para tu proyecto. ¡Consultoría Gratis!" />
@@ -13,7 +13,7 @@
     <meta property="og:description" content="Tu web debe vender, no solo existir. Creamos páginas web que convierten visitantes en clientes. Posicionamiento en Google garantizado." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://maketo.site" />
- <meta property="og:image" content="https://maketo.site/imagen/banner-maketo.webp" />
+ <meta property="og:image" content="https://maketo.site/imagen/banner-maketo_v20251202.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -24,201 +24,14 @@
     <link rel="apple-touch-icon" href="/imagen/favicon.png" sizes="180x180">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preload" href="https://maketo.site/imagen/banner-maketo.webp" as="image" type="image/webp">
-<link rel="preload" href="https://maketo.site/imagen/banner-maketo.webp" as="image" type="image/webp">
+
 
 <link rel="preconnect" href="https://connect.facebook.net">
 <link rel="preconnect" href="https://www.facebook.com">
 <link rel="preconnect" href="https://scripts.clarity.ms">
 
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" as="style">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"></noscript>
-   <style>
-  /* 🎨 VARIABLES DE COLOR (Recuperadas de tu tailwind.config) */
-  :root {
-    --color-primary: #111827; /* Negro elegante */
-    --color-secondary: #00acee; /* Azul premium */
-    --color-call: #dc2626; /* Rojo premium */
-    --color-accent: #059669; /* Verde éxito */
-    --color-light: #f8fafc;
-    --color-dark: #1f2937;
-    scroll-behavior: smooth;
-  }
-  
-  /* 🖌️ CLASES DE UTILIDAD PARA COLORES (Para que funcionen tus clases perdidas) */
-  .bg-primary { background-color: var(--color-primary); }
-  .text-primary { color: var(--color-primary); }
-  .bg-secondary { background-color: var(--color-secondary); }
-  .text-secondary { color: var(--color-secondary); }
-  .bg-call { background-color: var(--color-call); }
-  .text-call { color: var(--color-call); }
-  .bg-accent { background-color: var(--color-accent); }
-  .text-accent { color: var(--color-accent); }
-  .bg-light { background-color: var(--color-light); }
-  .text-light { color: var(--color-light); }
-  .bg-dark { background-color: var(--color-dark); }
-  .text-dark { color: var(--color-dark); }
+   <link rel="stylesheet" href="/styles.css">
 
-  /* 🚀 KEYFRAMES Y ANIMACIONES (Recuperadas de tu tailwind.config) */
-  @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(30px); }
-      100% { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-  }
-  @keyframes pulse { 
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
-  }
-
-  /* CLASES DE ANIMACIÓN CORRESPONDIENTES */
-  .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
-  .animate-pulse-slow { animation: pulse 3s infinite; }
-  .animate-float { animation: float 6s ease-in-out infinite; }
-  
-  /* ✅ FIX: Clases para Gradientes Personalizados (Solución para la sección que no se veía) */
-  .custom-gradient-br {
-      background: linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
-  }
-  .custom-gradient-r {
-      background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
-  }
-  
-  /* 🖼️ ESTILOS CRÍTICOS Y PERSONALIZADOS (Tu CSS existente) */
-  body {
-    background-color: #ffffff;
-    color: var(--color-primary);
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    line-height: 1.6;
-  }
-  
-  /* Ajuste de colores por consistencia de diseño */
-  .bg-blue-100 { background-color: #e0f7ff; } 
-  .bg-green-100 { background-color: #d1fae5; }
-  .text-blue-600 { color: var(--color-secondary); } 
-  
-  /* Tus estilos de Neurodiseño (.card-elegant, .modal, etc.) */
-  .card-elegant {
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    border: 1px solid #f3f4f6;
-  }
-  
-  .card-elegant:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
-  }
-  
-  .gradient-subtle {
-    background: linear-gradient(135deg, var(--color-light) 0%, #f1f5f9 100%);
-  }
-  
-  .text-readable { line-height: 1.7; }
-  
-  .animate-on-scroll {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.2, 0.9, 0.3, 1);
-  }
-  
-  .animate-on-scroll.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  img { max-width: 100%; height: auto; }
-  
-  .icon-elegant {
-    filter: grayscale(100%) brightness(0.3);
-    transition: all 0.3s ease;
-  }
-  
-  .card-elegant:hover .icon-elegant {
-    filter: grayscale(0%) brightness(1);
-  }
-  
-  .counter { font-variant-numeric: tabular-nums; }
-  
-  .neuro-shadow {
-    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  }
-  
-  .pulse-urgency { animation: pulse 2s infinite; }
-  
-  .will-change-transform { will-change: transform; }
-  
-  /* Estilos funcionales del Modal */
-  .modal {
-    display: none; 
-    position: fixed;
-    inset: 0; 
-    z-index: 1000;
-    overflow: hidden; 
-    background-color: rgba(0, 0, 0, 0.95); 
-    align-items: center; 
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .modal-content {
-    position: relative;
-    width: 95%; 
-    height: 95%; 
-    border-radius: 1rem; 
-    overflow: hidden; 
-    box-shadow: 0 10px 25px var(--color-secondary); 
-  }
-  
-  .close {
-    color: #fff;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-    cursor: pointer;
-    z-index: 1001; 
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
-  }
-
-  .close:hover,
-  .close:focus {
-    color: var(--color-secondary); 
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  /* Estilos Estéticos AVANZADOS (Animaciones) */
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .animate-on-scroll.animate-in {
-    animation: fadeIn 0.6s ease-out forwards;
-    opacity: 0;
-  }
-  .card-float {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .card-float:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(3, 138, 248, 0.3), 0 4px 6px -4px rgba(94, 169, 255, 0.3);
-  }
-  .badge {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color:var(--color-secondary); 
-    background-color: var(--color-secondary); 
-    border-radius: 9999px;
-  }
-</style>
-    
     <link rel="preload" href="imagen/logo.png?v=1.1" as="image">
     <link rel="preload" href="imagen/Estadisticas-roi-maketo.png?v=1.1" as="image">
     
@@ -445,7 +258,7 @@
   <header class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
       <a href="/" class="flex items-center space-x-3">
-        <img src="imagen/logo.png" alt="Logo Maketo" class="w-10 h-10" width="40" height="40">
+       <img src="/imagen/logo_v20251202.png" alt="Logo de Maketo web Agencia de Diseño Web y financiamiento" class="h-12 w-auto">
         <div>
         
           <span class="text-xs text-gray-500 uppercase tracking-wider">Webs que Venden</span>
@@ -608,7 +421,7 @@
         <div class="relative">
           <!-- Imagen principal -->
           <div class="relative   sm:p-3 ">
-    <img src="/imagen/Estadisticas-roi-maketo.png" alt="Gráfico de estadísticas que muestra el Retorno de Inversión y ROI" ...>        
+    <img src="/imagen/Estadisticas-roi-maketo.png?v=1.0" alt="Gráfico de estadísticas que muestra el Retorno de Inversión y ROI" loading="lazy" width="600" height="600">        
             <!-- Badge de resultado -->
             <div class="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 bg-white border border-blue-200 rounded-lg sm:rounded-xl p-3 sm:p-4 shadow-lg max-w-[140px] sm:max-w-xs">
               <div class="flex items-center gap-2 sm:gap-3">
@@ -740,10 +553,7 @@
       
       <!-- Columna de imagen -->
       <div class="order-2 lg:order-1">
-        <img src="imagen/ob1.png   " 
-             alt="Financiamiento web sin intereses para PYMES" 
-             class="w-full "
-             loading="lazy">
+        <img src="imagen/ob1.png?v=1.0"alt="Financiamiento web sin intereses para PYMES"class="w-full"loading="lazy" width="400" height="192">
       </div>
 
       <!-- Columna de texto -->
@@ -909,13 +719,13 @@
       
       <div class="col-span-1 lg:col-span-2 order-1 lg:order-2 flex justify-center items-center  px-4 rounded-full card-float"> 
          <a href="/diseno-web-a-credito.html" class="flex items-center space-x-2">
-        <img src="/imagen/flex.png" alt="Icono Maketo Flex" class="h-auto  w-full max-h-[200px]  "  >
+        <img src="/imagen/flex.png" alt="Icono Maketo Flex" class="h-auto  w-full max-h-[200px]"loading="lazy" width="400" height="192"  >
         </a>
       </div>
       
       <div class="col-span-1 lg:col-span-3 order-3 lg:order-3 text-center lg:text-right  ">
        
-        <img src="imagen/flex-banner.png" alt="Banner Maketo Flex" class="w-full h-auto mx-auto lg:mx-0 " style="margin-bottom: px;">
+        <img src="imagen/flex-banner.png?v=1.0" alt="Banner Maketo Flex" class="w-full h-auto mx-auto lg:mx-0 " loading="lazy" width="400" height="192" style="margin-bottom: px;">
          </a>
       </div>
 
