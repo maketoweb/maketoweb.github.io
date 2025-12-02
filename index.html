@@ -27,7 +27,7 @@
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" as="style">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"></noscript>
-    <style>
+   <style>
   /* 🎨 VARIABLES DE COLOR (Recuperadas de tu tailwind.config) */
   :root {
     --color-primary: #111827; /* Negro elegante */
@@ -72,12 +72,10 @@
   .animate-pulse-slow { animation: pulse 3s infinite; }
   .animate-float { animation: float 6s ease-in-out infinite; }
   
-  /* ✅ FIX CRÍTICO: Clases para Gradientes Personalizados (Solución LCP) */
-  /* Reemplaza bg-gradient-to-br from-primary to-secondary */
+  /* ✅ FIX: Clases para Gradientes Personalizados (Solución para la sección que no se veía) */
   .custom-gradient-br {
       background: linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
   }
-  /* Reemplaza bg-gradient-to-r from-primary to-secondary */
   .custom-gradient-r {
       background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
   }
@@ -92,11 +90,9 @@
   }
   
   /* Ajuste de colores por consistencia de diseño */
-  /* Definiciones de colores claros usados en la sección para iconos */
   .bg-blue-100 { background-color: #e0f7ff; } 
   .bg-green-100 { background-color: #d1fae5; }
-  /* Ajuste de color de texto en la tercera tarjeta */
-  .text-blue-600 { color: var(--color-secondary); }
+  .text-blue-600 { color: var(--color-secondary); } 
   
   /* Tus estilos de Neurodiseño (.card-elegant, .modal, etc.) */
   .card-elegant {
@@ -236,263 +232,132 @@
       gtag('js', new Date());
       gtag('config', 'G-5CN6E2EFS2');
     </script>
-
- <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["ProfessionalService", "AdvertisingAgency", "WebDesignAgency"],
+      /* 1. Definición de la Organización y Negocio Local */
+      "@type": ["ProfessionalService", "Organization", "LocalBusiness"],
       "@id": "https://maketo.site/#organization",
-      "name": "Maketo - Agencia Global de Diseño Web que Convierte",
-      "alternateName": [
-        "Maketo Web",
-        "Maketo Digital",
-        "Agencia Maketo Diseño Web",
-        "Maketo SEO",
-        "Diseño Web Maketo"
-      ],
+      "name": "Maketo - Agencia Global de Diseño Web que Convierte planes a credito",
+      "alternateName": ["Maketo Web", "Maketo Digital"],
       "url": "https://maketo.site",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://maketo.site/imagen/logo.png",
-        "width": 500,
-        "height": 500,
-        "caption": "Logo Maketo - Agencia de Diseño Web"
-      },
-      "image": [
-        "https://maketo.site/imagen/banner-maketo.webp",
-        "https://maketo.site/imagen/Estadisticas-roi-maketo.png"
-      ],
-      "description": "Agencia líder mundial en diseño web conversivo y posicionamiento SEO garantizado. Especialistas en crear páginas web que convierten visitantes en clientes con financiamiento 0% intereses.",
+      "logo": {"@id": "https://maketo.site/#logo"},
+      "image": {"@id": "https://maketo.site/#banner"},
+      "description": "Agencia líder en diseño web conversivo, posicionamiento SEO Y financiamiento de paginas web . Especialistas en crear páginas web que convierten visitantes en clientes.",
       "slogan": "Tu web debe vender, no solo existir",
       "foundingDate": "2020-01-01",
-      "foundingLocation": {
-        "@type": "Place",
-        "name": "Venezuela",
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "VE"
-        }
-      },
-      "founders": [
-        {
-          "@type": "Person",
-          "name": "Henderson Ochoa",
-          "jobTitle": "Cofundador & CEO",
-          "knowsAbout": ["Diseño Web", "SEO", "Marketing Digital", "NeuroDiseño"]
-        }
-      ],
-      "numberOfEmployees": {
-        "@type": "QuantitativeValue",
-        "value": "0-10",
-        "unitText": "personas"
-      },
-      "serviceType": [
-        "Diseño Web Profesional",
-        "Posicionamiento SEO",
-        "Tiendas Online",
-        "Rediseño Web",
-        "Consultoría Digital",
-        "Diseño Web a Crédito",
-        "NeuroDiseño",
-        "Optimización IA"
-      ],
-      "knowsAbout": [
-        "Diseño Web que Convierte",
-        "Posicionamiento SEO Garantizado",
-        "NeuroDiseño 2025",
-        "Google SGE y IA Overviews",
-        "Estrategias E-E-A-T",
-        "Financiamiento Web",
-        "WordPress Avanzado",
-        "Conversión Digital",
-        "Marketing B2B/B2C",
-        "SEO Local e Internacional"
-      ],
-      "makesOffer": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Diseño Web a Crédito - Plan Flex",
-            "description": "Financiamiento 0% intereses para PYMES con 30% inicial y cuotas fijas"
-          },
-          "priceSpecification": {
-            "@type": "UnitPriceSpecification",
-            "priceType": "Financiación",
-            "priceCurrency": "USD",
-            "price": "135",
-            "unitText": "Cuota Inicial"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Posicionamiento SEO Garantizado"
-          },
-          "priceSpecification": {
-            "@type": "UnitPriceSpecification",
-            "priceCurrency": "USD",
-            "price": "300"
-          }
-        }
-      ],
-      "areaServed": {
-        "@type": "Country",
-        "name": ["World", "Global", "International"],
-        "description": "Servicios disponibles en todo el mundo de forma remota"
-      },
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 10.1621,
-          "longitude": -68.0077
-        },
-        "geoRadius": "20000 km"
-      },
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "VE",
         "addressRegion": "Carabobo",
         "addressLocality": "Valencia",
-        "postalCode": "2001",
-        "streetAddress": "Av. Principal"
+        "streetAddress": "Trigal centro" 
       },
       "contactPoint": [
         {
           "@type": "ContactPoint",
           "contactType": "customer service",
-          "telephone": "+58-412-405-8904",
+          "telephone": "+584124058904",
           "email": "maketostudio@gmail.com",
-          "contactOption": "TollFree",
-          "areaServed": "VE",
-          "availableLanguage": ["Spanish", "English"]
-        },
-        {
-          "@type": "ContactPoint",
-          "contactType": "sales",
-          "telephone": "+58-412-405-8904",
-          "contactOption": "TollFree",
-          "areaServed": ["VE","ES", "MX", "CO", "US"],
           "availableLanguage": ["Spanish", "English"]
         }
       ],
-      "telephone": "+58-412-405-8904",
-      "email": "maketostudio@gmail.com",
-      "priceRange": "$$",
-      "currenciesAccepted": "USD, EUR, VES",
-      "paymentAccepted": "Credit Card, PayPal, Bank Transfer, Zelle, Cryptocurrency",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "09:00",
-        "closes": "18:00",
-        "validFrom": "2024-01-01",
-        "validThrough": "2025-12-31"
-      },
       "sameAs": [
         "https://instagram.com/maketo.web",
-        "https://facebook.com/maketoweb",
-        "https://linkedin.com/company/maketo",
-        "https://twitter.com/maketoweb",
-        "https://youtube.com/@maketoweb"
+        "https://facebook.com/maketoweboficial",
+        "https://linkedin.com/company/maketo"
       ],
-     
-      "brand": {
-        "@type": "Brand",
-        "name": "Maketo",
-        "slogan": "Webs que Venden",
-        "description": "Especialistas en diseño web conversivo y posicionamiento SEO",
-        "logo": "https://maketo.site/imagen/logo.png"
-      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "ratingCount": "35",
-        "reviewCount": "27",
+        "ratingCount": "20",
         "bestRating": "5",
-        "worstRating": "1",
-        "ratingExplanation": "Basado en 27 reseñas verificadas de clientes satisfechos"
+        "worstRating": "1"
       },
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "Professional Certification",
-          "name": "Google Partners Certified",
-          "description": "Certificación oficial de Google para agencias de marketing digital"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "Professional Certification",
-          "name": "WordPress VIP Partner",
-          "description": "Partner oficial de WordPress para desarrollo empresarial"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "Professional Certification",
-          "name": "NeuroDiseño Certified 2025",
-          "description": "Certificación en técnicas avanzadas de NeuroDiseño y conversión"
-        }
-      ],
-      "founder": {
-        "@type": "Person",
-        "@id": "https://maketo.site/#founder",
-        "name": "Henderson Ochoa",
-        "jobTitle": "Cofundador & CEO",
-        "description": "Especialista en diseño web estratégico, marketing digital y modelos de financiamiento innovadores",
-        "knowsAbout": [
-          "Diseño Web Conversivo",
-          "SEO Técnico",
-          "NeuroMarketing",
-          "Estrategias B2B",
-          "Financiamiento Digital"
-        ],
-        "url": "https://maketo.site/equipo/henderson-ochoa",
-        "image": "https://maketo.site/imagen/henderson-ochoa.jpg"
-      },
-      "employee": [
-        {
-          "@type": "Person",
-          "name": "Henderson Ochoa",
-          "jobTitle": "Cofundador & CEO",
-          "experienceYears": "5"
-        },
-        {
-          "@type": "Person",
-          "name": "Edicson j",
-          "jobTitle": "Analista y experto en seguridad",
-          "experienceYears": "6"
-        }
-      ],
-      "ethicsPolicy": "https://maketo.site/politica-etica",
-      "termsOfService": "https://maketo.site/terminos-servicio",
-      "ownershipFundingInfo": {
-        "@type": "AboutPage",
-        "url": "https://maketo.site/sobre-nosotros",
-        "description": "Información sobre nuestra estructura de propiedad y modelo de negocio"
+      "priceRange": "$$$", /* Ajustado a $$$ para reflejar servicio profesional */
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
       }
     },
     {
+        /* 2. Definición del Logo (ImageObject) */
+        "@type": "ImageObject",
+        "@id": "https://maketo.site/#logo",
+        "url": "https://maketo.site/imagen/logo.png",
+        "caption": "Logo de Maketo - Agencia de Diseño Web y SEO"
+    },
+    {
+        /* 3. Definición del Banner o Imagen Principal (ImageObject) */
+        "@type": "ImageObject",
+        "@id": "https://maketo.site/#banner",
+        "url": "https://maketo.site/imagen/banner-maketo.webp",
+        "caption": "Banner Principal de Maketo"
+    },
+    {
+      /* 4. Definición del Sitio Web */
+      "@type": "WebSite",
+      "@id": "https://maketo.site/#website",
+      "url": "https://maketo.site",
+      "name": "Maketo - Agencia de Diseño Web",
+      "description": "Especialistas en diseño web conversivo y posicionamiento SEO , pago a cuotas",
+      "publisher": {"@id": "https://maketo.site/#organization"},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://maketo.site/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      /* 5. Definición de la Página Actual (Homepage) */
+      "@type": "WebPage",
+      "@id": "https://maketo.site/#webpage",
+      "url": "https://maketo.site",
+      "name": "Maketo | Diseño Web que Convierte + SEO + Financiamiento",
+      "description": "Agencia especializada en diseño web conversivo y posicionamiento SEO. Webs que venden con financiamiento 0% intereses.",
+      "isPartOf": {"@id": "https://maketo.site/#website"},
+      "about": {"@id": "https://maketo.site/#organization"},
+      "datePublished": "2025-01-01",
+      "dateModified": "2025-12-01"
+    },
+    {
+        /* 6. BreadcrumbList  */
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://maketo.site"
+            }
+             {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Diseño web a credito",
+                "item": "https://maketo.site/diseno-web-a-credito"
+            }
+             {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Nosotros",
+                "item": "https://maketo.site/nosotros"
+            }
+        ]
+    },
+    {
+      /* 7. Definición de FAQPage */
       "@type": "FAQPage",
-      "@id": "https://maketo.site/#faq",
       "mainEntity": [
         {
           "@type": "Question",
           "name": "¿Hacen diseño web para PYMES y Emprendedores?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. Nos especializamos en diseño web para pymes y emprendedores. Entendemos que necesitas una web que venda rápido, con SEO local integrado y a un precio justo."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Ya tengo web, ¿ofrecen servicio de Rediseño?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutamente. El rediseño de sitios web es clave si tu página actual no convierte. Mantenemos tu antigüedad en Google (SEO) pero modernizamos la imagen y la estrategia de ventas."
+            "text": "Sí. Nos especializamos en diseño web para PYMES y emprendedores. Creamos webs que venden rápido, con SEO local integrado y a un precio accesible."
           }
         },
         {
@@ -500,7 +365,7 @@
           "name": "¿Cómo funciona el diseño web a crédito o cuotas?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Es un modelo de inversión inteligente. Pagas una inicial del 30% para comenzar y el resto en cuotas fijas sin intereses. Ideal para no afectar el flujo de caja de tu negocio mientras disfrutas de una web profesional."
+            "text": "Puedes comenzar con 30% de inicial y el resto en cuotas fijas sin intereses. Ideal para no afectar el flujo de caja de tu negocio."
           }
         },
         {
@@ -508,365 +373,57 @@
           "name": "¿Trabajan con clientes fuera de Venezuela?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí, nuestro servicio es global y remoto. Tenemos clientes en España, USA y Latinoamérica. Utilizamos plataformas de pago internacionales y gestionamos el proyecto vía Zoom/Meet sin inconvenientes."
+            "text": "Sí, trabajamos con clientes en España, USA y toda Latinoamérica. Proyectos 100% remotos con plataformas de pago internacionales."
           }
         }
       ]
     },
     {
+      /* 8. Servicio 1 - Diseño Web */
       "@type": "Service",
-      "@id": "https://maketo.site/#service-financed",
-      "name": "Diseño Web a Crédito - Plan Flex",
-      "serviceType": "Diseño Web Financiado",
-      "provider": {
-        "@id": "https://maketo.site/#organization"
-      },
-      "description": "Servicio de diseño web profesional con financiamiento 0% intereses. Ideal para PYMES y emprendedores que necesitan una web que venda sin inversión inicial grande.",
-      "serviceOutput": {
-        "@type": "WebApplication",
-        "name": "Página Web Optimizada",
-        "browserRequirements": "Requiere navegador moderno",
-        "featureList": [
-          "Diseño Responsive",
-          "SEO Técnico",
-          "Formulario de Contacto",
-          "Optimización Velocidad",
-          "Certificado SSL"
-        ]
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": ["World", "Global"],
-        "description": "Servicio disponible internacionalmente de forma remota"
-      },
+      "name": "Diseño Web a Crédito",
+      "description": "Diseño web profesional con financiamiento 0% intereses. Ideal para PYMES que necesitan una web que venda sin inversión inicial grande.",
+      "provider": {"@id": "https://maketo.site/#organization"},
       "offers": {
         "@type": "Offer",
         "priceCurrency": "USD",
+        "price": "450",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
           "priceType": "Financiación",
           "priceCurrency": "USD",
-          "price": "135.00",
+          "price": "135",
           "unitText": "Cuota Inicial 30%"
-        },
-        "businessFunction": "https://schema.org/Sell",
-        "eligibleCustomerType": {
-          "@type": "BusinessEntityType",
-          "name": "PYMES, Emprendedores, Profesionales"
         }
       },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Planes de Financiamiento",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Plan Básico Financiado"
-            },
-            "price": "350",
-            "priceCurrency": "USD"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Plan Empresarial Financiado"
-            },
-            "price": "500",
-            "priceCurrency": "USD"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Plan Tienda Online Financiado"
-            },
-            "price": "850",
-            "priceCurrency": "USD"
-          }
-        ]
+      "areaServed": {
+        "@type": "Country",
+        "name": "Global"
       }
     },
     {
+      /* 9. Servicio 2 - Posicionamiento SEO */
       "@type": "Service",
-      "@id": "https://maketo.site/#service-seo",
       "name": "Posicionamiento SEO Garantizado",
-      "serviceType": "SEO Service",
-      "provider": {
-        "@id": "https://maketo.site/#organization"
-      },
-      "description": "Servicio de posicionamiento en Google garantizado. Implementamos estrategias SEO avanzadas, E-E-A-T y optimización para IA Overviews.",
-      "serviceAudience": {
-        "@type": "PeopleAudience",
-        "audienceType": "Businesses",
-        "geographicArea": {
-          "@type": "Country",
-          "name": "Global"
-        }
-      },
+      "description": "Servicio de posicionamiento en Google garantizado. Estrategias SEO avanzadas y optimización para IA Overviews.",
+      "provider": {"@id": "https://maketo.site/#planes"},
       "offers": {
         "@type": "Offer",
         "priceCurrency": "USD",
-        "price": "300",
-        "availability": "https://schema.org/InStock",
-        "priceValidUntil": "2025-12-31"
-      },
-      "serviceWarranty": {
-        "@type": "WarrantyPromise",
-        "warrantyScope": "https://schema.org/MaintenanceAndRepair",
-        "durationOfWarranty": {
-          "@type": "QuantitativeValue",
-          "value": "6",
-          "unitCode": "MON"
-        }
+        "price": "300"
       }
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": "https://maketo.site/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Inicio",
-          "item": "https://maketo.site"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Diseño Web",
-          "item": "https://maketo.site/diseno-web"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Diseño Web a Crédito",
-          "item": "https://maketo.site/diseno-web-a-credito"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Posicionamiento SEO",
-          "item": "https://maketo.site/posicionamiento-seo"
-        }
-      ]
-    },
-    {
-      "@type": "SiteNavigationElement",
-      "@id": "https://maketo.site/#navigation",
-      "name": "Navegación Principal",
-      "url": "https://maketo.site",
-      "potentialAction": [
-        {
-          "@type": "Action",
-          "name": "Ver Planes",
-          "target": "https://maketo.site#planes"
-        },
-        {
-          "@type": "Action",
-          "name": "Solicitar Consultoría",
-          "target": "https://api.whatsapp.com/send?phone=+584124058904"
-        }
-      ]
-    },
-    {
-      "@type": "ConfidenceIndicator",
-      "name": "Indicador de Confianza Maketo",
-      "description": "Métricas verificadas de rendimiento y satisfacción",
-      "confidenceMetric": "98",
-      "metricType": "Percentage",
-      "measurementTechnique": "Google Analytics + Search Console + Encuestas Clientes",
-      "dateMeasured": "2025-12-01",
-      "measurementFrequency": "P1M",
-      "metricPublisher": {
-        "@type": "Organization",
-        "name": "Maketo Analytics Department"
-      }
-    },
-    {
-      "@type": "ClaimReview",
-      "url": "https://maketo.site/verificacion-resultados",
-      "claimReviewed": "Maketo posiciona webs en  Google y la IA",
-      "author": {
-        "@type": "Organization",
-        "name": "Google Business Profile Verified",
-        "url": "https://business.google.com"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1",
-        "alternateName": "Verificado"
-      },
-      "itemReviewed": {
-        "@type": "CreativeWork",
-        "author": {
-          "@id": "https://maketo.site/#organization"
-        },
-        "datePublished": "2025-11-01"
-      },
-      "claimReviewedDate": "2024-11-30"
-    },
-    {
-      "@type": "ItemList",
-      "@id": "https://maketo.site/#service-list",
-      "name": "Servicios Principales de Maketo",
-      "description": "Lista completa de servicios de diseño web y marketing digital",
-      "numberOfItems": "6",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "Service",
-            "name": "Diseño Web que Convierte",
-            "description": "Páginas web optimizadas para conversión con NeuroDiseño"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "Service",
-            "name": "Posicionamiento SEO Garantizado",
-            "description": "SEO avanzado con garantía de resultados"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "Service",
-            "name": "Diseño Web a Crédito",
-            "description": "Financiamiento 0% intereses para PYMES"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@type": "Service",
-            "name": "Rediseño Web Estratégico",
-            "description": "Modernización de webs antiguas manteniendo SEO"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "item": {
-            "@type": "Service",
-            "name": "Tiendas Online Profesionales",
-            "description": "E-commerce con pasarelas de pago y SEO"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "item": {
-            "@type": "Service",
-            "name": "Consultoría Digital Avanzada",
-            "description": "Estrategias personalizadas para crecimiento"
-          }
-        }
-      ]
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://maketo.site/#webpage",
-      "url": "https://maketo.site",
-      "name": "Maketo | Diseño Web que Convierte + Posicionamiento SEO Garantizado",
-      "description": "Agencia especializada en diseño web conversivo y posicionamiento SEO. Creamos páginas web que venden con financiamiento 0% intereses.",
-      "isPartOf": {
-        "@id": "https://maketo.site/#website"
-      },
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://maketo.site/imagen/banner-maketo.webp",
-        "width": 1200,
-        "height": 630,
-        "caption": "Maketo - Diseño Web que Convierte"
-      },
-      "datePublished": "2023-01-01T00:00:00+00:00",
-      "dateModified": "2024-12-01T00:00:00+00:00",
-      "lastReviewed": "2024-12-01T00:00:00+00:00",
-      "significantLink": [
-        "https://maketo.site/sobre-nosotros",
-        "https://maketo.site/diseno-web-a-credito",
-        "https://maketo.site#planes",
-        "https://maketo.site#portafolio"
-      ],
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "xpath": [
-          "/html/head/title",
-          "/html/head/meta[@name='description']/@content"
-        ]
-      },
-      "potentialAction": {
-        "@type": "ReadAction",
-        "target": "https://maketo.site"
-      }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://maketo.site/#website",
-      "url": "https://maketo.site",
-      "name": "Maketo - Agencia de Diseño Web",
-      "description": "Especialistas en diseño web conversivo y posicionamiento SEO garantizado",
-      "publisher": {
-        "@id": "https://maketo.site/#organization"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://maketo.site/search?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      },
-      "inLanguage": ["es-ES", "en-US"],
-      "copyrightYear": "2024",
-      "copyrightHolder": {
-        "@id": "https://maketo.site/#organization"
-      }
+      /* 10. Definición de la Persona Clave (E-E-A-T) */
+      "@type": "Person",
+      "name": "Henderson Ochoa",
+      "jobTitle": "Cofundador & CEO",
+      "worksFor": {"@id": "https://maketo.site/#organization"},
+      "description": "Especialista en diseño web estratégico, marketing digital y modelos de financiamiento innovadores",
+      "knowsAbout": ["Diseño Web Conversivo", "SEO Técnico", "NeuroMarketing"],
+      "sameAs": ["https://linkedin.com/in/henderson-ochoa"]
     }
   ]
-}
-</script>
-
-<!-- Schema adicional para autoridad E-E-A-T -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ClaimReview",
-  "datePublished": "2024-12-01",
-  "url": "https://maketo.site/verificacion",
-  "author": {
-    "@type": "Organization",
-    "name": "TrustArc",
-    "url": "https://www.trustarc.com"
-  },
-  "claimReviewed": "Maketo es la agencia más confiable para diseño web a crédito",
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": "5",
-    "bestRating": "5"
-  },
-  "itemReviewed": {
-    "@type": "Claim",
-    "appearance": {
-      "@type": "WebPage",
-      "url": "https://maketo.site"
-    },
-    "author": {
-      "@type": "Organization",
-      "name": "Maketo",
-      "sameAs": "https://maketo.site"
-    }
-  }
 }
 </script>
 </head>
@@ -898,7 +455,7 @@
         <a href="#blog" class="text-gray-700 hover:text-secondary transition duration-300">Blog</a>
         <a href="#portafolio" class="text-gray-700 hover:text-secondary transition duration-300">Portafolio</a>
        
-        <a href="https://api.whatsapp.com/send?phone=+584124058904&text=Hola%20Maketo,%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20y%20financiamiento." class="bg-secondary text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-red-700 transition duration-300 shadow-md">Comenzar Ahora</a>
+        <a href="https://api.whatsapp.com/send?phone=+584124058904&text=Hola%20Maketo,%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20y%20financiamiento." class="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-blue-500 transition duration-300 shadow-md">Comenzar Ahora</a>
       </nav>
       
       <!-- Mobile Menu Button -->
@@ -931,97 +488,164 @@
         <a href="#blog" class="block py-2 text-gray-700 hover:text-secondary transition duration-300">Blog</a>
         <a href="#portafolio" class="block py-2 text-gray-700 hover:text-secondary transition duration-300">Portafolio</a>
         
-        <a href="https://api.whatsapp.com/send?phone=+584124058904&text=Hola%20Maketo,%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20y%20financiamiento." class="block py-3 px-4 bg-secondary text-white font-semibold hover:bg-red-700 rounded-lg text-center transition duration-300">Comenzar Ahora</a>
+        <a href="https://api.whatsapp.com/send?phone=+584124058904&text=Hola%20Maketo,%20quiero%20informacion." class="block py-3 px-4 bg-secondary text-white font-semibold hover:bg-red-700 rounded-lg text-center transition duration-300">Comenzar Ahora</a>
     </nav>
 </div>
 
-  <!-- HERO SECTION  -->
-  <section id="gancho" class="py-20 md:py-28 gradient-subtle">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <div class="text-center lg:text-left animate-on-scroll">
-          <!-- Badge de urgencia -->
-          <div class="inline-flex items-center gap-2 bg-red-50 border border-red-200 rounded-full px-4 py-2 mb-6">
-            <div class="w-2 h-2 bg-red-500 rounded-full pulse-urgency"></div>
-            <span class="text-red-700 text-sm font-medium uppercase tracking-wide">¡Atención Emprendedores!</span>
-          </div>
+<!-- HERO OPTIMIZADO - NeuroMarketing + Mobile-First -->
+<section id="hero" class="py-12 md:py-20 lg:py-24 bg-gradient-to-br from-white via-blue-50 to-white text-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      
+      <!-- Columna de texto -->
+      <div class="text-center lg:text-left order-1 lg:order-1">
+        
+        <!-- Badge de confianza -->
+        <div class="inline-flex items-center gap-2 bg-blue-600 text-white rounded-full px-4 py-2 mb-6">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          <span class="text-sm font-medium">+20 Webs Creadas • 4.9/5 Rating</span>
+        </div>
 
-          <!-- Headline principal con psicología del dolor -->
-          <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-            <span class="text-primary">Tu Competencia Ya Está</span>
-            <span class="text-secondary block mt-2">Robando Tus Clientes</span>
-          </h1>
+        <!-- HEADLINE PRINCIPAL -->
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 lg:mb-6 leading-tight">
+          <span class="block text-gray-900">
+            Tu Negocio en Google
+            <span class=" bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600 block">
+              Más Clientes, Más Ventas
+            </span>
+          </span>
+        </h1>
+
+        <!-- SUBHEADLINE CLARO -->
+        <p class="text-lg sm:text-xl md:text-2xl mb-6 lg:mb-8 text-gray-700 max-w-2xl mx-auto lg:mx-0">
+          Creamos tu página web para que <span class="text-blue-600 font-semibold">Google te encuentre</span> 
+          y tus clientes <span class="text-blue-600 font-semibold">te elijan a ti</span>.
+        </p>
+
+        <!-- BENEFICIOS EN LENGUAJE CLIENTE -->
+        <div class="space-y-3 mb-6 lg:mb-8">
+          <div class="flex items-center gap-3">
+            <div class="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 bg-blue-100 rounded-full flex items-center justify-center">
+              <svg class="w-3 h-3 sm:w-4 sm:h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <span class="text-gray-800 font-medium text-sm sm:text-base">Apareces cuando te buscan en Google</span>
+          </div>
           
-          <!-- Subheadline que conecta con el dolor -->
-          <p class="text-xl md:text-2xl mb-8 font-light text-gray-700 max-w-2xl mx-auto lg:mx-0 text-readable">
-            Mientras lees esto, <strong class="text-red-600">competidores con webs optimizadas</strong> están captando clientes que deberían ser tuyos. 
-            <strong class="text-primary">¿Cuánto más puedes permitirte perder?</strong>
-          </p>
-
-          <!-- Lista de problemas/pain points -->
-          <div class="grid grid-cols-1 gap-4 mb-8 text-left">
-            <div class="flex items-center gap-3 bg-white p-4 rounded-lg border border-gray-200 neuro-shadow">
-              <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+          <div class="flex items-center gap-3">
+            <div class="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 bg-green-100 rounded-full flex items-center justify-center">
+              <svg class="w-3 h-3 sm:w-4 sm:h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
               </svg>
-              <span class="text-gray-700 font-medium">¿Tu web no aparece en Google cuando te buscan?</span>
             </div>
-            <div class="flex items-center gap-3 bg-white p-4 rounded-lg border border-gray-200 neuro-shadow">
-              <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
-              </svg>
-              <span class="text-gray-700 font-medium">¿Los visitantes no se convierten en clientes?</span>
-            </div>
-            <div class="flex items-center gap-3 bg-white p-4 rounded-lg border border-gray-200 neuro-shadow">
-              <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
-              </svg>
-              <span class="text-gray-700 font-medium">¿Tu diseño web parece de hace 10 años?</span>
-            </div>
+            <span class="text-gray-800 font-medium text-sm sm:text-base">Diseño que convierte visitantes en clientes</span>
           </div>
 
-          <!-- CTA Principal con urgencia -->
-          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a href="https://api.whatsapp.com/send?phone=+584124058904&text=Hola%20Maketo,%20quiero%20informacion." 
-               class="py-4 px-8 bg-secondary text-white font-bold rounded-lg shadow-lg hover:bg-red-700 transition duration-300 transform hover:scale-105 text-center will-change-transform">
-              Solucionar Mi Problema Ahora
-            </a>
-            <a href="/diseno-web-a-credito.html" 
-               class="py-4 px-8 bg-primary text-white border border-gray-300 bg-call font-bold rounded-lg shadow hover:bg-gray-50 hover:text-primary transition duration-300 text-center will-change-transform">
-              Ver Planes a Credito
-            </a>
-          </div>
-
-          <!-- Elemento de prueba social y urgencia -->
-          <div class="mt-6 flex flex-col sm:flex-row items-center gap-4 text-sm text-gray-600">
-            <div class="flex items-center">
-              <div class="flex -space-x-2 mr-2">
-                <div class="w-6 h-6 bg-gray-300 rounded-full border-2 border-white"></div>
-                <div class="w-6 h-6 bg-gray-400 rounded-full border-2 border-white"></div>
-                <div class="w-6 h-6 bg-gray-500 rounded-full border-2 border-white"></div>
-              </div>
-              <span><strong class="text-primary">+20 clientes</strong> ya solucionaron este problema</span>
+          <div class="flex items-center gap-3">
+            <div class="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 bg-purple-100 rounded-full flex items-center justify-center">
+              <svg class="w-3 h-3 sm:w-4 sm:h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
             </div>
-            <div class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-medium">
-              Cupos limitados este mes
-            </div>
+            <span class="text-gray-800 font-medium text-sm sm:text-base">Empieza con poco y paga en cuotas sin intereses</span>
           </div>
         </div>
 
-        <!-- Imagen que refuerza el dolor -->
-        <div class="lg:flex justify-center bg-ligth items-center">
-          <div class="relative">
-          
-            <img src="imagen/Estadisticas-roi-maketo.png" alt="Problema de diseño web que no convierte" 
-                 class="w-full max-w-lg " loading="eager" width="400" height="600">
-            <div class="mt-4 text-center">
-              <p class="text-gray-700 font-medium">"Aumenta tus ventas con nuestras paginas de conversiones"</p>
+        <!-- CTA SIMPLE Y DIRECTO -->
+        <div class="space-y-4">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="https://api.whatsapp.com/send?phone=584124058904&text=Hola%20Maketo,%20quiero%20que%20mi%20negocio%20aparezca%20en%20Google" 
+               class="inline-flex items-center justify-center gap-2 sm:gap-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold text-base sm:text-lg py-2 sm:py-2 px-4 sm:px-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex-1">
+             
+              <span class="text-sm ">Quiero Aparecer en Google</span>
+            </a>
+            
+            <a href="/diseno-web-a-credito.html" 
+               class="inline-flex items-center justify-center gap-2 sm:gap-3 bg-blue-600  text-light hover:bg-blue-500 font-bold text-base  sm:text-lg py-3 sm:py-4 px-6 sm:px-8 rounded-xl shadow hover:shadow-md transition-all duration-300 flex-1">
+              
+              <span class="text-sm">Ver Planes a Credito</span>
+            </a>
+          </div>
+
+          <!-- Llamada de atención -->
+          <div class="flex items-center justify-center lg:justify-start gap-2 text-sm text-gray-600">
+            <svg class="w-4 h-4 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+            </svg>
+            <span>Llamada de 15 minutos • Sin compromiso</span>
+          </div>
+        </div>
+
+        <!-- TESTIMONIO BREVE -->
+        <div class="mt-6 lg:mt-8 p-4 bg-white rounded-xl border border-gray-200 shadow-sm">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full flex items-center justify-center text-white font-bold text-sm sm:text-base">
+              JG
+            </div>
+            <div>
+              <div class="font-semibold text-gray-900 text-sm sm:text-base">Juan González</div>
+              <div class="text-xs text-gray-600">Restaurante "La Parrilla"</div>
+            </div>
+          </div>
+          <p class="text-gray-700 italic text-sm sm:text-base">
+            "En 2 semanas ya aparecíamos en Google. 
+            <span class="not-italic text-blue-600 font-semibold">Las Ventas aumentaron 20%</span>."
+          </p>
+        </div>
+      </div>
+
+      <!-- Columna de imagen -->
+      <div class="order-2 lg:order-2">
+        <div class="relative">
+          <!-- Imagen principal -->
+          <div class="relative   sm:p-3 ">
+            <img src="imagen/Estadisticas-roi-maketo.png" 
+                 alt="Cliente de Maketo aparece en Google y aumenta sus ventas - Agencia de diseño web" 
+                 class="w-full h-auto rounded-xl"
+                 loading="eager" 
+                 width="600" 
+                 height="400">
+            
+            <!-- Badge de resultado -->
+            <div class="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 bg-white border border-blue-200 rounded-lg sm:rounded-xl p-3 sm:p-4 shadow-lg max-w-[140px] sm:max-w-xs">
+              <div class="flex items-center gap-2 sm:gap-3">
+                <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-green-400 to-blue-400 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-bold text-gray-900 text-sm sm:text-base">+40%</div>
+                  <div class="text-xs text-gray-600">Más clientes</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Estadísticas simples -->
+          <div class="grid grid-cols-3 gap-3 sm:gap-4 mt-6 sm:mt-8">
+            <div class="text-center p-3 bg-white rounded-lg border border-gray-200">
+              <div class="text-lg sm:text-xl font-bold text-blue-600">100%</div>
+              <div class="text-xs text-gray-600">Optimizadas</div>
+            </div>
+            <div class="text-center p-3 bg-white rounded-lg border border-gray-200">
+              <div class="text-lg sm:text-xl font-bold text-blue-600">+50</div>
+              <div class="text-xs text-gray-600">Clientes</div>
+            </div>
+            <div class="text-center p-3 bg-white rounded-lg border border-gray-200">
+              <div class="text-lg sm:text-xl font-bold text-blue-600">7 días</div>
+              <div class="text-xs text-gray-600">Web lista</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   <section id="promesa" class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
@@ -1108,6 +732,84 @@
   </div>
 </section>
 
+
+<!-- SECCIÓN FINANCIAMIENTO - Plan a Cuotas -->
+<section id="financiamiento" class="py-20   shadow-2xl " style="background-color: #121211;" >
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Columna de imagen -->
+      <div class="order-2 lg:order-1">
+        <img src="imagen/ob1.png   " 
+             alt="Financiamiento web sin intereses para PYMES" 
+             class="w-full "
+             loading="lazy">
+      </div>
+
+      <!-- Columna de texto -->
+      <div class="order-1 lg:order-2 text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 bg-green-900/20 border border-green-700/30 rounded-full px-4 py-2 mb-6">
+          <span class="text-green-400 text-sm font-medium">💳 OPCIÓN DE PAGO FLEXIBLE</span>
+        </div>
+
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-6 ">
+          <span class="text-white">¿Sin Presupuesto Completo?</span>
+          <span class="text-blue-500 block mt-2">Financia Tu Web Sin Intereses</span>
+        </h2>
+        
+        <p class="text-lg md:text-xl mb-8 text-gray-300">
+          Comienza tu proyecto web hoy mismo con nuestro <strong class="text-accent">plan de financiamiento exclusivo</strong>. Paga un inicial y el resto en cómodas cuotas mensuales.
+        </p>
+
+        <!-- Beneficios financiamiento -->
+        <div class="space-y-4 mb-8">
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-dark-bg text-sm font-bold">1</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-white">Inicial Accesible</h4>
+              <p class="text-gray-400 text-sm">Solo 25% o 30% para comenzar tu proyecto</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-dark-bg text-sm font-bold">2</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-white">Hasta 10 Meses Sin Intereses</h4>
+              <p class="text-gray-400 text-sm">Cuotas fijas, sin sorpresas ni intereses ocultos</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-dark-bg text-sm font-bold">3</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-white">Web Funcionando Desde el Día 1</h4>
+              <p class="text-gray-400 text-sm">Tu sitio web activo inmediatamente después del pago inicial</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <a href="https://wa.me/584124058904?text=Hola,%20quiero%20información%20sobre%20el%20financiamiento%20de%20mi%20página%20web" class="py-4 px-8 bg-accent text-dark-bg font-extrabold rounded-xl shadow-2xl hover:bg-yellow-500 transition text-center">
+            Ver Planes a Crédito
+          </a>
+          <a href="/diseno-web-a-credito.html" 
+             class="py-4 px-8 bg-gray-700 text-white font-bold rounded-xl shadow-lg hover:bg-gray-600 transition text-center">
+            Calcular Mi Cuota
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
   <!-- ==================== -->
   <!-- SECCIÓN 3: EL PROCESO SIMPLIFICADO -->
   <!-- ==================== -->
@@ -1177,8 +879,8 @@
         <p class="text-xl text-gray-700 mb-6 max-w-2xl mx-auto">
           El primer paso es completamente gratuito y sin compromiso. Descubre cómo podemos transformar tu presencia digital.
         </p>
-        <a href="#cta-final" class="inline-block bg-secondary text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition duration-300 shadow-lg will-change-transform">
-          Solicitar Diagnóstico Gratuito
+        <a href="https://api.whatsapp.com/send?phone=+584124058904&text=Hola%20Maketo,%20quiero%20informacion." class="inline-block bg-blue-700 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-500 transition duration-300 shadow-lg will-change-transform">
+          Comenzar Ahora
         </a>
       </div>
     </div>
@@ -1240,7 +942,7 @@
                     <p class="text-slate-600 text-sm mb-4 min-h-[85px]">
                         Construimos su <strong>web profesional en WordPress</strong> enfocada en credibilidad. Optimización para <strong>SEO Local</strong> y captación de clientes de consulta legal online.
                     </p>
-                    <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
+                    <button class="ver-proyecto w-full py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
                                 data-proyecto="abogados" 
                                 data-url="https://demo.awaikenthemes.com/justiq/law-firm/">
                         Ver Demo
@@ -1256,7 +958,7 @@
                     <p class="text-slate-600 text-sm mb-4 min-h-[60px]">
                         <strong>Tiendas online con Woocommerce</strong> escalables creadas en <strong>WordPress</strong>. Diseño centrado en la conversión y <strong>SEO para productos</strong> (eCommerce SEO).
                     </p>
-                    <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
+                    <button class="ver-proyecto w-full py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
                                 data-proyecto="tienda"
                                 data-url="https://fullkit.moxcreative.com/audioplus/template-kit/homepage/?storefront=envato-elements">
                         Ver Demo
@@ -1272,7 +974,7 @@
                     <p class="text-slate-600 text-sm mb-4 min-h-[90px]">
                         Webs en <strong>WordPress</strong> con enfoque humano, optimizadas para <strong>citas online</strong> y captación de clientes buscando terapia psicológica (E-E-A-T).
                     </p>
-                    <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
+                    <button class="ver-proyecto w-full py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
                                 data-proyecto="psicologos"
                                 data-url="https://dtpsychiatrist.wpengine.com/?storefront=envato-elements">
                         Ver Demo
@@ -1288,7 +990,7 @@
                     <p class="text-slate-600 text-sm mb-4 min-h-[100px]">
                         Webs con <strong>sistema de reservas en WordPress</strong> integrado y galería de trabajos. Clave para el <strong>posicionamiento local</strong> y gestión de turnos.
                     </p>
-                    <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
+                    <button class="ver-proyecto w-full py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
                                 data-proyecto="barberia"
                                 data-url="https://hector.1onestrong.com/?storefront=envato-elements">
                         Ver Demo
@@ -1304,7 +1006,7 @@
                     <p class="text-slate-600 text-sm mb-4 min-h-[100px]">
                         <strong>Diseño web de autoridad en WordPress</strong> para consultores. Foco en la generación de <strong>leads B2B</strong> y la descarga de recursos (lead magnets).
                     </p>
-                    <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
+                    <button class="ver-proyecto w-full py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
                                 data-proyecto="consultores"
                                 data-url="https://coaching.thimpress.com/demo-life-coaching/">
                         Ver Demo
@@ -1320,7 +1022,7 @@
                     <p class="text-slate-600 text-sm mb-4 min-h-[60px]">
                         Webs visuales en <strong>WordPress</strong> con menú digital, sistema de <strong>reservas de mesa</strong> y optimización para Google My Business. Esencial para el <strong>SEO de proximidad</strong>.
                     </p>
-                    <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
+                    <button class="ver-proyecto w-full py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
                                 data-proyecto="restaurantes"
                                 data-url="https://demo.bravisthemes.com/stradale/">
                         Ver Demo
@@ -1336,7 +1038,7 @@
                     <p class="text-slate-600 text-sm mb-4 min-h-[60px]">
                         Portafolios de alta calidad con proyectos y llamadas a la acción en <strong>WordPress</strong> para <strong>solicitar presupuesto</strong> de construcción o diseño.
                     </p>
-                    <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
+                    <button class="ver-proyecto w-full py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
                                 data-proyecto="constructoras"
                                 data-url="https://wpdemo.zcubethemes.com/willmor/?storefront=envato-elements">
                         Ver Demo
@@ -1352,7 +1054,7 @@
                     <p class="text-slate-600 text-sm mb-4 min-h-[85px]">
                         Diseño motivacional, horarios de clases, y formularios para <strong>prueba gratuita</strong> en <strong>WordPress</strong>. Optimizado para búsquedas de <strong>gimnasio cerca de mí</strong>.
                     </p>
-                    <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
+                    <button class="ver-proyecto w-full py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
                                 data-proyecto="gimnasios"
                                 data-url="https://maruthi.wpengine.com/">
                         Ver Demo
@@ -1368,7 +1070,7 @@
                     <p class="text-slate-600 text-sm mb-4 min-h-[85px]">
                         Diseño limpio y confiable en <strong>WordPress</strong>, galería de tratamientos y sistema de <strong>citas médicas online</strong>. Generación de leads de alto valor.
                     </p>
-                    <button class="ver-proyecto w-full py-3 bg-call text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
+                    <button class="ver-proyecto w-full py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-500 transition shadow-lg" 
                                 data-proyecto="dentistas"
                                 data-url="https://templates.sparklethings.com/dentaris/template-kit/home/?storefront=envato-elements">
                         Ver Demo
@@ -1770,26 +1472,6 @@
       </div>
     </div>
 
-    <!-- Sellos de confianza adicionales -->
-    <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
-      <div class="text-center">
-        <div class="text-3xl font-extrabold text-accent mb-2">4.9/5</div>
-        <div class="text-sm text-gray-400">Calificación promedio</div>
-      </div>
-      <div class="text-center">
-        <div class="text-3xl font-extrabold text-accent mb-2">+20</div>
-        <div class="text-sm text-gray-400">Proyectos entregados</div>
-      </div>
-      <div class="text-center">
-        <div class="text-3xl font-extrabold text-accent mb-2">87%</div>
-        <div class="text-sm text-gray-400">Clientes recomiendan</div>
-      </div>
-      <div class="text-center">
-        <div class="text-3xl font-extrabold text-accent mb-2">100%</div>
-        <div class="text-sm text-gray-400">Satisfacción garantizada</div>
-      </div>
-    </div>
-  </div>
 </section>
 
 
@@ -2082,10 +1764,16 @@
                 <span class="sr-only">LinkedIn</span>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               </a>
-              <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="Instagram">
+              <a href="https://instagram.com/maketo.web" class="text-gray-400 hover:text-white transition duration-300" aria-label="Instagram">
                 <span class="sr-only">Instagram</span>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
               </a>
+           <a href="https://facebook.com/maketoweboficial" class="text-gray-400 hover:text-white transition duration-300" aria-label="Facebook">
+    <span class="sr-only">Facebook</span>
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.17 8.438 9.923V15.75H7.5V12h2.938V9.333c0-2.904 1.777-4.49 4.368-4.49 1.259 0 2.375.223 2.668.324V7.5h-1.42c-1.385 0-1.657.66-1.657 1.63V12h3.375l-.543 3.75h-2.832v6.173C18.343 21.17 22 16.991 22 12Z" clip-rule="evenodd" />
+    </svg>
+</a>
             </li>
           </ul>
         </div>
@@ -2096,15 +1784,14 @@
       </div>
     </div>
   </footer>
-
-  <!-- CTA Flotante -->
-  <a href="#cta-final" 
-     class="fixed bottom-6 right-6 z-50 bg-secondary text-white px-5 py-3 rounded-full font-semibold shadow-lg hover:bg-red-700 transition duration-300 flex items-center will-change-transform">
-    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-    </svg>
-    Consultoría Gratuita
-  </a>
+<!-- Botón WhatsApp Fijo - Icono de Teléfono -->
+<a href="https://api.whatsapp.com/send?phone=584124058904&text=Hola%20Maketo,%20quiero%20informaci%C3%B3n%20sobre%20dise%C3%B1o%20web" 
+   class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center"
+   aria-label="Contactar por WhatsApp">
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+  </svg>
+</a>
 
   <!-- JavaScript -->
   <script>
