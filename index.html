@@ -14,7 +14,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://maketo.site" />
  <meta property="og:image" content="https://maketo.site/imagen/banner-maketo.webp" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     
@@ -32,22 +32,19 @@
     <meta name="ai-extractable" content="true" />
     <meta name="ai-topic" content="diseño web que convierte, posicionamiento seo, páginas web vendedoras, conversión digital" />
     
-
-    
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      /* 1. Definición de la Organización y Negocio Local */
       "@type": ["ProfessionalService", "Organization", "LocalBusiness"],
       "@id": "https://maketo.site/#organization",
-      "name": "Maketo - Agencia Global de Diseño Web que Convierte planes a credito",
+      "name": "Maketo - Agencia Global de Diseño Web Conversivo y Financiamiento",
       "alternateName": ["Maketo Web", "Maketo Digital"],
       "url": "https://maketo.site",
       "logo": {"@id": "https://maketo.site/#logo"},
       "image": {"@id": "https://maketo.site/#banner"},
-      "description": "Agencia líder en diseño web conversivo, posicionamiento SEO Y financiamiento de paginas web . Especialistas en crear páginas web que convierten visitantes en clientes.",
+      "description": "Agencia líder en diseño web conversivo, posicionamiento SEO Y financiamiento de paginas web. Especialistas en crear páginas web que convierten visitantes en clientes.",
       "slogan": "Tu web debe vender, no solo existir",
       "foundingDate": "2020-01-01",
       "address": {
@@ -57,6 +54,12 @@
         "addressLocality": "Valencia",
         "streetAddress": "Trigal centro" 
       },
+      "areaServed": [
+        {"@type": "Country", "name": "Global"},
+        {"@type": "Country", "name": "VE"},
+        {"@type": "Country", "name": "ES"},
+        {"@type": "Country", "name": "US"} 
+      ],
       "contactPoint": [
         {
           "@type": "ContactPoint",
@@ -78,7 +81,7 @@
         "bestRating": "5",
         "worstRating": "1"
       },
-      "priceRange": "$$$", /* Ajustado a $$$ para reflejar servicio profesional */
+      "priceRange": "USD",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -87,90 +90,37 @@
       }
     },
     {
-        /* 2. Definición del Logo (ImageObject) */
-        "@type": "ImageObject",
-        "@id": "https://maketo.site/#logo",
-        "url": "https://maketo.site/imagen/logo.png",
-        "caption": "Logo de Maketo - Agencia de Diseño Web y SEO"
+      "@type": "ImageObject", "@id": "https://maketo.site/#logo", "url": "https://maketo.site/imagen/logo.png", "caption": "Logo de Maketo - Agencia de Diseño Web y SEO"
     },
     {
-        /* 3. Definición del Banner o Imagen Principal (ImageObject) */
-        "@type": "ImageObject",
-        "@id": "https://maketo.site/#banner",
-        "url": "https://maketo.site/imagen/banner-maketo.webp",
-        "caption": "Banner Principal de Maketo"
+      "@type": "ImageObject", "@id": "https://maketo.site/#banner", "url": "https://maketo.site/imagen/banner-maketo.webp", "caption": "Banner Principal de Maketo"
     },
     {
-      /* 4. Definición del Sitio Web */
-      "@type": "WebSite",
-      "@id": "https://maketo.site/#website",
-      "url": "https://maketo.site",
-      "name": "Maketo - Agencia de Diseño Web",
-      "description": "Especialistas en diseño web conversivo y posicionamiento SEO , pago a cuotas",
+      "@type": "WebSite", "@id": "https://maketo.site/#website", "url": "https://maketo.site", "name": "Maketo - Agencia de Diseño Web", "description": "Especialistas en diseño web conversivo y posicionamiento SEO, pago a cuotas",
       "publisher": {"@id": "https://maketo.site/#organization"},
       "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://maketo.site/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
+        "@type": "SearchAction", "target": "https://maketo.site/search?q={search_term_string}", "query-input": "required name=search_term_string"
       }
     },
     {
-      /* 5. Definición de la Página Actual (Homepage) */
-      "@type": "WebPage",
-      "@id": "https://maketo.site/#webpage",
-      "url": "https://maketo.site",
-      "name": "Maketo | Diseño Web que Convierte + SEO + Financiamiento",
-      "description": "Agencia especializada en diseño web conversivo y posicionamiento SEO. Webs que venden con financiamiento 0% intereses.",
-      "isPartOf": {"@id": "https://maketo.site/#website"},
-      "about": {"@id": "https://maketo.site/#organization"},
-      "datePublished": "2025-01-01",
-      "dateModified": "2025-12-01"
-    },
- {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Inicio",
-      "item": "https://maketo.site"
-    },
-
-    {
-      /* 7. Definición de FAQPage */
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "¿Hacen diseño web para PYMES y Emprendedores?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí. Nos especializamos en diseño web para PYMES y emprendedores. Creamos webs que venden rápido, con SEO local integrado y a un precio accesible."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cómo funciona el diseño web a crédito o cuotas?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Puedes comenzar con 30% de inicial y el resto en cuotas fijas sin intereses. Ideal para no afectar el flujo de caja de tu negocio."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Trabajan con clientes fuera de Venezuela?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí, trabajamos con clientes en España, USA y toda Latinoamérica. Proyectos 100% remotos con plataformas de pago internacionales."
-          }
-        }
-      ]
+      "@type": "WebPage", "@id": "https://maketo.site/#webpage", "url": "https://maketo.site", "name": "Maketo | Diseño Web que Convierte + SEO + Financiamiento", "description": "Agencia especializada en diseño web conversivo y posicionamiento SEO. Webs que venden con financiamiento 0% intereses.",
+      "isPartOf": {"@id": "https://maketo.site/#website"}, "about": {"@id": "https://maketo.site/#organization"},
+      "datePublished": "2025-01-01", "dateModified": "2025-12-01"
     },
     {
-      /* 8. Servicio 1 - Diseño Web */
-      "@type": "Service",
-      "name": "Diseño Web a Crédito",
+      "@type": "Person",
+      "@id": "https://maketo.site/#person-henderson-ochoa",
+      "name": "Henderson Ochoa",
+      "jobTitle": "Cofundador & CEO, Especialista en SEO Estratégico",
+      "worksFor": {"@id": "https://maketo.site/#organization"},
+      "description": "Especialista en diseño web estratégico, marketing digital y modelos de financiamiento innovadores.",
+      "knowsAbout": ["Diseño Web Conversivo", "SEO Técnico", "NeuroMarketing", "Financiamiento Web"],
+      "sameAs": ["https://linkedin.com/in/henderson-ochoa"]
+    },
+    {
+      "@type": ["Service", "Product"],
+      "@id": "https://maketo.site/#service-diseno-web-credito",
+      "name": "Diseño Web Profesional a Crédito para PYMES",
       "description": "Diseño web profesional con financiamiento 0% intereses. Ideal para PYMES que necesitan una web que venda sin inversión inicial grande.",
       "provider": {"@id": "https://maketo.site/#organization"},
       "offers": {
@@ -179,38 +129,176 @@
         "price": "450",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "priceType": "Financiación",
+          "priceType": "Financing",
           "priceCurrency": "USD",
           "price": "135",
           "unitText": "Cuota Inicial 30%"
-        }
+        },
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
       },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Global"
-      }
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "20",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "areaServed": {"@id": "https://maketo.site/#organization"}
     },
     {
-      /* 9. Servicio 2 - Posicionamiento SEO */
       "@type": "Service",
-      "name": "Posicionamiento SEO Garantizado",
+      "@id": "https://maketo.site/#service-seo-garantizado",
+      "name": "Posicionamiento SEO de Autoridad Garantizado",
       "description": "Servicio de posicionamiento en Google garantizado. Estrategias SEO avanzadas y optimización para IA Overviews.",
-      "provider": {"@id": "https://maketo.site/#planes"},
+      "provider": {"@id": "https://maketo.site/#organization"},
       "offers": {
         "@type": "Offer",
         "priceCurrency": "USD",
         "price": "300"
-      }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "20",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "areaServed": {"@id": "https://maketo.site/#organization"}
     },
     {
-      /* 10. Definición de la Persona Clave (E-E-A-T) */
-      "@type": "Person",
-      "name": "Henderson Ochoa",
-      "jobTitle": "Cofundador & CEO",
-      "worksFor": {"@id": "https://maketo.site/#organization"},
-      "description": "Especialista en diseño web estratégico, marketing digital y modelos de financiamiento innovadores",
-      "knowsAbout": ["Diseño Web Conversivo", "SEO Técnico", "NeuroMarketing"],
-      "sameAs": ["https://linkedin.com/in/henderson-ochoa"]
+      "@type": "HowTo",
+      "@id": "https://maketo.site/#howto-proceso",
+      "name": "Cómo crear una página web que genera clientes en 4 pasos con Maketo",
+      "description": "El proceso simplificado de 4 pasos de Maketo para lanzar tu web centrada en resultados y conversión.",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "USD",
+        "value": "450"
+      },
+      "totalTime": "P7D",
+      "tool": [
+        {"@type": "HowToTool", "name": "Consulta Gratuita"},
+        {"@type": "HowToTool", "name": "Información de Negocio"}
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Diagnóstico Gratuito",
+          "text": "Analizamos tu situación actual y definimos juntos tus objetivos de negocio mediante un diagnóstico gratuito. Tú solo respondes preguntas clave.",
+          "url": "https://maketo.site/#proceso-paso-1"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Estrategia Personalizada",
+          "text": "Creamos un plan detallado con acciones específicas de diseño y SEO para alcanzar tus metas. Tú aportas información vital de tu negocio.",
+          "url": "https://maketo.site/#proceso-paso-2"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Desarrollo y Lanzamiento",
+          "text": "Implementamos el diseño y la estrategia en tiempo récord, asegurando que el sitio esté funcionando. Tú apruebas el resultado final.",
+          "url": "https://maketo.site/#proceso-paso-3"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Resultados y Optimización",
+          "text": "Monitoreamos el performance de la web, analizamos datos y realizamos ajustes continuos para maximizar la generación de clientes.",
+          "url": "https://maketo.site/#proceso-paso-4"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://maketo.site"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Hacen diseño web para PYMES y Emprendedores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Nos especializados en diseño web para PYMES y emprendedores. Entendemos que necesitas una web que venda rápido, con SEO local integrado y a un precio justo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ya tengo web, ¿ofrecen servicio de Rediseño?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutamente. El rediseño de sitios web es clave si tu página actual no convierte. Mantenemos tu antigüedad en Google (SEO) pero modernizamos la imagen y la estrategia de ventas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo funciona el diseño web a crédito o cuotas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es un modelo de inversión inteligente. Pagas una inicial del 30% para comenzar y el resto en cuotas fijas sin intereses. Ideal para no afectar el flujo de caja de tu negocio mientras disfrutas de una web profesional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Trabajan con clientes fuera de Venezuela?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, nuestro servicio es global y remoto. Tenemos clientes en España, USA y Latinoamérica. Utilizamos plataformas de pago internacionales y gestionamos el proyecto vía Zoom/Meet sin inconvenientes."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "Artículos Recientes del Blog Maketo",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 6,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://maketo.site/como-financiar-pagina-web-2025.html",
+          "name": "5 Errores Comunes en SEO On-Page que Matan tu Tráfico"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://maketo.site/blog-ventajas-credito.html",
+          "name": "¿Cómo Funciona la Financiación Web Sin Intereses? (Guía para PYMES)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://maketo.site/cuanto-cuesta-una-pagina-web.html",
+          "name": "Cuánto Cuesta una Página Web? Guía Completa de Precios 2025"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://maketo.site/neurodiseno.html",
+          "name": "NeuroDiseño: Tendencia 2025"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://maketo.site/diseno-web-a-credito.html",
+          "name": "Diseño UX: 7 Principios Clave para la Retención y el SEO"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://maketo.site/seo-local-2025.html",
+          "name": "Estrategias de SEO Local en 2025: Dominando Google Maps"
+        }
+      ]
     }
   ]
 }
@@ -300,9 +388,9 @@
         <!-- HEADLINE PRINCIPAL -->
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 lg:mb-6 leading-tight">
           <span class="block text-gray-900">
-            Tu Negocio en Google
-            <span class=" bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600 block">
-              Más Clientes, Más Ventas
+            Tu Negocio en Google. <br>
+            <span class=" bg-clip-text bg-gradient-to-r  text-blue-800 text-5xl ">
+              Diseño Web que Convierte Más Clientes, Más Ventas
             </span>
           </span>
         </h1>
@@ -1257,7 +1345,6 @@
 
 
  <!-- blog -->
-
 <section id="blog-teaser" class="py-16 sm:py-24 bg-secondary-bg ">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center pb-12">
@@ -1274,7 +1361,7 @@
         
         <div class="mt-12 grid gap-10 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-10 ">
             
-            <div class="p-6 bg-blak-900 rounded-lg shadow-xl border border-secondary hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 ">
+            <article class="p-6 bg-blak-900 rounded-lg shadow-xl border border-secondary hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 ">
                 <p class="text-sm font-medium text-secondary">SEO Técnico</p>
                 <a href="/como-financiar-pagina-web-2025.html" class="block mt-2">
                     <h3 class="text-xl font-bold text-primary leading-snug">
@@ -1285,14 +1372,14 @@
                     </p>
                 </a>
                 <div class="mt-6">
-                    <a href="/diseno-web-a-credito.html" class="text-sm font-semibold text-accent hover:text-teal-500 transition duration-300 flex items-center">
+                    <a href="/como-financiar-pagina-web-2025.html" class="text-sm font-semibold text-accent hover:text-teal-500 transition duration-300 flex items-center">
                         Leer Artículo 
                         <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
-            </div>
+            </article>
 
-            <div class="p-6 bg-blak-900 rounded-lg shadow-xl border border-secondary card-float hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+            <article class="p-6 bg-blak-900 rounded-lg shadow-xl border border-secondary card-float hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
                 <p class="text-sm font-medium text-secondary">Negocios & Finanzas</p>
                 <a href="/blog-ventajas-credito.html" class="block mt-2">
                     <h3 class="text-xl font-bold text-primary leading-snug">
@@ -1303,21 +1390,21 @@
                     </p>
                 </a>
                 <div class="mt-6">
-                    <a href="/como-financiar-pagina-web-2025.html" class="text-sm font-semibold text-accent hover:text-accent transition duration-300 flex items-center">
+                    <a href="/blog-ventajas-credito.html" class="text-sm font-semibold text-accent hover:text-accent transition duration-300 flex items-center">
                         Leer Artículo 
                         <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
-            </div>
+            </article>
 
-            <div class="p-6 bg-blak-900 rounded-lg shadow-xl border border-secondary hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+            <article class="p-6 bg-blak-900 rounded-lg shadow-xl border border-secondary hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
                 <p class="text-sm font-medium text-secondary">Precios</p>
-                <a href="/diseno-web-a-credito.html" class="block mt-2">
+                <a href="/cuanto-cuesta-una-pagina-web.html" class="block mt-2">
                     <h3 class="text-xl font-bold text-primary leading-snug">
-                         Cuánto Cuesta una Página Web? Guía Completa de Precios 2025
+                            Cuánto Cuesta una Página Web? Guía Completa de Precios 2025
                     </h3>
                     <p class="mt-3 text-base text-gray-800">
-                    Si estás buscando crear una presencia digital para tu negocio, una de las primeras preguntas que seguramente te haces es: "¿Cuánto cuesta contratar a alguien para crear una página web?" La respuesta no es simple, ya que el precio depende de múltiples factores.
+                        Si estás buscando crear una presencia digital para tu negocio, una de las primeras preguntas que seguramente te haces es: "¿Cuánto cuesta contratar a alguien para crear una página web?" La respuesta no es simple, ya que el precio depende de múltiples factores.
                     </p>
                 </a>
                 <div class="mt-6">
@@ -1326,17 +1413,17 @@
                         <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
-            </div>
+            </article>
             
-            <div class="p-6 bg-blak-900 rounded-lg shadow-xl border border-secondary hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+            <article class="p-6 bg-blak-900 rounded-lg shadow-xl border border-secondary hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
                 <p class="text-sm font-medium text-secondary">Tendencia</p>
                 <a href="/neurodiseno.html" class="block mt-2">
                     <h3 class="text-xl font-bold text-primary leading-snug">
                         NeuroDiseño: Tendencia 2025 
                     </h3>
                     <p class="mt-3 text-base text-gray-800">
-                      Descubre que es el NeuroDiseño y como lo implementamos
-                             </p>
+                        Descubre que es el NeuroDiseño y como lo implementamos
+                    </p>
                 </a>
                 <div class="mt-6">
                     <a href="/neurodiseno.html" class="text-sm font-semibold text-accent hover:text-teal-500 transition duration-300 flex items-center">
@@ -1344,9 +1431,9 @@
                         <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
-            </div>
-
-            <div class="p-6 bg-blak-900 rounded-lg shadow-xl border border-secondary hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
+            </article>
+            
+            <article class="p-6 bg-blak-900 rounded-lg shadow-xl border border-secondary hover:shadow-2xl transition duration-500 transform hover:-translate-y-1">
                 <p class="text-sm font-medium text-secondary">Diseño Web</p>
                 <a href="/diseno-web-a-credito.html" class="block mt-2">
                     <h3 class="text-xl font-bold text-primary leading-snug">
@@ -1362,11 +1449,11 @@
                         <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
-            </div>
+            </article>
 
-            <div class="p-6 bg-blak-900 rounded-lg shadow-xl border border-secondary hover:shadow-2xl- transition duration-500 transform hover:-translate-y-1">
+            <article class="p-6 bg-blak-900 rounded-lg shadow-xl border border-secondary hover:shadow-2xl- transition duration-500 transform hover:-translate-y-1">
                 <p class="text-sm font-medium text-secondary">SEO Local</p>
-                <a href="/como-financiar-pagina-web-2025.html" class="block mt-2">
+                <a href="/blog-ventajas-credito.html" class="block mt-2">
                     <h3 class="text-xl font-bold text-primary leading-snug">
                         Estrategias de SEO Local en 2025: Dominando Google Maps
                     </h3>
@@ -1380,19 +1467,11 @@
                         <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
-            </div>
+            </article>
             
         </div>
     </div>
-</section><section id="faq" class="py-20 bg-secondary-bg">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-primary mb-4">
-        Dudas Frecuentes sobre <span class="text-gradient">Diseño Web y Pagos</span>
-      </h2>
-      <p class="text-lg text-secondary-text">Respuestas claras, sin letra pequeña.</p>
-    </div>
-
+</section>
     <div class="space-y-4">
       <!-- Long Tail: Diseño Web Pymes -->
       <details class="bg-dark-bg rounded-xl p-6 border border-gray-300 cursor-pointer group">
@@ -1784,6 +1863,21 @@
             });
         }
     });
+});
+
+
+// service-worker.js - AÑADIR PWA
+self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches.open('maketo-v1').then((cache) => {
+      return cache.addAll([
+        '/',
+        '/styles.css',
+        '/imagen/logo.webp',
+        // Assets críticos
+      ]);
+    })
+  );
 });
   </script>
 </body>
