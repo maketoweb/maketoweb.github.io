@@ -377,7 +377,7 @@
         <a href="/sobre-nosotros" class="text-gray-700 hover:text-secondary transition duration-300">Nosotros</a>
          <a href="/diseno-web-a-credito" class="text-gray-700 hover:text-secondary transition duration-300">Plan Flex</a>
         <a href="#planes" class="text-gray-700 hover:text-secondary transition duration-300">Planes</a>
-            <a href="/servicios" class="text-gray-700 hover:text-secondary transition duration-300">Servivios</a>
+            <a href="/servicios" class="text-gray-700 hover:text-secondary transition duration-300">Servicios</a>
         <a href="#blog" class="text-gray-700 hover:text-secondary transition duration-300">Blog</a>
         <a href="#portafolio" class="text-gray-700 hover:text-secondary transition duration-300">Portafolio</a>
        
@@ -411,7 +411,7 @@
         <a href="/sobre-nosotros" class="block py-2 text-gray-700 hover:text-secondary transition duration-300">Nosotros</a>
         <a href="/diseno-web-a-credito" class="block py-2 text-gray-700 hover:text-secondary transition duration-300">Plan Flex</a>
         <a href="#planes" class="block py-2 text-gray-700 hover:text-secondary transition duration-300">Planes</a>
-          <a href="/servicios" class="text-gray-700 hover:text-secondary transition duration-300">Servivios</a>
+          <a href="/servicios" class="text-gray-700 hover:text-secondary transition duration-300">Servicios</a>
         <a href="#blog" class="block py-2 text-gray-700 hover:text-secondary transition duration-300">Blog</a>
         <a href="#portafolio" class="block py-2 text-gray-700 hover:text-secondary transition duration-300">Portafolio</a>
         
@@ -2070,5 +2070,17 @@ self.addEventListener('install', (event) => {
   );
 });
   </script>
+  <script>
+// Redirección 301 simulada para index.html
+if (window.location.pathname === '/index.html' || 
+    window.location.pathname === '/index') {
+    
+    // Guardar en consola para debugging
+    console.log('Redirecting from duplicate: ' + window.location.href);
+    
+    // Redirigir a la raíz sin index.html
+    window.location.replace('https://maketo.site/');
+}
+</script>
 </body>
 </html>
