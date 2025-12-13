@@ -1,5 +1,7 @@
 User-agent: *
 Disallow: /politica-legal.html
+Disallow: /index.html
 
 Sitemap: https://maketo.site/sitemap.xml
+
 
