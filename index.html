@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
-<link rel="alternate" hreflang="x-default" href="https://maketo.site/" />
+  <link rel="alternate" hreflang="x-default" href="https://maketo.site/" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5" />
     <title>Maketo Web | Diseño web y SEO global | Agencia de Marketing </title>
@@ -15,7 +15,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://maketo.site" />
  <meta property="og:image" content="https://maketo.site/imagen/banner-maketo.webp" />
-   <meta http-equiv="refresh" content="0; url=https://maketo.site" />
+  <meta http-equiv="refresh" content="0; url=https://maketo.site" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
    
@@ -3022,54 +3022,6 @@ self.addEventListener('install', (event) => {
 });
   </script>
   
-<script>
-// Redirección canónica estricta - MEJORADA
-(function() {
-    var canonicalUrl = 'https://maketo.site';
-    var currentPath = window.location.pathname;
-    var currentUrl = window.location.href;
-    
-    // URLs que deben redirigir a la raíz
-    var duplicatePaths = [
-        '/index.html',
-        '/index',
-        '/home',
-        '/home.html',
-        '/inicio',
-        '/inicio.html'
-    ];
-    
-    // Verificar si estamos en una URL duplicada
-    var shouldRedirect = false;
-    
-    // Caso 1: Estamos en una ruta duplicada
-    duplicatePaths.forEach(function(path) {
-        if (currentPath === path || currentPath === path + '/') {
-            shouldRedirect = true;
-        }
-    });
-    
-    // Caso 2: URL contiene index.html aunque tenga parámetros
-    if (currentUrl.toLowerCase().indexOf('index.html') > -1) {
-        shouldRedirect = true;
-    }
-    
-    // Ejecutar redirección (simula 301)
-    if (shouldRedirect && currentUrl !== canonicalUrl) {
-        // Guardar para analytics
-        console.log('Canonical redirect: ' + currentUrl + ' → ' + canonicalUrl);
-        
-        // Redirección permanente (simulada)
-        window.location.replace(canonicalUrl + window.location.search + window.location.hash);
-    }
-    
-    // También manejar www vs non-www si es necesario
-    if (window.location.hostname.startsWith('www.')) {
-        var nonWwwUrl = 'https://maketo.site' + window.location.pathname + window.location.search + window.location.hash;
-        window.location.replace(nonWwwUrl);
-    }
-})();
-</script>
  
 </body>
 </html>
