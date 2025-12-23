@@ -1,4 +1,14 @@
 User-agent: *
 
+Disallow: /send?phone=
+Disallow: /send/?phone=
+
+
+Disallow: /imagen/favicon-32x32.png
+Disallow: /imagen/favicon-16x16.png
+Disallow: /site.webmanifest
+
+
+Allow: /
 
 Sitemap: https://maketo.site/sitemap.xml
