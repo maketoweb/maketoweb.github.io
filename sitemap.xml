@@ -1,55 +1,115 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-<loc>https://maketo.site</loc>
-<lastmod>2025-12-09T23:59:59+00:00</lastmod>
-<priority>1.0</priority>
-</url>
-<url>
-<loc>https://maketo.site/diseno-web-a-credito</loc>
-<lastmod>2025-12-10T23:59:59+00:00</lastmod>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://maketo.site/ve/</loc>
-<lastmod>2025-12-08T23:59:59+00:00</lastmod>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://maketo.site/sobre-nosotros</loc>
-<lastmod>2025-12-07T23:59:59+00:00</lastmod>
-<priority>0.7</priority>
-</url>
-
-<url>
-<loc>https://maketo.site/servicios</loc>
-<lastmod>2025-12-12T23:59:59+00:00</lastmod>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://maketo.site/cuanto-cuesta-una-pagina-web</loc>
-<lastmod>2025-12-07T23:59:59+00:00</lastmod>
-<priority>0.7</priority>
-</url>
-
-<url>
-<loc>https://maketo.site/neurodiseno</loc>
-<lastmod>2025-12-10T23:59:59+00:00</lastmod>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://maketo.site/como-financiar-pagina-web-2025</loc>
-<lastmod>2025-12-10T23:59:59+00:00</lastmod>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://maketo.site/blog-ventajas-credito</loc>
-<lastmod>2025-11-25T23:59:59+00:00</lastmod>
-<priority>0.7</priority>
-</url>
-
-<url>
-<loc>https://maketo.site/beneficios-pagina-web-negocio</loc>
-<lastmod>2025-12-08T23:59:59+00:00</lastmod>
-<priority>0.8</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- PÁGINA GLOBAL -->
+  <url>
+    <loc>https://maketo.site</loc>
+    <lastmod>2025-12-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- PÁGINA VENEZUELA (LA MÁS IMPORTANTE) -->
+  <url>
+    <loc>https://maketo.site/ve/</loc>
+    <lastmod>2025-12-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- DISEÑO WEB A CRÉDITO -->
+  <url>
+    <loc>https://maketo.site/diseno-web-a-credito.html</loc>
+    <lastmod>2025-12-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- SERVICIOS -->
+  <url>
+    <loc>https://maketo.site/servicios.html</loc>
+    <lastmod>2025-12-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- SOBRE NOSOTROS -->
+  <url>
+    <loc>https://maketo.site/sobre-nosotros.html</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- POLÍTICA LEGAL (mencionada en tu footer) -->
+  <url>
+    <loc>https://maketo.site/politica-legal.html</loc>
+    <lastmod>2025-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- PORTFOLIO (mencionado en tu navegación) -->
+  <url>
+    <loc>https://maketo.site/#portafolio</loc>
+    <lastmod>2025-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- BLOG (mencionado en tu navegación) -->
+  <url>
+    <loc>https://maketo.site/#blog</loc>
+    <lastmod>2025-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- PLANES (mencionado en tu navegación) -->
+  <url>
+    <loc>https://maketo.site/#planes</loc>
+    <lastmod>2025-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- ARTÍCULOS DEL BLOG -->
+  <url>
+    <loc>https://maketo.site/blog/cuanto-cuesta-una-pagina-web.html</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://maketo.site/blog/neurodiseno.html</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://maketo.site/blog/como-financiar-pagina-web-2026.html</loc>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://maketo.site/blog/ventajas-credito.html</loc>
+    <lastmod>2025-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://maketo.site/blog/beneficios-pagina-web-negocio.html</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
 </urlset>
