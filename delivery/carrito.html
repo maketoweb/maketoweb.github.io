@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Tu Carrito de Compras</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec1313",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: { "display": ["Work Sans", "sans-serif"] },
+                },
+            },
+        }
+    </script>
+    <style>
+        .ios-shadow { box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col font-display">
+
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+    <div class="flex items-center p-4 justify-between max-w-md mx-auto">
+        <button onclick="window.location.href='carnes.html'" class="text-gray-900 dark:text-white size-10 flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full">
+            <span class="material-symbols-outlined">arrow_back_ios_new</span>
+        </button>
+        <h2 class="text-gray-900 dark:text-white text-lg font-bold flex-1 text-center">Tu Carrito</h2>
+        <div class="size-10"></div>
+    </div>
+</header>
+
+<main class="flex-1 w-full max-w-md mx-auto overflow-y-auto pb-48">
+    <div id="cart-items-container" class="mt-4 px-4 space-y-4">
+        </div>
+
+    <div class="px-4 mt-6">
+        <div onclick="window.location.href='carnes.html'" class="bg-primary/5 dark:bg-primary/10 rounded-xl p-4 flex items-center justify-between border border-primary/10 cursor-pointer">
+            <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">add_shopping_cart</span>
+                <span class="text-sm font-medium">¿Olvidaste algo?</span>
+            </div>
+            <span class="text-primary text-sm font-bold">Ver más</span>
+        </div>
+    </div>
+</main>
+
+<footer class="fixed bottom-0 left-0 right-0 bg-white dark:bg-zinc-900 ios-shadow border-t border-gray-100 dark:border-zinc-800 px-6 pt-4 pb-8 z-50">
+    <div class="max-w-md mx-auto">
+        <div class="space-y-2 mb-4">
+            <div class="flex justify-between items-center py-1">
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-medium">Subtotal</p>
+                <p id="subtotal-price" class="text-gray-900 dark:text-white text-sm font-semibold">$0.00</p>
+            </div>
+            <div class="flex justify-between items-center py-1">
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-medium">Envío</p>
+                <p class="text-green-600 dark:text-green-400 text-sm font-semibold">Gratis</p>
+            </div>
+            <div class="h-px bg-gray-100 dark:bg-zinc-800 my-2"></div>
+            <div class="flex justify-between items-center pt-1">
+                <h3 class="text-gray-900 dark:text-white text-xl font-bold">Total</h3>
+                <h3 id="total-price" class="text-primary text-xl font-bold">$0.00</h3>
+            </div>
+        </div>
+        
+        <button onclick="goToCheckout()" class="w-full bg-primary text-white py-4 rounded-xl font-bold flex items-center justify-center gap-3 active:scale-95 transition-transform shadow-lg shadow-primary/20">
+            <span class="material-symbols-outlined">shopping_cart_checkout</span>
+            Finalizar Compra
+        </button>
+    </div>
+</footer>
+
+<script>
+    function loadCart() {
+        const cartData = localStorage.getItem('cart');
+        return cartData ? JSON.parse(cartData) : [];
+    }
+
+    function renderCart() {
+        const cart = loadCart();
+        const container = document.getElementById('cart-items-container');
+        
+        if (cart.length === 0) {
+            container.innerHTML = `
+                <div class="text-center py-20">
+                    <span class="material-symbols-outlined text-6xl text-gray-300">shopping_basket</span>
+                    <p class="mt-4 text-gray-500">Tu carrito está vacío</p>
+                </div>`;
+            updateTotals(cart);
+            return;
+        }
+
+        container.innerHTML = cart.map((item, index) => `
+            <div class="flex items-center gap-4 bg-white dark:bg-zinc-900 p-3 rounded-xl border border-gray-100 dark:border-zinc-800 justify-between">
+                <div class="flex items-center gap-4">
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16" style="background-image: url('${item.img}')"></div>
+                    <div class="flex flex-col justify-center">
+                        <p class="text-gray-900 dark:text-white text-base font-semibold line-clamp-1">${item.name}</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">$${item.price.toFixed(2)} / kg</p>
+                    </div>
+                </div>
+                <div class="shrink-0 flex flex-col items-end gap-2">
+                    <div class="flex items-center gap-3 bg-gray-50 dark:bg-background-dark p-1 rounded-lg border border-gray-100 dark:border-white/5">
+                        <button onclick="updateQty(${index}, -1)" class="flex h-7 w-7 items-center justify-center rounded-md bg-white dark:bg-zinc-800 text-primary border border-gray-200 dark:border-zinc-700">-</button>
+                        <span class="text-base font-semibold w-4 text-center text-gray-900 dark:text-white">${item.qty}</span>
+                        <button onclick="updateQty(${index}, 1)" class="flex h-7 w-7 items-center justify-center rounded-md bg-primary text-white">+</button>
+                    </div>
+                    <p class="text-primary font-bold text-sm">$${(item.price * item.qty).toFixed(2)}</p>
+                </div>
+            </div>
+        `).join('');
+        updateTotals(cart);
+    }
+
+    function updateQty(index, change) {
+        let cart = loadCart();
+        cart[index].qty += change;
+        if (cart[index].qty <= 0) cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        renderCart();
+    }
+
+    function updateTotals(cart) {
+        const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+        document.getElementById('subtotal-price').innerText = `$${total.toFixed(2)}`;
+        document.getElementById('total-price').innerText = `$${total.toFixed(2)}`;
+    }
+
+    // Nueva función para navegar a la siguiente página
+    function goToCheckout() {
+        const cart = loadCart();
+        if (cart.length === 0) {
+            alert("Agregue productos al carrito antes de continuar.");
+            return;
+        }
+        window.location.href = 'finalizar-compra.html';
+    }
+
+    document.addEventListener('DOMContentLoaded', renderCart);
+</script>
+</body>
+</html>
