@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mercado Fresco - Categorías Principales</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec1313",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Work Sans", sans-serif;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-[#1b0d0d] dark:text-white font-display">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="flex items-center gap-2">
+<div class="text-primary material-symbols-outlined" style="font-size: 28px;">storefront</div>
+<h1 class="text-[#1b0d0d] dark:text-white text-xl font-bold leading-tight tracking-tight">Mercado Fresco</h1>
+</div>
+<div class="flex gap-2 items-center">
+<button class="flex size-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined" style="font-size: 24px;">shopping_cart</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-full bg-gray-100 dark:bg-white/10">
+<span class="material-symbols-outlined text-[#1b0d0d] dark:text-white" style="font-size: 24px;">person</span>
+</button>
+</div>
+</div>
+<!-- Search Bar Component -->
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm">
+<div class="text-primary flex border-none bg-white dark:bg-[#321a1a] items-center justify-center pl-4 rounded-l-xl" data-icon="MagnifyingGlass">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-[#1b0d0d] dark:text-white focus:outline-0 focus:ring-0 border-none bg-white dark:bg-[#321a1a] h-full placeholder:text-gray-400 px-4 pl-2 text-base font-normal leading-normal" placeholder="¿Qué buscas hoy?" value=""/>
+</div>
+</label>
+</div>
+</header>
+<main class="pb-24"><div class="flex w-full overflow-x-auto hide-scrollbar snap-x snap-mandatory scroll-smooth">
+  <div class="flex flex-nowrap p-4 gap-4">
+    
+    <div class="flex-none w-[85vw] md:w-[400px] snap-center">
+      <div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover rounded-xl flex flex-col justify-end p-4 relative overflow-hidden shadow-lg" 
+           style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1000&auto=format&fit=crop");'>
+        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">OFERTA</span>
+        <p class="text-white text-lg font-bold leading-tight">Parrillada Familiar</p>
+        <p class="text-white/80 text-sm font-normal">20% OFF en cortes seleccionados</p>
+      </div>
+    </div>
+
+    <div class="flex-none w-[85vw] md:w-[400px] snap-center">
+      <div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover rounded-xl flex flex-col justify-end p-4 relative overflow-hidden shadow-lg" 
+           style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1000&auto=format&fit=crop");'>
+        <span class="absolute top-3 left-3 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded">FRESCO</span>
+        <p class="text-white text-lg font-bold leading-tight">Directo del Campo</p>
+        <p class="text-white/80 text-sm font-normal">Verduras recién cosechadas hoy</p>
+      </div>
+    </div>
+
+    <div class="flex-none w-[85vw] md:w-[400px] snap-center">
+      <div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover rounded-xl flex flex-col justify-end p-4 relative overflow-hidden shadow-lg" 
+           style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://images.unsplash.com/photo-1587593810167-a84920ea0781?q=80&w=1000&auto=format&fit=crop");'>
+        <p class="text-white text-lg font-bold leading-tight">Pollo de Granja</p>
+        <p class="text-white/80 text-sm font-normal">Calidad garantizada 100% natural</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Section Header -->
+<div class="flex items-center justify-between px-4 pt-4">
+<h2 class="text-[#1b0d0d] dark:text-white text-xl font-bold leading-tight tracking-tight">Categorías Principales</h2>
+<button class="text-primary text-sm font-semibold">Ver todas</button>
+</div>
+<!-- Categories Image Grid -->
+<div class="grid grid-cols-2 gap-3 p-4">
+<!-- Carne de Res -->
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm active:scale-95 transition-transform" data-alt="Fresh red raw beef steaks" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 70%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA54WHHHcX0QARqdY76wuPwSKhVoTMuUQWc8I75SRBGSVfDnPct463pLzd6NohrRxkUNDLDewKDU2WMnP0Ct_QQV4B8ohltV-HFr_BD8a_W1yDhnnoMJSxvdzuIEo7KywP0FvhzkTicSkg2tqIxoKscKq2NVn9tzBcrKf9cvfYqySoJwz1sVfrFDOITz_z-48aZSRPuc4uM7HGD3QZ8Ad7_hct6gw6lTUovqRROp156KaZFyF9WIwesDogb2OXm9AT5rjVKjoYtBUM");'>
+<p class="text-white text-base font-bold leading-tight">Carne de Res</p>
+</div>
+<!-- Pollo -->
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm active:scale-95 transition-transform" data-alt="Fresh raw chicken breasts on a counter" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 70%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9ckclwrIFfRoPpWLcGI2KVIvZJiHB8SID4M38-M5Yx0Y3Jj_Vx6WYOJsJkDXDuJaekEueNlU7jxG3AAkTN5GFIx6vrWb3blq6z7JI8NoNySZ_JQpobLE-xvN2DWZojG04tNFdeha_bL3m9dgsNbMPouGp3NFfIkZxQ0hvoPicgFJ8vq8FL3RJ-Ym1HFbzSjlORIMRoB5RKrrDQ35wB0q4xdnoCnJOuUIwO9s9n9cAYgycddwa6bCEorewVYfjFKY3zKpEcqB-SEw");'>
+<p class="text-white text-base font-bold leading-tight">Pollo</p>
+</div>
+<!-- Cochino -->
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm active:scale-95 transition-transform" data-alt="Raw pork ribs with spices" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 70%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuAxzoKphHxH29-OBRcCgy87XOwPXwdXZJt030p-LuXSjLKQoOdWWMaH0cH-FwTZg-YJ-Zov2yn0hmodU-aNBgkueS2W8t3qtiNt1XozQpmRMm5nZrRo_TMm2CxE0KQfHRS24JmIYd7F3Yx-uWGVs8l1Bysj37VCxHyhvRLeDicm9wuaX-cNACCxVArZT3JvCIIm7Jc7Rs_9Br_zNGGUmt22T2UFDXmWcAnIQ2-pfyAyOtPNAUyxUiWt-hpluRZAZfhZzK10OeXyc");'>
+<p class="text-white text-base font-bold leading-tight">Cochino</p>
+</div>
+<!-- Charcutería -->
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm active:scale-95 transition-transform" data-alt="Assorted salami and cheese platter" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 70%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9yJZmHtB2FEb85Oc7lLrrzCNYcV5F0Du1kUS6fAxveHViVNLtrXDGzi9_7QaGim73OX8KsFR4ZBKjbvLa_y39I9xopwBPNPy8SQWO5bMCKJJkHWoDiRFgxr-aj9iNmZcX8dHl60AHVOz3Mjho1Co5cEqkYPHjvffMXiXgDlUNZyNv7oDqJtDF1YNlzo_hkY8aW53DS3m6hANjD5--cvcXRkHD2XnoX_tloT0PdAgMMyLvgU42MWz9gXnJ7sscIYg8Ieq0Sut1vIs");'>
+<p class="text-white text-base font-bold leading-tight">Charcutería</p>
+</div>
+<!-- Frutas y Verduras -->
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm active:scale-95 transition-transform" data-alt="Basket with lettuce and tomatoes" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 70%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcJR_gkALwRFoNyR4b1Wy5nfmNnjtGiGdAhnYWdcgfvbbJpL2oy6BuYZFLH2D_kM1aGMW63gcoeEYSBYgA2q6UDE_rDpe8oQsy114ivTaCr9lcjmBYWah-6QyDnPkmhsTZ_xJQnD34tzJlK_Go5p0yn8g-1hVRrBLGMS2quVKYeBX-XCBS2LVICtAMxGhYNA5lSblO2lbCQKA2_7iAzXzn4TKFNr8-PJDzXROXmRSm1EuVSq1i0d38Bcy6wD3DBmSgz7uCgk3fQSA");'>
+<p class="text-white text-base font-bold leading-tight">Frutas y Verduras</p>
+</div>
+<!-- Víveres -->
+<div class="bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm active:scale-95 transition-transform" data-alt="Pasta and pantry staples on a shelf" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 70%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCG5vvRp4Tgzq-s4C4QITD2kzdd_bLxzN9gWFmDqMtJuN7KU525phIHpT0OOgj90cIWfsXOy3zBp_LmxyXUpbMhTW9U7EII5dfylFtv941qWA3I9bDCRJ5i4xi6ABEwd7zw6Q1szy-zG3yTyizdAC4ETgHUtFOLztYbZZ27FJ2Hu5_NWkpDQSAKrA5q-tx3sZUf8gATfEdZlG-7zWztCXhkuepdXIWVv8HiDnNH3OkhRfdIH64tvWeDn0ZBULqN5rOA2v4DCEGV6YI");'>
+<p class="text-white text-base font-bold leading-tight">Víveres</p>
+</div>
+</div>
+<!-- WhatsApp Support Banner -->
+<div class="px-4 py-2">
+<div class="bg-primary/5 dark:bg-primary/20 border border-primary/20 rounded-xl p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-[#25D366] text-white p-2 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+</div>
+<div>
+<p class="font-bold text-sm text-[#1b0d0d] dark:text-white">¿Necesitas ayuda?</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Pide directamente por WhatsApp</p>
+</div>
+</div>
+<button class="bg-primary text-white text-xs font-bold py-2 px-4 rounded-full uppercase tracking-wider">Contactar</button>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar (iOS style) -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-lg border-t border-gray-200 dark:border-white/10 pb-6 pt-2 px-6 flex justify-between items-center z-50">
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-medium">Inicio</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-[10px] font-medium">Categorías</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="text-[10px] font-medium">Pedidos</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-[10px] font-medium">Favoritos</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">more_horiz</span>
+<span class="text-[10px] font-medium">Más</span>
+</button>
+</nav>
+<!-- WhatsApp Floating Action Button -->
+<div class="fixed bottom-24 right-4 z-40">
+<a class="flex size-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+</div>
+</body></html>
